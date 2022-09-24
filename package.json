@@ -28,6 +28,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.5.0"
+		"@fontsource/jetbrains-mono": "^4.5.10"
 	}
 }
