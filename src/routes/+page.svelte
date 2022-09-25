@@ -1,11 +1,10 @@
 <script>
-	import IntersectionObserver from 'svelte-intersection-observer';
 	import zkMainImage from './zk_main.jpg';
 	import zkLinksImage from './zk_links.jpg';
 	import { spring } from 'svelte/motion';
 
 	let menuItems = [
-		{ url: '#zkConten', title: '~' },
+		{ url: '#zkContent', title: '~' },
 		{ url: '#zkLinks', title: 'Links' },
 		{ url: '#zkMusic', title: 'My Music' },
 		{ url: '#zkMerch', title: 'Merch' },
@@ -45,6 +44,10 @@
 		<span id="zkDescriptionCoder">/ˈkəʊdə/</span>
 	</div>
 
+	<div id="zkScrollIndicator">
+		<span>dance within your spirit &gt; &gt;</span>
+	</div>
+
 	<div id="zkContent">
 		<span class="zkTitle">@zedkaido</span>
 
@@ -52,54 +55,45 @@
 			<img draggable="false" class="zkImage" src={zkMainImage} alt="Picture of DJ Zed Kaidō" />
 		</div>
 
-		<div id="zkLinks" style="margin-top: -6px;" class="zkImageContainer">
-			<img
-				draggable="false"
-				class="zkImage"
-				src={zkLinksImage}
-				alt="Abstract picture of Zed Kaidō"
-			/>
-			links
+		<div id="zkLinks" style="margin-top: -8px;" class="zkImageContainer">
+			<div style="background-image: url({zkLinksImage});" class="zkImageContent">
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon..com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+				<a href="">patreon.com</a>
+			</div>
 		</div>
 
 		<div id="zkMusic" style="margin-top: -6px;" class="zkImageContainer">
-			<img
-				draggable="false"
-				class="zkImage"
-				src={zkLinksImage}
-				alt="Abstract picture of Zed Kaidō"
-			/>
-			music
+			<div style="background-image: url({zkLinksImage});" class="zkImageContent" />
 		</div>
 
 		<div id="zkMerch" style="margin-top: -6px;" class="zkImageContainer">
-			<img
-				draggable="false"
-				class="zkImage"
-				src={zkLinksImage}
-				alt="Abstract picture of Zed Kaidō"
-			/>
-			merch
+			<div style="background-image: url({zkLinksImage});" class="zkImageContent" />
 		</div>
 
 		<div id="zkDjSessions" style="margin-top: -6px;" class="zkImageContainer">
-			<img
-				draggable="false"
-				class="zkImage"
-				src={zkLinksImage}
-				alt="Abstract picture of Zed Kaidō"
-			/>
-			dj sessions
+			<div style="background-image: url({zkLinksImage});" class="zkImageContent" />
 		</div>
 
 		<div id="zkContactMe" style="margin-top: -6px;" class="zkImageContainer">
-			<img
-				draggable="false"
-				class="zkImage"
-				src={zkLinksImage}
-				alt="Abstract picture of Zed Kaidō"
-			/>
-			contact me
+			<div style="background-image: url({zkLinksImage});" class="zkImageContent" />
 		</div>
 	</div>
 
@@ -139,7 +133,7 @@
 	section {
 		--zFirstPercentage: 15%;
 		--zSecondPercentage: 45%;
-		--beginningTopSpacing: 8%;
+		--beginningTopSpacing: 3.3vw;
 
 		height: 100vh;
 		width: 100%;
@@ -154,18 +148,20 @@
 
 	#zkDescription {
 		position: fixed;
-		top: calc(var(--beginningTopSpacing) + 3.5%);
+		top: 9vw;
 		width: var(--zFirstPercentage);
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
 		text-align: right;
+		z-index: 1;
 	}
 
 	#zkDescription span {
 		font-size: 1vw;
 		padding-right: 2vw;
 		cursor: not-allowed;
+		background-color: #ffffff;
 	}
 
 	#zkDescriptionArtist:hover:before {
@@ -182,6 +178,18 @@
 
 	#zkDescriptionCoder:hover:before {
 		content: 'coder';
+	}
+
+  #zkScrollIndicator {
+		position: absolute;
+		left: 4vw;
+		bottom: 10vw;
+		-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+		z-index: 0;
 	}
 
 	#zkContent {
@@ -204,8 +212,6 @@
 
 	.zkImageContainer {
 		width: 100%;
-		min-height: 750px;
-		background-color: #f1f1f1;
 	}
 
 	.zkImage {
@@ -216,6 +222,21 @@
 		-moz-user-select: none;
 		-o-user-select: none;
 		user-select: none;
+	}
+
+	.zkImageContent {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 40vw;
+		padding: 4vw;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+ 	.zkImageContent a {
+		font-size: 1.5vw;
+		color: var(--primary-color);
 	}
 
 	#zkNavigation {
