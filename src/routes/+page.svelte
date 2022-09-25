@@ -219,7 +219,6 @@
 		text-transform: uppercase;
 		font-weight: 900;
 		font-size: 1.6vw;
-		cursor: pointer;
 	}
 
 	li {
@@ -229,6 +228,7 @@
 
 	li.a:hover {
 		text-decoration: underline;
+		cursor: pointer;
 	}
 
 	li .selectedMenuItem {
