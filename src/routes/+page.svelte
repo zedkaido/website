@@ -5,7 +5,7 @@
 	import { spring } from 'svelte/motion';
 
 	let menuItems = [
-		{ url: '#zkMain', title: '~' },
+		{ url: '#zkConten', title: '~' },
 		{ url: '#zkLinks', title: 'Links' },
 		{ url: '#zkMusic', title: 'My Music' },
 		{ url: '#zkMerch', title: 'Merch' },
@@ -26,18 +26,6 @@
 		el.scrollIntoView({
 			behavior: 'smooth'
 		});
-	}
-
-	let zkMain;
-	let zkLinks;
-	let zkMusic;
-	let zkMerch;
-	let zkDjSessions;
-	let zkContactMe;
-	function updateSelectedMenu(event, menuItem) {
-		if (event.detail.isIntersecting === true) {
-			selectedMenuItem = menuItem;
-		}
 	}
 </script>
 
@@ -60,47 +48,39 @@
 	<div id="zkContent">
 		<span class="zkTitle">@zedkaido</span>
 
-		<IntersectionObserver element={zkMain} on:observe={(e) => updateSelectedMenu(e, '#zkMain')}>
-			<div bind:this={zkMain} class="zkImageContainer">
-				<img draggable="false" class="zkImage" src={zkMainImage} alt="Picture of DJ Zed Kaidō" />
-			</div>
-		</IntersectionObserver>
+		<div class="zkImageContainer">
+			<img draggable="false" class="zkImage" src={zkMainImage} alt="Picture of DJ Zed Kaidō" />
+		</div>
 
-		<IntersectionObserver element={zkLinks} on:observe={(e) => updateSelectedMenu(e, '#zkLinks')}>
-			<div bind:this={zkLinks} id="zkLinks" style="margin-top: -6px;" class="zkImageContainer">
-				<img
-					draggable="false"
-					class="zkImage"
-					src={zkLinksImage}
-					alt="Abstract picture of Zed Kaidō"
-				/>
-				links
-			</div>
-		</IntersectionObserver>
+		<div id="zkLinks" style="margin-top: -6px;" class="zkImageContainer">
+			<img
+				draggable="false"
+				class="zkImage"
+				src={zkLinksImage}
+				alt="Abstract picture of Zed Kaidō"
+			/>
+			links
+		</div>
 
-		<IntersectionObserver element={zkMusic} on:observe={(e) => updateSelectedMenu(e, '#zkMusic')}>
-			<div bind:this={zkMusic} id="zkMusic" style="margin-top: -6px;" class="zkImageContainer">
-				<img
-					draggable="false"
-					class="zkImage"
-					src={zkLinksImage}
-					alt="Abstract picture of Zed Kaidō"
-				/>
-				music
-			</div>
-		</IntersectionObserver>
+		<div id="zkMusic" style="margin-top: -6px;" class="zkImageContainer">
+			<img
+				draggable="false"
+				class="zkImage"
+				src={zkLinksImage}
+				alt="Abstract picture of Zed Kaidō"
+			/>
+			music
+		</div>
 
-		<IntersectionObserver element={zkMerch} on:observe={(e) => updateSelectedMenu(e, '#zkMerch')}>
-			<div bind:this={zkMerch} id="zkMerch" style="margin-top: -6px;" class="zkImageContainer">
-				<img
-					draggable="false"
-					class="zkImage"
-					src={zkLinksImage}
-					alt="Abstract picture of Zed Kaidō"
-				/>
-				merch
-			</div>
-		</IntersectionObserver>
+		<div id="zkMerch" style="margin-top: -6px;" class="zkImageContainer">
+			<img
+				draggable="false"
+				class="zkImage"
+				src={zkLinksImage}
+				alt="Abstract picture of Zed Kaidō"
+			/>
+			merch
+		</div>
 
 		<div id="zkDjSessions" style="margin-top: -6px;" class="zkImageContainer">
 			<img
@@ -111,6 +91,7 @@
 			/>
 			dj sessions
 		</div>
+
 		<div id="zkContactMe" style="margin-top: -6px;" class="zkImageContainer">
 			<img
 				draggable="false"
