@@ -1,10 +1,11 @@
 <script>
+	import IntersectionObserver from 'svelte-intersection-observer';
 	import zkMainImage from './zk_main.jpg';
 	import zkLinksImage from './zk_links.jpg';
 	import { spring } from 'svelte/motion';
 
 	let menuItems = [
-		{ url: '#zkContent', title: '~' },
+		{ url: '#zkMain', title: '~' },
 		{ url: '#zkLinks', title: 'Links' },
 		{ url: '#zkMusic', title: 'My Music' },
 		{ url: '#zkMerch', title: 'Merch' },
@@ -12,10 +13,10 @@
 		{ url: '#zkContactMe', title: 'Contact Me' }
 	];
 
-	let selectedMenuItem = menuItems[0].title;
+	let selectedMenuItem = menuItems[0].url;
 
- 	function onSectionClicked(target, menuItem) {
-		selectedMenuItem = menuItem.title;
+	function onSectionClicked(target, menuItem) {
+		selectedMenuItem = menuItem.url;
 		scrollIntoView(target);
 	}
 
@@ -25,6 +26,18 @@
 		el.scrollIntoView({
 			behavior: 'smooth'
 		});
+	}
+
+	let zkMain;
+	let zkLinks;
+	let zkMusic;
+	let zkMerch;
+	let zkDjSessions;
+	let zkContactMe;
+	function updateSelectedMenu(event, menuItem) {
+		if (event.detail.isIntersecting === true) {
+			selectedMenuItem = menuItem;
+		}
 	}
 </script>
 
@@ -46,36 +59,49 @@
 
 	<div id="zkContent">
 		<span class="zkTitle">@zedkaido</span>
-		<div class="zkImageContainer">
-			<img draggable="false" class="zkImage" src={zkMainImage} alt="Picture of DJ Zed Kaidō" />
-		</div>
-		<div id="zkLinks" style="margin-top: -6px;" class="zkImageContainer">
-			<img
-				draggable="false"
-				class="zkImage"
-				src={zkLinksImage}
-				alt="Abstract picture of Zed Kaidō"
-			/>
-			links
-		</div>
-		<div id="zkMusic" style="margin-top: -6px;" class="zkImageContainer">
-			<img
-				draggable="false"
-				class="zkImage"
-				src={zkLinksImage}
-				alt="Abstract picture of Zed Kaidō"
-			/>
-			music
-		</div>
-		<div id="zkMerch" style="margin-top: -6px;" class="zkImageContainer">
-			<img
-				draggable="false"
-				class="zkImage"
-				src={zkLinksImage}
-				alt="Abstract picture of Zed Kaidō"
-			/>
-			merch
-		</div>
+
+		<IntersectionObserver element={zkMain} on:observe={(e) => updateSelectedMenu(e, '#zkMain')}>
+			<div bind:this={zkMain} class="zkImageContainer">
+				<img draggable="false" class="zkImage" src={zkMainImage} alt="Picture of DJ Zed Kaidō" />
+			</div>
+		</IntersectionObserver>
+
+		<IntersectionObserver element={zkLinks} on:observe={(e) => updateSelectedMenu(e, '#zkLinks')}>
+			<div bind:this={zkLinks} id="zkLinks" style="margin-top: -6px;" class="zkImageContainer">
+				<img
+					draggable="false"
+					class="zkImage"
+					src={zkLinksImage}
+					alt="Abstract picture of Zed Kaidō"
+				/>
+				links
+			</div>
+		</IntersectionObserver>
+
+		<IntersectionObserver element={zkMusic} on:observe={(e) => updateSelectedMenu(e, '#zkMusic')}>
+			<div bind:this={zkMusic} id="zkMusic" style="margin-top: -6px;" class="zkImageContainer">
+				<img
+					draggable="false"
+					class="zkImage"
+					src={zkLinksImage}
+					alt="Abstract picture of Zed Kaidō"
+				/>
+				music
+			</div>
+		</IntersectionObserver>
+
+		<IntersectionObserver element={zkMerch} on:observe={(e) => updateSelectedMenu(e, '#zkMerch')}>
+			<div bind:this={zkMerch} id="zkMerch" style="margin-top: -6px;" class="zkImageContainer">
+				<img
+					draggable="false"
+					class="zkImage"
+					src={zkLinksImage}
+					alt="Abstract picture of Zed Kaidō"
+				/>
+				merch
+			</div>
+		</IntersectionObserver>
+
 		<div id="zkDjSessions" style="margin-top: -6px;" class="zkImageContainer">
 			<img
 				draggable="false"
@@ -100,16 +126,20 @@
 		<ul>
 			{#each menuItems as item (item)}
 				<li>
-					{#if item.title === selectedMenuItem}
+					{#if item.url === selectedMenuItem}
 						<a
 							href={item.url}
-							on:click|preventDefault={(t) => {onSectionClicked(t, item)}}
+							on:click|preventDefault={(t) => {
+								onSectionClicked(t, item);
+							}}
 							class="selectedMenuItem">{item.title}</a
 						>
 					{:else}
 						<a
 							href={item.url}
-							on:click|preventDefault={(t) => {onSectionClicked(t, item)}}>{item.title}</a
+							on:click|preventDefault={(t) => {
+								onSectionClicked(t, item);
+							}}>{item.title}</a
 						>
 					{/if}
 				</li>
@@ -186,7 +216,7 @@
 		font-size: 7vw;
 		font-weight: 900;
 		margin-top: var(--beginningTopSpacing);
-		margin-bottom: -3.5vw;
+		margin-bottom: -3.4vw;
 		margin-left: -0.3vw;
 		z-index: 1;
 	}
