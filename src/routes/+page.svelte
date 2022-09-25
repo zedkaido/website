@@ -30,9 +30,8 @@
 </svelte:head>
 
 <svelte:window
-	on:mousemove={e => coords.set({ x: e.clientX, y: e.clientY })}
-	on:mousedown="{() => size.set(30)}"
-	on:mouseup="{() => size.set(10)}"/>
+	on:click={() => console.log('clicked')}
+	on:mousemove={e => coords.set({ x: e.clientX - 35, y: e.clientY - 30 })}/>
 
 <section>
 	<img bind:this={mouseFollower} id="mouseFollower" src={mouseSoundFollower} style="position: fixed; left: {$coords.x + 'px'}; top: {$coords.y + 'px'};" />
