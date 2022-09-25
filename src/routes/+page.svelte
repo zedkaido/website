@@ -1,24 +1,31 @@
 <script>
 	import zkMainImage from './zk_main.jpg';
- 	import zkLinksImage from './zk_links.jpg';
- 	import mouseSoundFollower from './mouseSoundFollower.svg';
- 	import { spring } from 'svelte/motion';
+	import zkLinksImage from './zk_links.jpg';
+	import { spring } from 'svelte/motion';
 
- 	let menuItems =
-		[ "~"
-		, "Links"
-		, "My Music"
-		, "Merch"
-		, "DJ Sessions"
-		, "Contact Me"];
+	let menuItems = [
+		{ url: '#zkContent', title: '~' },
+		{ url: '#zkLinks', title: 'Links' },
+		{ url: '#zkMusic', title: 'My Music' },
+		{ url: '#zkMerch', title: 'Merch' },
+		{ url: '#zkDjSessions', title: 'DJ Sessions' },
+		{ url: '#zkContactMe', title: 'Contact Me' }
+	];
 
- let selectedMenuItem = menuItems[2]
+	let selectedMenuItem = menuItems[0].title;
 
- let mouseFollower;
-	let coords = spring({ x: 50, y: 50 }, {
-		stiffness: 0.9,
-		damping: 0.9
-	});
+ 	function onSectionClicked(target, menuItem) {
+		selectedMenuItem = menuItem.title;
+		scrollIntoView(target);
+	}
+
+	function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+		el.scrollIntoView({
+			behavior: 'smooth'
+		});
+	}
 </script>
 
 <svelte:head>
@@ -29,12 +36,7 @@
 	/>
 </svelte:head>
 
-<svelte:window
-	on:click={() => console.log('clicked')}
-	on:mousemove={e => coords.set({ x: e.clientX - 35, y: e.clientY - 30 })}/>
-
 <section>
-	<img bind:this={mouseFollower} id="mouseFollower" src={mouseSoundFollower} style="position: fixed; left: {$coords.x + 'px'}; top: {$coords.y + 'px'};" />
 	<div id="zkDescription">
 		<span id="zkDescriptionArtist">/ˈɑːtɪst/</span>
 		<span id="zkDescriptionDj">/ˈdiːdʒeɪ/</span>
@@ -47,19 +49,68 @@
 		<div class="zkImageContainer">
 			<img draggable="false" class="zkImage" src={zkMainImage} alt="Picture of DJ Zed Kaidō" />
 		</div>
-		<div style="margin-top: -6px;" class="zkImageContainer">
-			<img draggable="false" class="zkImage" src={zkLinksImage} alt="Abstract picture of Zed Kaidō" />
+		<div id="zkLinks" style="margin-top: -6px;" class="zkImageContainer">
+			<img
+				draggable="false"
+				class="zkImage"
+				src={zkLinksImage}
+				alt="Abstract picture of Zed Kaidō"
+			/>
+			links
+		</div>
+		<div id="zkMusic" style="margin-top: -6px;" class="zkImageContainer">
+			<img
+				draggable="false"
+				class="zkImage"
+				src={zkLinksImage}
+				alt="Abstract picture of Zed Kaidō"
+			/>
+			music
+		</div>
+		<div id="zkMerch" style="margin-top: -6px;" class="zkImageContainer">
+			<img
+				draggable="false"
+				class="zkImage"
+				src={zkLinksImage}
+				alt="Abstract picture of Zed Kaidō"
+			/>
+			merch
+		</div>
+		<div id="zkDjSessions" style="margin-top: -6px;" class="zkImageContainer">
+			<img
+				draggable="false"
+				class="zkImage"
+				src={zkLinksImage}
+				alt="Abstract picture of Zed Kaidō"
+			/>
+			dj sessions
+		</div>
+		<div id="zkContactMe" style="margin-top: -6px;" class="zkImageContainer">
+			<img
+				draggable="false"
+				class="zkImage"
+				src={zkLinksImage}
+				alt="Abstract picture of Zed Kaidō"
+			/>
+			contact me
 		</div>
 	</div>
 
 	<div id="zkNavigation">
 		<ul>
 			{#each menuItems as item (item)}
-				<li on:click={() => {selectedMenuItem = item;}}>
-					{#if item === selectedMenuItem}
-						<a class="selectedMenuItem">{item}</a>
+				<li>
+					{#if item.title === selectedMenuItem}
+						<a
+							href={item.url}
+							on:click|preventDefault={(t) => {onSectionClicked(t, item)}}
+							class="selectedMenuItem">{item.title}</a
+						>
 					{:else}
-						<a>{item}</a>
+						<a
+							href={item.url}
+							on:click|preventDefault={(t) => {onSectionClicked(t, item)}}>{item.title}</a
+						>
 					{/if}
 				</li>
 			{/each}
@@ -68,7 +119,7 @@
 </section>
 
 <style>
- 	#mouseFollower {
+	#mouseFollower {
 		position: absolute;
 		width: 75px;
 		height: 75px;
@@ -106,20 +157,20 @@
 		cursor: not-allowed;
 	}
 
- 	#zkDescriptionArtist:hover:before {
-		content: "artist";
+	#zkDescriptionArtist:hover:before {
+		content: 'artist';
 	}
 
- 	#zkDescriptionDj:hover:before {
-		content: "dj";
+	#zkDescriptionDj:hover:before {
+		content: 'dj';
 	}
 
- 	#zkDescriptionProducer:hover:before {
-		content: "producer";
+	#zkDescriptionProducer:hover:before {
+		content: 'producer';
 	}
 
- 	#zkDescriptionCoder:hover:before {
-		content: "coder";
+	#zkDescriptionCoder:hover:before {
+		content: 'coder';
 	}
 
 	#zkContent {
@@ -140,7 +191,7 @@
 		z-index: 1;
 	}
 
- 	.zkImageContainer {
+	.zkImageContainer {
 		width: 100%;
 		min-height: 750px;
 		background-color: #f1f1f1;
@@ -171,16 +222,16 @@
 		cursor: pointer;
 	}
 
- 	li {
+	li {
 		margin-bottom: 0.4vw;
 		transition: color, font-size 1s ease-in-out;
 	}
 
- 	li:hover {
+	li.a:hover {
 		text-decoration: underline;
 	}
 
- 	li .selectedMenuItem {
+	li .selectedMenuItem {
 		font-size: 3vw;
 	}
 </style>
