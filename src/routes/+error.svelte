@@ -1,6 +1,6 @@
 <script>
   import { page } from '$app/stores';
-  import zkMainImage from './zk_main.jpg'
+  import zkMainImage from '$lib/images/zk_main.jpg'
 </script>
 
 <div>

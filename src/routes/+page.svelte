@@ -1,11 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
-	import zkMainImage from './zk_main.jpg';
- 	import zkContactImage from './zk_contact.webp';
- 	import zkRectangle from './zk_rectangle.svg';
- 	import zkMixer from './zk_mixer.svg';
- 	import zkPlayButton from './zk_play_button.svg';
- 	import zkPauseButton from './zk_pause_button.svg';
+	import zkMainImage from '$lib/images/zk_main.jpg';
+ 	import zkContactImage from '$lib/images/zk_contact.webp';
+ 	import zkRectangle from '$lib/images/zk_rectangle.svg';
+ 	import zkMixer from '$lib/images/zk_mixer.svg';
+ 	import zkPlayButton from '$lib/images/zk_play_button.svg';
+ 	import zkPauseButton from '$lib/images/zk_pause_button.svg';
 
 	let menuItems = [
 		{ url: '#zkContent', title: '~' },
