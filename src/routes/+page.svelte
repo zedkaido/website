@@ -51,6 +51,7 @@
 			url: "https://twitch.tv/zedkaido",
 			text: "I AM<br><b>LIVE</b><br>ON TWITCH"
 		},
+		"musicAnnouncement": "transcend this existance and jump into a state of dance",
 		"merch": [
 			{
 				"img": "img_link_0",
@@ -191,6 +192,8 @@
 					</div>
 				</a>
 			</div>
+
+			<span id="zkMusicAnnouncement">{wi ? wi.musicAnnouncement : ''}</span>
 
 			<div class="zkMixerContainer" >
 				<div id="zkMixerImage" style="background-image: url({zkMixer})" alt="DJ Mixer">
@@ -592,6 +595,14 @@
 		background-color: var(--accented-color);
 	}
 
+ 	#zkMusicAnnouncement {
+		margin-top: 1.5vw;
+		margin-left: 4.2vw;
+		margin-right: 4vw;
+		font-weight: 300;
+		font-size: 1vw;
+	}
+
  	.zkMixerContainer {
 		margin-left: var(--zkSectionPadding);
 		margin-top: 1.5vw;
@@ -885,6 +896,13 @@
 			margin-top: unset;
 		}
 
+		#zkMusicAnnouncement {
+			margin-top: 3vw;
+			margin-left: 4.2vw;
+			margin-right: 4vw;
+			font-size: 2vw;
+		}
+
 		.zkMixerContainer {
 			margin-top: 3.5vw;
 		}
@@ -1077,6 +1095,13 @@
 
 		.zkMixerContainer {
 			margin-top: 3.5vw;
+		}
+
+		#zkMusicAnnouncement {
+			margin-top: 3vw;
+			margin-left: 4.4vw;
+			margin-right: 4vw;
+			font-size: 4vw;
 		}
 
 		#zkMixerImage {
