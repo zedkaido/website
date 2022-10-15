@@ -34,7 +34,7 @@
  	let zkPlayer;
  	let samplePlaying = false;
 
-  let wi = {
+	let wi = {
 		"events": [
 			{
 				"description": "...",
@@ -85,15 +85,15 @@
 		}
 	};
 
-  let websiteInfoPromise;
+	let websiteInfoPromise;
 
-  onMount(async () => {
+	onMount(async () => {
 		websiteInfoPromise = fetchWebsiteInfo();
 	});
 
 	const fetchWebsiteInfo = async () => {
 		const response = await fetch(`https://zedkaido-fee92-default-rtdb.europe-west1.firebasedatabase.app/website.json`);
-    if (response.status === 200) {
+		if (response.status === 200) {
 			const parsedJson = await response.json();
 			if (parsedJson) {
 				wi = parsedJson;
@@ -101,12 +101,12 @@
 			} else {
 				throw new Error("unable to parse json");
 			}
-    } else {
-      throw new Error(response.statusText);
-    }
+		} else {
+			throw new Error(response.statusText);
+		}
 	}
 
-  const getRandomInt = (max) => {
+	const getRandomInt = (max) => {
 		return Math.floor(Math.random() * max);
 	}
 
@@ -116,13 +116,11 @@
 			zkPlayer.pause();
 		} else {
 			samplePlaying = !samplePlaying;
-			const fileToPlay = getRandomInt(5)
 			if (wi.musicLinks) {
-				if (wi.musicLinks.length > fileToPlay) {
-					zkPlayer.src = wi.musicLinks[fileToPlay];
-				}
+				const fileToPlay = getRandomInt(wi.musicLinks.length)
+				zkPlayer.src = wi.musicLinks[fileToPlay];
+				zkPlayer.play();
 			}
-			zkPlayer.play();
 		}
 	}
 
@@ -147,8 +145,6 @@
 	<div id="zkScrollIndicator">
 		<span>dance within your soul &nbsp; <span style="font-weight: 800; color: var(--accent-color);">&gt; &gt;</span></span>
 	</div>
-
-	<img id="zkRectangle" src={zkRectangle} alt="Decorative rectangle"/>
 
 	<div id="zkGoTop">
 			 <a href="#zkContent"
@@ -228,33 +224,37 @@
 					</a>
 					<span class="zkEventDescription">{wi.nextEvent ? wi.nextEvent.description : ''}</span>
 				</div>
-				{#each wi.events as event}
-					<div class="zkEvent">
-						<a href={event.url} target="_blank">
-							<span class="zkEventTitle">{event.title}</span>
-						</a>
-						<span class="zkEventDescription">{event.description}</span>
-					</div>
-				{/each}
+				{#if wi.events}
+					{#each wi.events as event}
+						<div class="zkEvent">
+							<a href={event.url} target="_blank">
+								<span class="zkEventTitle">{event.title}</span>
+							</a>
+							<span class="zkEventDescription">{event.description}</span>
+						</div>
+					{/each}
+				{/if}
 				<a href="https://twitter.com/zedkaido" class="zkGetNotified" target="_blank">** get notified</a>
 			</div>
 		</div>
 
-		<div id="zkMerch" class="zkSection">
-			<div class="zkSectionTitleWrapper">
-				<div class="zkSectionTitlePointer"/>
-				<span class="zkSectionTitle">MERCH</span>
+		{#if wi.merch}
+			<div id="zkMerch" class="zkSection">
+				<div class="zkSectionTitleWrapper">
+					<div class="zkSectionTitlePointer"/>
+					<span class="zkSectionTitle">MERCH</span>
+				</div>
+				<div class="zkMerch">
+					{#each wi.merch as merchItem}
+						<a href={merchItem.url} target="_blank">
+							<div class="zkMerchItem" style="background-image: url({merchItem.img});">
+								<span class="zkButton zkMerchItemPrice">{merchItem.price}</span>
+							</div>
+						</a>
+					{/each}
+				</div>
 			</div>
-			<div class="zkMerch">
-				{#each wi.merch as merchItem}
-					<a href={merchItem.url} target="_blank">
-						<div class="zkMerchItem" style="background-image: url({merchItem.img});">
-							<span class="zkButton zkMerchItemPrice">{merchItem.price}</span>
-						</div>
-					</a>
-				{/each}
-			</div>
-		</div>
+		{/if}
 
 		<div id="zkLinks" class="zkSection">
 			<div class="zkSectionTitleWrapper">
@@ -267,9 +267,9 @@
 						PATREON
 					</div>
 				</a>
-				<a href="https://twitch.tv/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #6441A4;">
-						TWITCH
+				<a href="https://mixcloud.com/zedkaido" target="_blank">
+					<div class="zkButton" style="background-color: #3A00FF; color: #FFFFFF;">
+						MIXCLOUD
 					</div>
 				</a>
 				<a href="https://www.youtube.com/channel/UCG7thlsan0rud5cEbUq7WGQ" target="_blank">
@@ -280,26 +280,6 @@
 				<a href="https://rumble.com/zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #85C742;">
 						RUMBLE
-					</div>
-				</a>
-				<a href="https://instagram.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #bc2a8d;">
-						INSTAGRAM
-					</div>
-				</a>
-				<a href="https://facebook.com/zedkaidomusic" target="_blank">
-					<div class="zkButton" style="background-color: #4c68d7;">
-						FACEBOOK
-					</div>
-				</a>
-				<a href="https://twitter.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #1D9BF0;">
-						TWITTER
-					</div>
-				</a>
-				<a href="https://tiktok.com/@zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #000000;">
-						TIKTOK
 					</div>
 				</a>
 				<a href="https://spotify.com/zedkaido" target="_blank">
