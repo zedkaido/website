@@ -370,7 +370,7 @@
 		font-weight: 300;
 		margin-right: 2vw;
 		cursor: text;
-		background-color: #ffffff;
+		background-color: var(--pure-white);
 	}
 
 	#zkDescriptionArtist:hover:before {
@@ -389,7 +389,7 @@
 		content: 'coder';
 	}
 
-  #zkScrollIndicator {
+	#zkScrollIndicator {
 		position: absolute;
 		left: 2.2vw;
 		bottom: 12.5vw;
@@ -452,6 +452,7 @@
 		margin-top: var(--beginningTopSpacing);
 		margin-bottom: -3.8vw;
 		margin-left: -0.15vw;
+		color: var(--heading-color);
 		z-index: 1;
 	}
 
@@ -545,6 +546,7 @@
  	.zkSectionTitle {
 		font-size: 5vw;
 		font-weight: 800;
+		color: var(--heading-color);
 		margin-left: calc(var(--zkSectionPadding) - 1vw);
 		margin-bottom: 1vw;
 	}
@@ -552,7 +554,7 @@
  	.zkHorizontalLinks {
 		display: flex;
 		flex-direction: row;
-		gap: 1vw;
+		gap: 0.5vw;
 		margin-left: var(--zkSectionPadding);
 		margin-top: -1vw;
 	}
@@ -576,7 +578,7 @@
 	}
 
  	#zkMusicAnnouncement {
-		margin-top: 1.5vw;
+		margin-top: 1vw;
 		margin-left: 4.2vw;
 		margin-right: 4vw;
 		font-weight: 300;
@@ -585,7 +587,7 @@
 
  	.zkMixerContainer {
 		margin-left: var(--zkSectionPadding);
-		margin-top: 1.5vw;
+		margin-top: 1.3vw;
 	}
 
  	#zkMixerImage {
@@ -874,17 +876,18 @@
 
 		.zkHorizontalLinks {
 			margin-top: unset;
+			gap: 2vw;
 		}
 
 		#zkMusicAnnouncement {
-			margin-top: 3vw;
+			margin-top: 2vw;
 			margin-left: 4.2vw;
 			margin-right: 4vw;
 			font-size: 2vw;
 		}
 
 		.zkMixerContainer {
-			margin-top: 3.5vw;
+			margin-top: 2.5vw;
 		}
 
 		#zkMixerImage {
@@ -978,15 +981,15 @@
 		}
 
 		.zkTitle {
-			font-size: 15.6vw;
-			margin-left: -0.3vw;
+			font-size: 15.5vw;
+			margin-left: -0.2vw;
 		}
 
 		#zkDescription {
 			display: flex;
 			flex-direction: column;
 			position: absolute;
-			top: 74vh;
+			top: 70vh;
 			right: 12vw;
 			z-index: 2;
 			width: 100%;
@@ -1002,7 +1005,7 @@
 		#zkScrollIndicator {
 			left: -36vw;
 			bottom: unset;
-			top: 58vh;
+			top: 55vh;
 			font-size: 6vw;
 			color: var(--pure-white);
 			background: unset;
