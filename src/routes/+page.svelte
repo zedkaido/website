@@ -9,12 +9,13 @@
 
 	let menuItems = [
 		{ url: '#zkContent', title: '~' },
-		{ url: '#zkMusicLink', title: 'My Music' },
-		{ url: '#zkDjSessionsLink', title: 'DJ Sessions' },
-		{ url: '#zkMerch', title: 'Merch' },
+		{ url: '#zkMusicLink', title: 'Music' },
+		{ url: '#zkDjSessionsLink', title: 'DJ Events' },
 		{ url: '#zkLinks', title: 'Links' },
 		{ url: '#zkContactMe', title: 'Contact Me' }
 	];
+
+	// url: '#zkMerch', title: 'Merch'
 
 	let selectedMenuItem = menuItems[0].url;
 
@@ -127,7 +128,7 @@
 </script>
 
 <svelte:head>
-	<title>Zed Kaidō (Artist, DJ, Producer, Coder)</title>
+	<title>Zed Kaido (Artist, DJ, Producer, Coder)</title>
 	<meta
 		name="description"
 		content="@zedkaido with music that makes your transcend this existance and jump into a state of dance. "
@@ -157,7 +158,7 @@
 		<span class="zkTitle"><span style="color: var(--accent-color);">@</span>zedkaido</span>
 
 		<div id="zkImageContainer">
-			<img draggable="false" class="zkImage" src={zkMainImage} alt="DJ Zed Kaidō" />
+			<img draggable="false" class="zkImage" src={zkMainImage} alt="DJ Zed Kaido" />
 		</div>
 
 		<div id="zkMusic" class="zkSection">
@@ -178,7 +179,7 @@
 					</div>
 				</a>
 				<a href="https://tidal.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #000000;">
+					<div class="zkButton" style="background-color: #101010;">
 						TIDAL
 					</div>
 				</a>
@@ -262,11 +263,6 @@
 				<span class="zkSectionTitle">LINKS</span>
 			</div>
 			<div class="zkLinksContainer">
-				<a href="https://patreon.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #FF424D; color: #111111;">
-						PATREON
-					</div>
-				</a>
 				<a href="https://mixcloud.com/zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #3A00FF; color: #FFFFFF;">
 						MIXCLOUD
@@ -293,7 +289,7 @@
 					</div>
 				</a>
 				<a href="https://tidal.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #000000;">
+					<div class="zkButton" style="background-color: #101010;">
 						TIDAL
 					</div>
 				</a>
@@ -344,11 +340,11 @@
 	section {
 		--zFirstPercentage: 15%;
 		--zSecondPercentage: 45%;
-		--beginningTopSpacing: 3.7vw;
+		--beginningTopSpacing: 3.8vw;
 		--zkSectionPadding: 4.2vw;
 		--defaultBorderRadius: 1vw;
 
-		background-color: var(--pure-white);
+		background-color: var(--primary-color);
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -370,7 +366,8 @@
 		font-weight: 300;
 		margin-right: 2vw;
 		cursor: text;
-		background-color: var(--pure-white);
+		color: var(--text-color);
+		background-color: var(--primary-color);
 	}
 
 	#zkDescriptionArtist:hover:before {
@@ -401,7 +398,8 @@
 		-ms-transform: rotate(90deg);
 		transform: rotate(90deg);
 		z-index: 1;
-		background-color: var(--pure-white);
+		color: var(--text-color);
+		background-color: var(--primary-color);
 		border-radius: var(--defaultBorderRadius);
 		padding: 0.2vw 1vw;
 	}
@@ -426,7 +424,7 @@
 	}
 
  	#zkGoTop a {
-		color: var(--pure-white);
+		color: var(--text-color);
 	}
 
  	#zkGoTop:hover {
@@ -482,7 +480,7 @@
 		font-size: 1.2vw;
 		border-radius: var(--defaultBorderRadius);
 		color: var(--accent-color);
-		background-color: var(--pure-white);
+		background-color: var(--text-color);
 	}
 
 	#zkNavigation {
@@ -505,7 +503,6 @@
 	}
 
  	li a {
-		background: var(--pure-white);
 		padding: 0.1vw 1vw;
 		margin-left: -1.1vw;
 		border-radius: var(--defaultBorderRadius);
@@ -514,7 +511,6 @@
 	li .selectedMenuItem {
 		color: var(--accent-color);
 		font-size: 4.8vw;
-		background-color: var(--pure-white);
 		border-radius: var(--defaultBorderRadius);
 		padding: 0.1vw 1vw;
 		margin-left: -1.1vw;
@@ -560,12 +556,12 @@
 	}
 
  	.zkHorizontalLinks a {
-		text-decoration-color: var(--pure-white);
+		text-decoration-color: var(--text-color);
 	}
 
  	.zkButton {
 		font-size: 1vw;
-		color: var(--pure-white);
+		color: var(--text-color);
 		background-color: var(--accent-color);
 		border-radius: var(--defaultBorderRadius);
 		padding: 0.1vw 0.5vw;
@@ -583,6 +579,7 @@
 		margin-right: 4vw;
 		font-weight: 300;
 		font-size: 1vw;
+		color: var(--text-color);
 	}
 
  	.zkMixerContainer {
@@ -672,6 +669,7 @@
 		right: -10vw;
 		font-size: 0.9vw;
 		font-weight: 300;
+		color: var(--text-color);
 		-webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
@@ -702,11 +700,11 @@
 
  	.zkNextEvent {
 		background-color: var(--accent-color);
-		color: var(--pure-white) !important;
+		color: var(--text-color) !important;
 	}
 
  	.zkNextEvent a {
-		color: var(--pure-white) !important;
+		color: var(--text-color) !important;
 	}
 
  	.zkNextEvent:hover {
@@ -739,7 +737,7 @@
 	}
 
  	.zkMerch a {
-		text-decoration-color: var(--pure-white);
+		text-decoration-color: var(--text-color);
 	}
 
  	.zkMerchItem {
@@ -784,7 +782,7 @@
  	#zkContactMe a {
 		position: absolute;
 	  margin-left: var(--zFirstPercentage);
-		color: var(--pure-white);
+		color: var(--text-color);
 		margin-top: 3.141vw;
 		font-size: 5vw;
 	}
@@ -816,7 +814,7 @@
 			font-size: 6vw;
 			text-align: right;
 			background: unset;
-			color: var(--pure-white);
+			color: var(--text-color);
 		}
 
 		#zkScrollIndicator {
@@ -824,13 +822,13 @@
 			bottom: unset;
 			top: 57vh;
 			font-size: 4.5vw;
-			color: var(--pure-white);
+			color: var(--text-color);
 			background: unset;
 			z-index: 2;
 		}
 
 		#zkImageContainer {
-			margin-top: -8.8vw;
+			margin-top: -8.7vw;
 			height: 100%;
 		}
 
@@ -999,7 +997,7 @@
 			font-size: 6vw;
 			text-align: right;
 			background: unset;
-			color: var(--pure-white);
+			color: var(--text-color);
 		}
 
 		#zkScrollIndicator {
@@ -1007,13 +1005,13 @@
 			bottom: unset;
 			top: 55vh;
 			font-size: 6vw;
-			color: var(--pure-white);
+			color: var(--text-color);
 			background: unset;
 			z-index: 2;
 		}
 
 		#zkImageContainer {
-			margin-top: -15.5vw;
+			margin-top: -7.8vh;
 			height: 100%;
 		}
 
