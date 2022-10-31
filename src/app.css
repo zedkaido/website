@@ -40,7 +40,7 @@ body::before {
 
 ::selection {
   color: var(--pure-white);
-  background: var(--accented-color);
+  background: var(--accent-color);
 }
 
 img {

@@ -131,7 +131,7 @@
 	<title>Zed Kaido (Artist, DJ, Producer, Coder)</title>
 	<meta
 		name="description"
-		content="@zedkaido with music that makes your transcend this existance and jump into a state of dance. "
+		content="@zedkaido with music that makes your transcend this existance and jump into a state of dance - on a mission to make people da..da..dance!"
 	/>
 </svelte:head>
 
@@ -296,6 +296,26 @@
 				<a href="https://itunes.com/zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #fc3c44;">
 						ITUNES
+					</div>
+				</a>
+				<a href="https://instagram.com/zedkaido" target="_blank">
+					<div class="zkButton" style="background-color: #bc2a8d;">
+						INSTAGRAM
+					</div>
+				</a>
+				<a href="https://facebook.com/zedkaidomusic" target="_blank">
+					<div class="zkButton" style="background-color: #4c68d7;">
+						FACEBOOK
+					</div>
+				</a>
+				<a href="https://twitter.com/zedkaido" target="_blank">
+					<div class="zkButton" style="background-color: #1D9BF0;">
+						TWITTER
+					</div>
+				</a>
+				<a href="https://tiktok.com/@zedkaido" target="_blank">
+					<div class="zkButton" style="background-color: #101010;">
+						TIKTOK
 					</div>
 				</a>
 			</div>
@@ -484,11 +504,12 @@
 	}
 
 	#zkNavigation {
-		position: fixed;
-		left: calc(var(--zFirstPercentage) + var(--zSecondPercentage));
-		width: calc(100% - (var(--zFirstPercentage)) + var(--zSecondPercentage));
-		bottom: 0;
+		margin-top: -15vw;
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
 		padding: 1vw;
+		bottom: 0;
+		padding-left: calc(var(--zFirstPercentage) + var(--zSecondPercentage) + 1vw);
 	}
 
 	ul {
@@ -518,7 +539,7 @@
 
  	.zkLinkToScroll {
 		position: relative;
-		top: -15vw;
+		top: -10vw;
 	}
 
  	.zkSection {
@@ -804,24 +825,40 @@
 			flex-direction: column;
 			position: absolute;
 			top: unset;
-			top: 65vh;
-			right: 12vw;
+			top: 66vh;
+			right: 13vw;
 			z-index: 2;
 			width: 100%;
 		}
 
 		#zkDescription span {
-			font-size: 6vw;
+			font-size: 5vw;
 			text-align: right;
 			background: unset;
 			color: var(--text-color);
 		}
 
+		#zkDescriptionArtist:hover:before {
+			content: '';
+		}
+
+		#zkDescriptionDj:hover:before {
+			content: '';
+		}
+
+		#zkDescriptionProducer:hover:before {
+			content: '';
+		}
+
+		#zkDescriptionCoder:hover:before {
+			content: '';
+		}
+
 		#zkScrollIndicator {
-			left: -22vw;
+			left: -20vw;
 			bottom: unset;
-			top: 57vh;
-			font-size: 4.5vw;
+			top: 55vh;
+			font-size: 4.2vw;
 			color: var(--text-color);
 			background: unset;
 			z-index: 2;
