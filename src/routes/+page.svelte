@@ -9,12 +9,12 @@
 
 	let menuItems = [
 		{ url: '#zkContent', title: '~' },
-		{ url: '#zkMusicLink', title: 'Music' },
 		{ url: '#zkDjSessionsLink', title: 'DJ Events' },
 		{ url: '#zkLinks', title: 'Links' },
 		{ url: '#zkContactMe', title: 'Contact Me' }
 	];
 
+	// url: '#zkMusicLink', title: 'Music'
 	// url: '#zkMerch', title: 'Merch'
 
 	let selectedMenuItem = menuItems[0].url;
@@ -161,56 +161,58 @@
 			<img draggable="false" class="zkImage" src={zkMainImage} alt="DJ Zed Kaido" />
 		</div>
 
-		<div id="zkMusic" class="zkSection">
-			<div id="zkMusicLink" class="zkLinkToScroll"></div>
-			<div class="zkSectionTitleWrapper">
-				<div class="zkSectionTitlePointer"/>
-				<span class="zkSectionTitle">MUSIC</span>
-			</div>
-			<div class="zkHorizontalLinks">
-				<a href="https://spotify.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #1DB954;">
-						SPOTIFY
-					</div>
-				</a>
-				<a href="https://soundcloud.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #F26F23;">
-						SOUNDCLOUD
-					</div>
-				</a>
-				<a href="https://tidal.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #101010;">
-						TIDAL
-					</div>
-				</a>
-				<a href="https://itunes.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #fc3c44;">
-						ITUNES
-					</div>
-				</a>
-			</div>
-
-			<span id="zkMusicAnnouncement">{wi ? wi.musicAnnouncement : ''}</span>
-
-			<div class="zkMixerContainer" >
-				<div id="zkMixerImage" style="background-image: url({zkMixer})" alt="DJ Mixer">
-					<audio bind:this={zkPlayer}
-								 on:ended={updatePlayingState}
-								 controls style="display: none;">
-					</audio>
-					{#if !samplePlaying}
-						<div id="playButtonContainer" on:click={updatePlayingState}>
-							<img id="zkPlayButton" src={zkPlayButton}  alt="Play Zed Kaido music sample"/>
-						</div>
-					{:else}
-						<div id="pauseButtonContainer" on:click={updatePlayingState}>
-							<img id="zkPauseButton" src={zkPauseButton} alt="Pause Zed Kaido music sample"/>
-						</div>
-					{/if}
+		{#if false}
+			<div id="zkMusic" class="zkSection">
+				<div id="zkMusicLink" class="zkLinkToScroll"></div>
+				<div class="zkSectionTitleWrapper">
+					<div class="zkSectionTitlePointer"/>
+					<span class="zkSectionTitle">MUSIC</span>
 				</div>
+				<div class="zkHorizontalLinks">
+					<a href="https://spotify.com/zedkaido" target="_blank">
+						<div class="zkButton" style="background-color: #1DB954;">
+							SPOTIFY
+						</div>
+					</a>
+					<a href="https://soundcloud.com/zedkaido" target="_blank">
+						<div class="zkButton" style="background-color: #F26F23;">
+							SOUNDCLOUD
+						</div>
+					</a>
+					<a href="https://tidal.com/zedkaido" target="_blank">
+						<div class="zkButton" style="background-color: #101010;">
+							TIDAL
+						</div>
+					</a>
+					<a href="https://itunes.com/zedkaido" target="_blank">
+						<div class="zkButton" style="background-color: #fc3c44;">
+							ITUNES
+						</div>
+					</a>
+				</div>
+
+				<span id="zkMusicAnnouncement">{wi ? wi.musicAnnouncement : ''}</span>
+
+				<div class="zkMixerContainer" >
+					<div id="zkMixerImage" style="background-image: url({zkMixer})" alt="DJ Mixer">
+						<audio bind:this={zkPlayer}
+							   on:ended={updatePlayingState}
+							   controls style="display: none;">
+						</audio>
+						{#if !samplePlaying}
+							<div id="playButtonContainer" on:click={updatePlayingState}>
+								<img id="zkPlayButton" src={zkPlayButton}  alt="Play Zed Kaido music sample"/>
+							</div>
+						{:else}
+							<div id="pauseButtonContainer" on:click={updatePlayingState}>
+								<img id="zkPauseButton" src={zkPauseButton} alt="Pause Zed Kaido music sample"/>
+							</div>
+						{/if}
+					</div>
+				</div>
+				<span id="zkPlayDescription">click <span style="color: var(--accent-color); font-weight: 800;">play</span> and get a <span style="font-weight: 800;">sample</span></span>
 			</div>
-			<span id="zkPlayDescription">click <span style="color: var(--accent-color); font-weight: 800;">play</span> and get a <span style="font-weight: 800;">sample</span></span>
-		</div>
+		{/if}
 
 		<div id="zkDjSessions" class="zkSection">
 			<div id="zkDjSessionsLink" class="zkLinkToScroll"></div>
@@ -263,9 +265,9 @@
 				<span class="zkSectionTitle">LINKS</span>
 			</div>
 			<div class="zkLinksContainer">
-				<a href="https://mixcloud.com/zedkaido" target="_blank">
-					<div class="zkButton" style="background-color: #3A00FF; color: #FFFFFF;">
-						MIXCLOUD
+				<a href="https://twitch.tv/zedkaido" target="_blank">
+					<div class="zkButton" style="background-color: #6441a5; color: #FFFFFF;">
+						TWITCH
 					</div>
 				</a>
 				<a href="https://www.youtube.com/channel/UCG7thlsan0rud5cEbUq7WGQ" target="_blank">
@@ -278,26 +280,34 @@
 						RUMBLE
 					</div>
 				</a>
+				<!--
 				<a href="https://spotify.com/zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #1DB954;">
 						SPOTIFY
 					</div>
 				</a>
+				-->
 				<a href="https://soundcloud.com/zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #F26F23;">
 						SOUNDCLOUD
 					</div>
 				</a>
+				<!--
 				<a href="https://tidal.com/zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #101010;">
 						TIDAL
 					</div>
 				</a>
+				-->
+
+				<!--
 				<a href="https://itunes.com/zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #fc3c44;">
 						ITUNES
 					</div>
 				</a>
+				-->
+
 				<a href="https://instagram.com/zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #bc2a8d;">
 						INSTAGRAM
