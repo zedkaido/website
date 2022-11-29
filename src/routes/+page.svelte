@@ -270,7 +270,7 @@
 						TWITCH
 					</div>
 				</a>
-				<a href="https://www.youtube.com/channel/UCG7thlsan0rud5cEbUq7WGQ" target="_blank">
+				<a href="https://www.youtube.com/@zedkaido" target="_blank">
 					<div class="zkButton" style="background-color: #FF0000;">
 						YOUTUBE
 					</div>
