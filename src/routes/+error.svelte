@@ -1,30 +1,39 @@
 <script>
   import { page } from '$app/stores';
-  import zkMainImage from '$lib/images/zk_main.jpg'
+  import zkErrorPicture from '$lib/images/zk_error_picture.jpg'
 </script>
 
 <div>
   <a href="https://zedkaido.com">
-      <img src={zkMainImage} alt="Zed Kaido" />
+      <img src={zkErrorPicture} alt="Zed Kaido" />
   </a>
-  <h1>{$page.status}: {$page.error.message}</h1>
+  <h1>{$page.status} ⚠️😵‍💫🙀:</h1>
+  <h2>{$page.error.message}</h2>
 </div>
 
 <style>
  div {
-     padding-top: 7.5vw;
      display: flex;
      flex-direction: column;
-     align-items: center;
-     justify-content: center;
+     align-items: flex-start;
+     justify-content: flex-start;
  }
 
  h1 {
      color: var(--accent-color);
+     font-family: 'hk-bold';
+     font-size: 24px;
+     margin-bottom: 0px;
+ }
+
+ h2 {
+     font-family: 'hk-light';
+     font-size: 20px;
+     margin-top: 0px;
+     margin-bottom: 0px;
  }
 
  img {
-     width: 20vw;
      cursor: pointer;
  }
 </style>

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'hk-extra-light';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/HK Guise Extralight/HKGuise-Extralight.eot'); /* IE9 Compat Modes */
+    src: local(''), url('/fonts/HK Guise Extralight/HKGuise-Extralight.eot?#iefix') format('embedded-opentype'),
+        /* Super Modern Browsers */ url('/fonts/HK Guise Extralight/HKGuise-Extralight.woff') format('woff'),
+        /* Modern Browsers */ url('/fonts/HK Guise Extralight/HKGuise-Extralight.ttf') format('truetype'),
+        /* Safari, Android, iOS */ url('/fonts/HK Guise Extralight/HKGuise-Extralight.svg#Lora') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'hk-light';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/HK Guise Light/HKGuise-Light.eot'); /* IE9 Compat Modes */
+    src: local(''), url('/fonts/HK Guise Light/HKGuise-Light.eot?#iefix') format('embedded-opentype'),
+        /* Super Modern Browsers */ url('/fonts/HK Guise Light/HKGuise-Light.woff') format('woff'),
+        /* Modern Browsers */ url('/fonts/HK Guise Light/HKGuise-Light.ttf') format('truetype'),
+        /* Safari, Android, iOS */ url('/fonts/HK Guise Light/HKGuise-Light.svg#Lora') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'hk-semi-bold';
+    font-style: bold;
+    font-weight: 700;
+    src: url('/fonts/HK Guise SemiBold/HKGuise-SemiBold.eot'); /* IE9 Compat Modes */
+    src: local(''), url('/fonts/HK Guise SemiBold/HKGuise-SemiBold.eot?#iefix') format('embedded-opentype'),
+        /* Super Modern Browsers */ url('/fonts/HK Guise SemiBold/HKGuise-SemiBold.woff') format('woff'),
+        /* Modern Browsers */ url('/fonts/HK Guise SemiBold/HKGuise-SemiBold.ttf') format('truetype'),
+        /* Safari, Android, iOS */ url('/fonts/HK Guise SemiBold/HKGuise-SemiBold.svg#Lora') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+    font-family: 'hk-bold';
+    font-style: bold;
+    font-weight: 700;
+    src: url('/fonts/HK Guise Bold/HKGuise-Bold.eot'); /* IE9 Compat Modes */
+    src: local(''), url('/fonts/HK Guise Bold/HKGuise-Bold.eot?#iefix') format('embedded-opentype'),
+        /* Super Modern Browsers */ url('/fonts/HK Guise Bold/HKGuise-Bold.woff') format('woff'),
+        /* Modern Browsers */ url('/fonts/HK Guise Bold/HKGuise-Bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */ url('/fonts/HK Guise Bold/HKGuise-Bold.svg#Lora') format('svg'); /* Legacy iOS */
+}
