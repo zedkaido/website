@@ -91,7 +91,7 @@ a {
 
 a:hover {
 	color: var(--accent-color);
-	text-underline-offset: 5px;
+	text-underline-offset: 4px;
 	text-decoration-line: underline;
 	text-decoration-style: wavy;
 }

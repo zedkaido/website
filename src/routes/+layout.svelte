@@ -139,8 +139,8 @@ import { page } from '$app/stores';
      background: #ffffff99;
      backdrop-filter: blur(4.4px);
      color: var(--text-color);
-     padding: 16px 0 16px 0;
-     margin-bottom: 15px;
+     padding: 15px 0 16px 0;
+     margin-bottom: 16px;
      border-top: 1px solid var(--text-color);
      border-bottom: 1px solid var(--text-color);
  }
@@ -151,16 +151,9 @@ import { page } from '$app/stores';
      font-size: 16px;
  }
 
- a:hover {
-     color: var(--accent-color);
-     text-underline-offset: 5px;
-     text-decoration-line: underline;
-     text-decoration-style: wavy;
- }
-
  .currentRoute {
      color: var(--acent-color);
-     text-underline-offset: 5px;
+     text-underline-offset: 4px;
      text-decoration-line: underline;
      text-decoration-style: wavy;
  }
