@@ -32,7 +32,6 @@ import { page } from '$app/stores';
          stickyHeader = false;
      }
  };
-
 </script>
 
 <svelte:window on:scroll={onScroll} />
@@ -49,7 +48,7 @@ import { page } from '$app/stores';
         <div id="description">
             Join me on a quest to sonic bliss where we dance and groove to the beat, inspire!
         </div>
-        <div id="navBar" class={stickyHeader ? "sticky" : ""} bind:this={navBar}>
+        <nav id="navBar" class={stickyHeader ? "sticky" : ""} bind:this={navBar}>
             {#each routes as item (item)}
                 {#if (item.url.includes("/blog"))}
                     <li class={route.includes("blog") && item.url.includes("/blog") ? "currentRoute" : ""}><a href={item.url} on:click={() => updateRoute(item.url)}>{item.title}</a></li>
@@ -57,18 +56,37 @@ import { page } from '$app/stores';
                     <li class={route === item.url ? "currentRoute" : ""}><a href={item.url} on:click={() => updateRoute(item.url)}>{item.title}</a></li>
                 {/if}
             {/each}
-        </div>
+        </nav>
         <div class="content">
             <slot />
+        </div>
+        <div id="emailSubscriptionWrapper">
+            <p>Join my email list to get a front-row seat at all things Zed Kaido. From blog posts and music releases to special promotions, you won't miss a single beat. Stay updated!</p>
+            <br/>
+            <form id="follow-form" class="input-with-button" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)">
+                <input type="hidden" name="seller_id" value="1078182701802"/>
+                <input id="input" type="email" placeholder="Your email address" name="email" value=""/>
+                <button id="button" class="primary" type="submit">
+                    Join Now
+                </button>
+            </form>
+            <!-- <br/>
+                 <a href="https://t.me/+KDaW-JQMhCNhZDNk" target="_blank">
+                 <div class="zkLink" style="background-color: #0088CC; color: #FFFFFF; margin-bottom: 15px;">
+                 TELEGRAM CHANNEL
+                 </div>
+                 </a> -->
         </div>
         <div id="emailWrapper">
             <a id="email" href="mailto:contact@zedkaido.com">contact@zedkaido.com</a>
         </div>
         <div id="footer">
-            <h2 id="thanks">Thank you for your support!</h2>
-            <a id="address" target="_blank" href="https://www.buymeacoffee.com/zedkaido"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=zedkaido&button_colour=840716&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+            <!-- <h2 id="thanks">Thank you for your support!</h2> -->
             <p id="address" target="_blank"><span style="font-family: 'hk-semi-bold';">bitcoin:</span>bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5 <a href="bitcoin:bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5">(Link)</a></p>
             <p id="address" target="_blank"><span style="font-family: 'hk-semi-bold';">monero:</span>44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY <a href="monero:44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY">(Link)</a></p>
+            <a id="address" target="_blank" href="https://www.buymeacoffee.com/zedkaido">
+                <span style="font-family: 'hk-semi-bold';">buymeacoffee.com/zedkaido</span>
+            </a>
         </div>
     </main>
 </div>
@@ -105,7 +123,7 @@ import { page } from '$app/stores';
  }
 
  #description {
-     font-family: "hk-light";
+     font-family: var(--medium-font);
      font-size: 17px;
      color: var(--text-color);
      margin-bottom: 10px;
@@ -114,17 +132,21 @@ import { page } from '$app/stores';
 
  #navBar {
      display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 16px 16px;
      width: 350px;
      background: #ffffff99;
      backdrop-filter: blur(4.4px);
      color: var(--text-color);
-     padding: 15px 0 15px 0;
+     padding: 16px 0 16px 0;
      margin-bottom: 15px;
+     border-top: 1px solid var(--text-color);
+     border-bottom: 1px solid var(--text-color);
  }
 
  li {
      display: inline;
-     padding : 0 15px 0 0;
      font-family: 'hk-semi-bold';
      font-size: 16px;
  }
@@ -147,6 +169,7 @@ import { page } from '$app/stores';
      position: fixed;
      top: 0;
      padding-left: 15px !important;
+     border-top: 0px !important;
  }
 
  .sticky + .content {
@@ -157,12 +180,21 @@ import { page } from '$app/stores';
      margin-bottom: 15px;
  }
 
+ #emailSubscriptionWrapper {
+     word-wrap: break-word;
+     border-width: 1px;
+     border-style: solid none none none;
+     border-color: var(--secondary-color);
+     margin: 30px 0 0 0;
+     padding: 24px 0 0 0;
+ }
+
  #emailWrapper {
      display: flex;
      flex-direction: column;
      word-wrap: break-word;
-     border-width: 4px;
-     border-style: dotted none dotted none;
+     border-width: 1px;
+     border-style: solid none solid none;
      border-color: var(--secondary-color);
      margin: 30px 0 30px 0;
      padding: 24px 0 24px 0;
@@ -172,7 +204,7 @@ import { page } from '$app/stores';
      display: flex;
      flex-direction: column;
      word-wrap: break-word;
-     padding-bottom: 25px;
+     padding-bottom: 20px;
  }
 
  #thanks {
@@ -181,7 +213,7 @@ import { page } from '$app/stores';
 
  #address {
      font-family: 'hk-extra-light';
-     margin-bottom: 15px;
+     margin-bottom: 20px;
  }
 
  #address:hover {

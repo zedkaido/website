@@ -1,15 +1,12 @@
 <script>
-	import { onMount } from 'svelte';
+ import { onMount } from 'svelte';
 </script>
 
 <svelte:head>
-
-
-	<title>Zed Kaido</title>
+	<title>Zed Kaido | Music</title>
 	<meta
 		name="description"
-		content="@zedkaido with music that makes your transcend this existance and jump into a state of dance!"
-	/>
+		content="@zedkaido with music that makes your transcend this existance and jump into a state of dance!"/>
 </svelte:head>
 
 <section>
@@ -211,7 +208,7 @@
  }
 
  #description {
-	 font-family: "hk-light";
+	 font-family: "hk-extra-light";
 	 font-size: 16.9px;
  }
 

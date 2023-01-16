@@ -1,3 +1,11 @@
+<svelte:head>
+    <title>Zed Kaido | Social Links</title>
+    <!-- <meta
+         name="description"
+         content="diswith music that makes your transcend this existance and jump into a state of dance!"
+         /> -->
+</svelte:head>
+
 <div class="zkLinksContainer">
     <p>Get the inside scoop by joining my Telegram Channel. Don't miss out on exclusive insider updates. Let's connect!</p>
 
@@ -70,24 +78,13 @@
 </div>
 
 <style>
- .zkLink {
-     height: 50px;
-     padding-top: 3px;
-     padding-left: 15px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     color: #ffffff;
-     font-family: 'hk-light';
-     font-size: 18px;
- }
-
  a:hover {
-     text-decoration-color: #ffffff;
+     text-decoration-color: #ffffff !important;
  }
 
  p {
-    margin-bottom: 15px;
+     font-family: var(--light-font);
+     margin-bottom: 15px;
  }
 
 </style>

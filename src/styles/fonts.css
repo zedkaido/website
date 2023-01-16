@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'hk-extra-light';
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     src: url('/fonts/HK Guise Extralight/HKGuise-Extralight.eot'); /* IE9 Compat Modes */
     src: local(''), url('/fonts/HK Guise Extralight/HKGuise-Extralight.eot?#iefix') format('embedded-opentype'),
         /* Super Modern Browsers */ url('/fonts/HK Guise Extralight/HKGuise-Extralight.woff') format('woff'),
@@ -11,13 +10,22 @@
 
 @font-face {
     font-family: 'hk-light';
-    font-style: normal;
     font-weight: 400;
     src: url('/fonts/HK Guise Light/HKGuise-Light.eot'); /* IE9 Compat Modes */
     src: local(''), url('/fonts/HK Guise Light/HKGuise-Light.eot?#iefix') format('embedded-opentype'),
         /* Super Modern Browsers */ url('/fonts/HK Guise Light/HKGuise-Light.woff') format('woff'),
         /* Modern Browsers */ url('/fonts/HK Guise Light/HKGuise-Light.ttf') format('truetype'),
         /* Safari, Android, iOS */ url('/fonts/HK Guise Light/HKGuise-Light.svg#Lora') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'hk-medium';
+    font-weight: 600;
+    src: url('/fonts/HK Guise Medium/HKGuise-Medium.eot'); /* IE9 Compat Modes */
+    src: local(''), url('/fonts/HK Guise Medium/HKGuise-Medium.eot?#iefix') format('embedded-opentype'),
+        /* Super Modern Browsers */ url('/fonts/HK Guise Medium/HKGuise-Medium.woff') format('woff'),
+        /* Modern Browsers */ url('/fonts/HK Guise Medium/HKGuise-Medium.ttf') format('truetype'),
+        /* Safari, Android, iOS */ url('/fonts/HK Guise Medium/HKGuise-Medium.svg#Lora') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
@@ -30,7 +38,6 @@
         /* Modern Browsers */ url('/fonts/HK Guise SemiBold/HKGuise-SemiBold.ttf') format('truetype'),
         /* Safari, Android, iOS */ url('/fonts/HK Guise SemiBold/HKGuise-SemiBold.svg#Lora') format('svg'); /* Legacy iOS */
 }
-
 
 @font-face {
     font-family: 'hk-bold';
