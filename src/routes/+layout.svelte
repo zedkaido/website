@@ -13,7 +13,7 @@ import { page } from '$app/stores';
 
  let route = $page.url.pathname
  let routes = [
-     { url: '/', title: 'Music' },
+     { url: '/music', title: 'Music' },
      { url: '/events', title: 'Events' },
      { url: '/blog', title: 'Blog' },
      { url: '/merch', title: 'Merch' },
@@ -104,6 +104,7 @@ import { page } from '$app/stores';
      height: 100vh;
      padding: 0;
      margin: 0 auto;
+     width: 350px;
      max-width: 350px;
  }
 
@@ -112,7 +113,7 @@ import { page } from '$app/stores';
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     margin-bottom: 25px;
+     margin-bottom: 10px;
  }
 
  #headerBranding {
@@ -126,8 +127,7 @@ import { page } from '$app/stores';
      font-family: var(--medium-font);
      font-size: 17px;
      color: var(--text-color);
-     margin-bottom: 10px;
-     padding-right: 8px;
+     padding: var(--default-spacing) 8px var(--default-spacing) 0;
  }
 
  #navBar {
@@ -140,7 +140,6 @@ import { page } from '$app/stores';
      backdrop-filter: blur(4.4px);
      color: var(--text-color);
      padding: 15px 0 16px 0;
-     margin-bottom: 16px;
      border-top: 1px solid var(--text-color);
      border-bottom: 1px solid var(--text-color);
  }
@@ -170,7 +169,7 @@ import { page } from '$app/stores';
  }
 
  .content {
-     margin-bottom: 15px;
+     margin-bottom: var(--defaultSpacing);
  }
 
  #emailSubscriptionWrapper {
@@ -179,7 +178,7 @@ import { page } from '$app/stores';
      border-style: solid none none none;
      border-color: var(--secondary-color);
      margin: 30px 0 0 0;
-     padding: 24px 0 0 0;
+     padding: var(--bigger-spacing) 0 0 0;
  }
 
  #emailWrapper {
@@ -189,24 +188,24 @@ import { page } from '$app/stores';
      border-width: 1px;
      border-style: solid none solid none;
      border-color: var(--secondary-color);
-     margin: 30px 0 30px 0;
-     padding: 24px 0 24px 0;
+     margin: var(--bigger-spacing) 0 var(--default-spacing) 0;
+     padding: var(--bigger-spacing) 0 var(--bigger-spacing) 0;
  }
 
  #footer {
      display: flex;
      flex-direction: column;
      word-wrap: break-word;
-     padding-bottom: 20px;
+     padding-bottom: var(--default-spacing);
  }
 
  #thanks {
-     margin-bottom: 20px;
+     margin-bottom: var(--default-spacing);
  }
 
  #address {
      font-family: 'hk-extra-light';
-     margin-bottom: 20px;
+     margin-bottom: var(--default-spacing);
  }
 
  #address:hover {

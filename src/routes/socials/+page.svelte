@@ -6,6 +6,7 @@
          /> -->
 </svelte:head>
 
+<div class="spacer"></div>
 <div class="zkLinksContainer">
     <p>Get the inside scoop by joining my Telegram Channel. Don't miss out on exclusive insider updates. Let's connect!</p>
 

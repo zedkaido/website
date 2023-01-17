@@ -16,6 +16,8 @@
 	--medium-font: 'hk-medium';
 	--semi-bold-font: 'hk-semi-bold';
 	--bold-font: 'hk-bold';
+	--default-spacing: 20px;
+	--bigger-spacing: 24px;
 }
 
 body {
@@ -48,6 +50,8 @@ img {
 h1,
 h2,
 h3,
+h4,
+h5,
 p {
 	margin: 0;
 	color: var(--heading-color);
@@ -56,24 +60,30 @@ p {
 h1 {
 	font-size: 44px;
 	font-family: 'hk-bold';
-	margin-bottom: 18px;
+	margin-bottom: 12px;
 }
 
 h2 {
 	font-size: 24px;
 	font-family: 'hk-bold';
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 }
 
 h3 {
 	font-size: 20px;
 	font-family: var(--semi-bold-font);
-	margin-bottom: 14px;
+	margin-bottom: 12px;
 }
 
 h4 {
+	font-size: 17px;
+	font-family: var(--medium-font);
+	margin-bottom: 12px;
+}
+
+h5 {
 	font-size: 16px;
-	font-family: var(--light-font);
+	font-family: var(--medium-font);
 	margin-bottom: 8px;
 }
 
@@ -98,6 +108,10 @@ a:hover {
 
 ul {
 	list-style-type: none;
+}
+
+.spacer {
+	height: var(--default-spacing);
 }
 
 .zkLink {
