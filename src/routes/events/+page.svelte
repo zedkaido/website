@@ -52,22 +52,28 @@
                 {#if events}
                     {#each events as event}
                         <div class="event" on:click={() => openEvent(event.url)}>
-                            {#if event.thumbnail_url}
-                                <div class="eventThumbnail">
-                                    <img class="eventImage" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
-                                </div>
+                            {#if event?.thumbnail_url}
+                                {#if event?.thumbnail_size}
+                                    <div class="eventThumbnail" style="height: {event?.thumbnail_size};">
+                                        <img class="eventImage" style="height: {event?.thumbnail_size};" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
+                                    </div>
+                                {:else}
+                                    <div class="eventThumbnail">
+                                        <img class="eventImage" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
+                                    </div>
+                                {/if}
                             {/if}
-                            {#if event.date}
+                            {#if event?.date}
                                 <div class="eventDate">
                                     <h2>{event.date}</h2>
                                 </div>
                             {/if}
-                            {#if event.title}
+                            {#if event?.title}
                                 <div class="eventTitle">
                                     <h3>{event.title}</h3>
                                 </div>
                             {/if}
-                            {#if event.description}
+                            {#if event?.description}
                                 <div class="eventDescription">
                                     <p>{event.description}</p>
                                 </div>
