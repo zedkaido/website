@@ -1,10 +1,10 @@
 <svelte:head>
     <title>Zed Kaido | Merch</title>
-    <!-- <meta
+    <meta
          name="description"
-         content="diswith music that makes your transcend this existance and jump into a state of dance!"
-         /> -->
-
+         content="Shop for my official merchandise and take a piece of my music with you everywhere you go. From unique t-shirts, hoodies and accessories, you'll find everything you need to show off your love for my music and make your look stand out. Come and check it out!"
+         />
+    <meta name="keywords" content="merchandise, brand, official, t-shirts, hoodies, accessories, music, fashion">
 </svelte:head>
 
 <script type="text/javascript">
@@ -43,7 +43,7 @@
 
 </script>
 
-<div id="header">
+<div class="header">
     <h4>Add some beats to that look! It's music to everyone's eyes!</h4>
 </div>
 
@@ -80,15 +80,6 @@
 </div>
 
 <style>
- #header {
-     padding: var(--default-spacing) 0 var(--default-spacing) 0;
-     border-bottom: 1px solid var(--secondary-color);
- }
-
- #header * {
-     margin: 0;
- }
-
  #products {
      display: flex;
      flex-direction: column;

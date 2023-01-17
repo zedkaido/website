@@ -11,7 +11,7 @@ import { page } from '$app/stores';
  let sticky;
  let stickyHeader = false;
 
- let route = $page.url.pathname
+ let route = $page.url.pathname === "/" ? "/music" : $page.url.pathname;
  let routes = [
      { url: '/music', title: 'Music' },
      { url: '/events', title: 'Events' },

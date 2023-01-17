@@ -1,9 +1,10 @@
 <svelte:head>
     <title>Zed Kaido | Social Links</title>
-    <!-- <meta
+    <meta
          name="description"
-         content="diswith music that makes your transcend this existance and jump into a state of dance!"
-         /> -->
+         content="Stay connected to the beat of my music! Follow me on my socials for exclusive updates, behind the scenes content and a sneak peek into my creative process. Don't miss out on a single beat and join the party by following me on my social media platforms."
+         />
+    <meta name="keywords" content="socials, follow, updates, behind the scenes, creative process, community, connection, social media">
 </svelte:head>
 
 <div class="spacer"></div>

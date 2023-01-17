@@ -1,9 +1,13 @@
 <svelte:head>
     <title>Zed Kaido | Blog</title>
-    <!-- <meta
-         name="description"
-         content="diswith music that makes your transcend this existance and jump into a state of dance!"
-         /> -->
+    <meta
+        name="description"
+        content="Get a unique insight into the world of music through the eyes of a software engineer. A fresh take."/>
+    <meta name="keywords" content="music production, coding, software engineering, tips and tricks, industry experts, new music releases, insights">
 </svelte:head>
 
-<h1>Blog</h1>
+<section>
+    <div class="header">
+        <h4>Reading about music is almost as good as listening to it, almost.</h4>
+    </div>
+</section>
