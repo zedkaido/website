@@ -2,8 +2,7 @@
     <title>Zed Kaido | Merch</title>
     <meta
          name="description"
-         content="Shop for my official merchandise and take a piece of my music with you everywhere you go. From unique t-shirts, hoodies and accessories, you'll find everything you need to show off your love for my music and make your look stand out. Come and check it out!"
-         />
+         content="Shop for my official merchandise and take a piece of my music with you everywhere you go. From unique t-shirts, hoodies and accessories, you'll find everything you need to show off your love for my music and make your look stand out. Come and check it out!"/>
     <meta name="keywords" content="merchandise, brand, official, t-shirts, hoodies, accessories, music, fashion">
 </svelte:head>
 
@@ -19,6 +18,7 @@
      try {
         loadProducts();
      } catch (e) {
+         loading = false;
          error = true;
          errorMessage = "Something went wrong: (" + e.statusCode + "). Try again, later"
          console.log(e);
@@ -33,11 +33,9 @@
      loading = false;
      error = !response?.success;
      products = response?.products;
-     console.log(products);
  };
 
  const buyProduct = (permalink) => {
-     console.log(permalink)
      window.open("https://store.zedkaido.com/l/" + permalink, '_blank');
  }
 
@@ -50,8 +48,7 @@
 <div class="spacer"></div>
 <div id="products">
     {#if loading}
-        <br/>
-        <h5>█ Loading ... </h5>
+        <h5> █ Loading ... </h5>
     {:else}
         {#if error}
             <div>
@@ -63,16 +60,22 @@
                 <div class="product" on:click={() => buyProduct(product?.custom_permalink)}>
                     <img class="productImage" alt={product?.name} src={product?.thumbnail_url} />
                     <div class="productHeader">
+                        {#if product?.name}
                         <div class="productName">
                             <h3>{product?.name}</h3>
                         </div>
+                        {/if}
+                        {#if product?.formatted_price}
                         <div class="productPrice">
                             <h4>{product?.formatted_price}</h4>
                         </div>
+                        {/if}
                     </div>
+                    {#if product?.custom_summary}
                     <div class="productSummary">
                         <p>{product?.custom_summary}</p>
                     </div>
+                    {/if}
                 </div>
             {/each}
         {/if}
@@ -84,14 +87,13 @@
      display: flex;
      flex-direction: column;
      gap: 25px;
-     --dashed-border: dashed 1px #101010;
  }
 
  .product {
      display: flex;
      flex-direction: column;
      width: 100%;
-     border: var(--dashed-border);
+     border: var(--default-border);
      border-radius: 10px;
      overflow: hidden;
  }
@@ -107,7 +109,7 @@
  .productImage {
      width: 100%;
      min-height: 50px;
-     border-bottom: var(--dashed-border);
+     border-bottom: var(--default-border);
  }
 
  .productHeader {
@@ -116,14 +118,14 @@
      flex-direction: row;
      align-items: center;
      justify-content: space-between;
-     border-bottom: var(--dashed-border);
+     border-bottom: var(--default-border);
  }
 
  .productName {
      height: 100%;
      width: 100%;
-     padding: 20px 10px 20px 20px;
-     border-right: var(--dashed-border);
+     padding: var(--default-padding) 15px var(--default-padding) var(--default-padding);
+     border-right: var(--default-border);
  }
 
  .productName * {
@@ -147,6 +149,6 @@
  }
 
  .productSummary {
-     padding: 20px;
+     padding: var(--default-padding);
  }
 </style>

@@ -8,7 +8,7 @@
 
 <section>
     <div class="header">
-        <h4>Life is a symphony, so turn up the volume!</h4>
+        <h4>Life is a symphony! Turn up the volume!</h4>
     </div>
 </section>
 

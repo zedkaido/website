@@ -29,6 +29,9 @@
      console.log(events);
  };
 
+ const openEvent = (url) => {
+     window.open(url, '_blank');
+ }
 </script>
 
 <section>
@@ -37,10 +40,10 @@
     </div>
     <div class="spacer">
     </div>
-    <div class="zkEvents">
+    <div class="events">
         {#if loading}
             <br/>
-            <h5>█ Loading ... </h5>
+            <h5> █ Loading ... </h5>
         {:else}
             {#if error}
                 <br/>
@@ -48,14 +51,27 @@
             {:else}
                 {#if events}
                     {#each events as event}
-                        <div class="zkEvent">
-                            <a href={event.url} target="_blank">
-                                {#if event.date}
-                                    <h1>{event.date}</h1>
-                                {/if}
-                                <h2 class="zkEventTitle">{event.title}</h2>
-                            </a>
-                            <p class="zkEventDescription">{event.description}</p>
+                        <div class="event" on:click={() => openEvent(event.url)}>
+                            {#if event.thumbnail_url}
+                                <div class="eventThumbnail">
+                                    <img class="eventImage" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
+                                </div>
+                            {/if}
+                            {#if event.date}
+                                <div class="eventDate">
+                                    <h2>{event.date}</h2>
+                                </div>
+                            {/if}
+                            {#if event.title}
+                                <div class="eventTitle">
+                                    <h3>{event.title}</h3>
+                                </div>
+                            {/if}
+                            {#if event.description}
+                                <div class="eventDescription">
+                                    <p>{event.description}</p>
+                                </div>
+                            {/if}
                         </div>
                     {/each}
                 {/if}
@@ -66,20 +82,62 @@
 </section>
 
 <style>
- .zkEvents {
+ .events {
      display: flex;
      flex-direction: column;
-     gap: 44px;
+     gap: 25px;
  }
 
- .zkEvent {
+ .event {
      display: flex;
      flex-direction: column;
+     width: 100%;
+     border: var(--default-border);
      background-color: var(--primary-color);
+     border-radius: 10px;
+     overflow: hidden;
+     cursor: pointer;
  }
 
- .zkEvent a {
-     text-decoration: none;
+ .event:hover {
+     curosr: pointer;
+     transform: translate(-0.25rem, -0.25rem);
+     box-shadow: var(--secondary-color) 0.25rem 0.25rem;
+     background-color: var(--accent);
+     color: var(--contrast-accent);
+ }
+
+ .eventThumbnail {
+     width: 100%;
+     height: 244px;
+     border-bottom: var(--default-border);
+ }
+
+ .eventImage {
+     height: 100%;
+ }
+
+ .eventDate {
+     width: 100%;
+     padding: var(--default-padding);
+     border-bottom: var(--default-border);
+ }
+
+ .eventDate * {
+     margin: 0;
+ }
+
+ .eventTitle {
+     padding: var(--default-padding);
+     border-bottom: var(--default-border);
+ }
+
+ .eventTitle * {
+     margin: 0;
+ }
+
+ .eventDescription {
+     padding: var(--default-padding);
  }
 
  .zkGetNotified {

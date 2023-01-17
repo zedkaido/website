@@ -4,7 +4,7 @@
  import { onMount } from 'svelte';
  import zkLogo from '$lib/images/zk_logo.svg';
  import zkHeader from '$lib/images/zk_header.svg';
- import zkPicture from '$lib/images/zk_picture.jpg';
+ import zkPicture from '$lib/images/zk_picture.webp';
 import { page } from '$app/stores';
 
  let navBar;
@@ -62,7 +62,6 @@ import { page } from '$app/stores';
         </div>
         <div id="emailSubscriptionWrapper">
             <p>Join my email list to get a front-row seat at all things Zed Kaido. From blog posts and music releases to special promotions, you won't miss a single beat. Stay updated!</p>
-            <br/>
             <form id="follow-form" class="input-with-button" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)">
                 <input type="hidden" name="seller_id" value="1078182701802"/>
                 <input id="input" type="email" placeholder="Your email address" name="email" value=""/>
@@ -82,12 +81,18 @@ import { page } from '$app/stores';
         </div>
         <div id="footer">
             <!-- <h2 id="thanks">Thank you for your support!</h2> -->
-            <p id="address" target="_blank"><span style="font-family: 'hk-semi-bold';">bitcoin:</span>bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5 <a href="bitcoin:bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5">(Link)</a></p>
-            <p id="address" target="_blank"><span style="font-family: 'hk-semi-bold';">monero:</span>44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY <a href="monero:44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY">(Link)</a></p>
+            <p id="address" target="_blank"><span style="font-family: 'hk-semi-bold';">bitcoin:</span>bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5 <a href="bitcoin:bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5">[ Link ]</a></p>
+            <p id="address" target="_blank"><span style="font-family: 'hk-semi-bold';">monero:</span>44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY <a href="monero:44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY">[ Link ]</a></p>
             <a id="address" target="_blank" href="https://www.buymeacoffee.com/zedkaido">
                 <span style="font-family: 'hk-semi-bold';">buymeacoffee.com/zedkaido</span>
             </a>
         </div>
+        <div class="separator"/>
+        <div class="spacer"/>
+        <p>Designed & Developed with ♥️ by Zed Kaido.
+        Licenced under <a href="/license.txt" target="_blank">GPLv3</a> [ <a href="https://gitlab.com/zedkaido/website" target="_blank">Gitlab</a> | <a href="https://github.com/zedkaido/website" target="_blank">Github</a> ]
+        </p>
+        <div class="spacer"/>
     </main>
 </div>
 
@@ -200,7 +205,6 @@ import { page } from '$app/stores';
      display: flex;
      flex-direction: column;
      word-wrap: break-word;
-     padding-bottom: var(--default-spacing);
  }
 
  #thanks {

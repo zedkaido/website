@@ -1,14 +1,15 @@
 <script>
   import { page } from '$app/stores';
-  import zkErrorPicture from '$lib/images/zk_error_picture.jpg'
+  import zkErrorPicture from '$lib/images/zk_error_picture.webp'
 </script>
 
 <div>
-  <a href="https://zedkaido.com">
-      <img src={zkErrorPicture} alt="Zed Kaido" />
-  </a>
-  <h1>{$page.status} ⚠️😵‍💫🙀:</h1>
-  <h2>{$page.error.message}</h2>
+    <div class="spacer"/>
+    <a href="/">
+        <img src={zkErrorPicture} alt="Zed Kaido Surprised" />
+    </a>
+    <h1>{$page.status} ⚠️😵‍💫🙀:</h1>
+    <h2>{$page.error.message}</h2>
 </div>
 
 <style>
