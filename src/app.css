@@ -11,11 +11,14 @@
 	--discrete-color: #10101090;
 	--text-color: #101010;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
+
 	--extra-light-font: 'hk-extra-light';
 	--light-font: 'hk-light';
 	--medium-font: 'hk-medium';
 	--semi-bold-font: 'hk-semi-bold';
 	--bold-font: 'hk-bold';
+
+	--default-width: 350px;
 	--default-spacing: 20px;
 	--bigger-spacing: 24px;
 }

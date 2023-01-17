@@ -97,15 +97,15 @@ import { page } from '$app/stores';
  main {
      --zkLeftPadding: 15px;
      --zkRightPadding: 15px;
-     font-family: 'hk-light';
+     font-family: var(--light-font);
  }
 
  .zedkaido-website {
      height: 100vh;
      padding: 0;
      margin: 0 auto;
-     width: 350px;
-     max-width: 350px;
+     width: var(--default-width);
+     max-width: var(--default-width);
  }
 
  #header {
@@ -135,7 +135,7 @@ import { page } from '$app/stores';
      flex-direction: row;
      flex-wrap: wrap;
      gap: 16px 16px;
-     width: 350px;
+     width: var(--default-width);
      background: #ffffff99;
      backdrop-filter: blur(4.4px);
      color: var(--text-color);
@@ -158,10 +158,14 @@ import { page } from '$app/stores';
  }
 
  .sticky {
+     z-index: 5;
      position: fixed;
      top: 0;
-     padding-left: 15px !important;
+     left: 0;
+     justify-content: center;
      border-top: 0px !important;
+     width: 100vw !important;
+     padding-right: 50px;
  }
 
  .sticky + .content {
