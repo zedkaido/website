@@ -60,17 +60,17 @@
                                 {/if}
                             {/if}
                             {#if event?.date}
-                                <div class="eventDate">
+                                <div class="eventDate zeroMargin">
                                     <h2>{event.date}</h2>
                                 </div>
                             {/if}
                             {#if event?.title}
-                                <div class="eventTitle">
+                                <div class="eventTitle zeroMargin">
                                     <h3>{event.title}</h3>
                                 </div>
                             {/if}
                             {#if event?.description}
-                                <div class="eventDescription">
+                                <div class="eventDescription zeroMargin">
                                     <p>{event.description}</p>
                                 </div>
                             {/if}
@@ -125,17 +125,9 @@
      border-bottom: var(--default-border);
  }
 
- .eventDate * {
-     margin: 0;
- }
-
  .eventTitle {
      padding: var(--default-padding);
      border-bottom: var(--default-border);
- }
-
- .eventTitle * {
-     margin: 0;
  }
 
  .eventDescription {

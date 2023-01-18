@@ -56,18 +56,18 @@
                     <img class="productThumbnail" alt={product?.name} src={product?.thumbnail_url} />
                     <div class="productHeader">
                         {#if product?.name}
-                        <div class="productName">
+                        <div class="productName zeroMargin">
                             <h3>{product?.name}</h3>
                         </div>
                         {/if}
                         {#if product?.formatted_price}
-                        <div class="productPrice">
+                        <div class="productPrice zeroMargin">
                             <h4>{product?.formatted_price}</h4>
                         </div>
                         {/if}
                     </div>
                     {#if product?.custom_summary}
-                    <div class="productSummary">
+                    <div class="productSummary zeroMargin">
                         <p>{product?.custom_summary}</p>
                     </div>
                     {/if}
@@ -103,7 +103,6 @@
 
  .productThumbnail {
      width: 100%;
-     min-height: 50px;
      border-bottom: var(--default-border);
  }
 
@@ -123,14 +122,9 @@
      border-right: var(--default-border);
  }
 
- .productName * {
-     margin: 0;
- }
-
  .productPrice {
      align-self: center;
      transform: rotate(90deg);
-     margin-right: 13px;
      padding: 5px;
      /* Legacy vendor prefixes that you probably don't need... */
      /* Safari */
