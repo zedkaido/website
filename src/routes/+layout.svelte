@@ -90,7 +90,7 @@ import { page } from '$app/stores';
         <div class="separator"/>
         <div class="spacer"/>
         <p>Designed & Developed with ♥️ by Zed Kaido.
-        Licenced under <a href="/license.txt" target="_blank">GPLv3</a> [ <a href="https://gitlab.com/zedkaido/website" target="_blank">Gitlab</a> | <a href="https://github.com/zedkaido/website" target="_blank">Github</a> ]
+        Licenced under <a href="/license.txt" target="_blank">GPLv3</a> <a href="https://gitlab.com/zedkaido/website" target="_blank">[ Gitlab |</a> <a href="https://github.com/zedkaido/website" target="_blank">Github ]</a>
         </p>
         <div class="spacer"/>
     </main>
@@ -155,11 +155,11 @@ import { page } from '$app/stores';
      font-size: 16px;
  }
 
- .currentRoute {
+ .currentRoute a {
      color: var(--acent-color);
      text-underline-offset: 4px;
-     text-decoration-line: underline;
      text-decoration-style: wavy;
+     text-decoration-line: underline;
  }
 
  .sticky {
