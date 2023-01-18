@@ -53,7 +53,7 @@
         {:else}
             {#each products as product}
                 <a class="product" href={"https://store.zedkaido.com/l/" + product?.custom_permalink} target="_blank">
-                    <img class="productImage" alt={product?.name} src={product?.thumbnail_url} />
+                    <img class="productThumbnail" alt={product?.name} src={product?.thumbnail_url} />
                     <div class="productHeader">
                         {#if product?.name}
                         <div class="productName">
@@ -89,20 +89,19 @@
      flex-direction: column;
      width: 100%;
      border: var(--default-border);
-     border-radius: 10px;
+     border-radius: var(--default-border-radius);
      overflow: hidden;
      text-decoration: none;
  }
 
  .product:hover {
-     cursor: pointer;
      transform: translate(-0.25rem, -0.25rem);
      box-shadow: var(--secondary-color) 0.25rem 0.25rem;
      background-color: var(--accent);
      color: var(--contrast-accent);
  }
 
- .productImage {
+ .productThumbnail {
      width: 100%;
      min-height: 50px;
      border-bottom: var(--default-border);

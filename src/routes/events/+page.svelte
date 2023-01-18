@@ -96,14 +96,13 @@
      width: 100%;
      border: var(--default-border);
      background-color: var(--primary-color);
-     border-radius: 10px;
+     border-radius: var(--default-border-radius);
      overflow: hidden;
      cursor: pointer;
      text-decoration: none;
  }
 
  .event:hover {
-     curosr: pointer;
      transform: translate(-0.25rem, -0.25rem);
      box-shadow: var(--secondary-color) 0.25rem 0.25rem;
      background-color: var(--accent);
