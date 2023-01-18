@@ -34,11 +34,6 @@
      error = !response?.success;
      products = response?.products;
  };
-
- const buyProduct = (permalink) => {
-     window.open("" + permalink, '_blank');
- }
-
 </script>
 
 <div class="header">

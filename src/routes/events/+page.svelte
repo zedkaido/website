@@ -28,10 +28,6 @@
      loading = false;
      console.log(events);
  };
-
- const openEvent = (url) => {
-     window.open(url, '_blank');
- }
 </script>
 
 <section>
