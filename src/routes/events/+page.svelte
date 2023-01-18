@@ -87,7 +87,7 @@
  .events {
      display: flex;
      flex-direction: column;
-     gap: 25px;
+     gap: var(--default-list-gap);
  }
 
  .event {
