@@ -51,7 +51,7 @@
             {:else}
                 {#if events}
                     {#each events as event}
-                        <div class="event" on:click={() => openEvent(event.url)}>
+                        <a class="event" href="{event.url}" target="_blank">
                             {#if event?.thumbnail_url}
                                 {#if event?.thumbnail_size}
                                     <div class="eventThumbnail" style="height: {event?.thumbnail_size};">
@@ -78,7 +78,7 @@
                                     <p>{event.description}</p>
                                 </div>
                             {/if}
-                        </div>
+                        </a>
                     {/each}
                 {/if}
             {/if}
@@ -103,6 +103,7 @@
      border-radius: 10px;
      overflow: hidden;
      cursor: pointer;
+     text-decoration: none;
  }
 
  .event:hover {

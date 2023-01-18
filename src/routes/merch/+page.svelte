@@ -36,7 +36,7 @@
  };
 
  const buyProduct = (permalink) => {
-     window.open("https://store.zedkaido.com/l/" + permalink, '_blank');
+     window.open("" + permalink, '_blank');
  }
 
 </script>
@@ -57,7 +57,7 @@
             </div>
         {:else}
             {#each products as product}
-                <div class="product" on:click={() => buyProduct(product?.custom_permalink)}>
+                <a class="product" href={"https://store.zedkaido.com/l/" + product?.custom_permalink} target="_blank">
                     <img class="productImage" alt={product?.name} src={product?.thumbnail_url} />
                     <div class="productHeader">
                         {#if product?.name}
@@ -76,7 +76,7 @@
                         <p>{product?.custom_summary}</p>
                     </div>
                     {/if}
-                </div>
+                </a>
             {/each}
         {/if}
     {/if}
@@ -96,6 +96,7 @@
      border: var(--default-border);
      border-radius: 10px;
      overflow: hidden;
+     text-decoration: none;
  }
 
  .product:hover {
