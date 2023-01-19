@@ -43,10 +43,12 @@ import { page } from '$app/stores';
                 <img style="width: 75px;" alt="Zed Kaido Logo" src={zkLogo}/>
                 <img style="width: 142px;" alt="Zed Kaido Title"src={zkHeader}/>
             </div>
-            <img style="width: 154px;" alt="Zed Kaido Dancing" src={zkPicture}/>
+            <img style="width: 154px;" alt="Portrait of Zed Kaido Dancing" src={zkPicture}/>
         </div>
         <div id="description">
-            Join me on a quest to sonic bliss where we dance and groove to the beat, inspire!
+            Join me on a quest to
+            sonic bliss where we dance
+            and groove to the beat, inspire!
         </div>
         <nav id="navBar" class={stickyHeader ? "sticky" : ""} bind:this={navBar}>
             {#each routes as item (item)}
@@ -80,16 +82,19 @@ import { page } from '$app/stores';
             <a id="email" href="mailto:contact@zedkaido.com">contact@zedkaido.com</a>
         </div>
         <div id="footer">
-            <!-- <h2 id="thanks">Thank you for your support!</h2> -->
-            <p id="address" target="_blank"><span style="font-family: 'hk-semi-bold';">bitcoin:</span>bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5 <a href="bitcoin:bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5">[ Link ]</a></p>
-            <p id="address" target="_blank"><span style="font-family: 'hk-semi-bold';">monero:</span>44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY <a href="monero:44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY">[ Link ]</a></p>
+            <p id="address" target="_blank">
+                <span style="font-family: var(--semi-bold-font);">bitcoin:</span>bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5
+            </p>
+            <p id="address" target="_blank">
+                <span style="font-family: var(--semi-bold-font);">monero:</span>44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY
+            </p>
             <a id="address" target="_blank" href="https://www.buymeacoffee.com/zedkaido">
-                <span style="font-family: 'hk-semi-bold';">buymeacoffee.com/zedkaido</span>
+                <span style="font-family: var(--semi-bold-font);">buymeacoffee.com/zedkaido</span>
             </a>
         </div>
-        <div class="separator"/>
+        <div class="divider"/>
         <div class="spacer"/>
-        <p>Designed & Developed with ♥️ by Zed Kaido.
+        <p>Designed & Developed with ♥ by Zed Kaido.
         Licenced under <a href="/license.txt" target="_blank">GPLv3</a> <a href="https://gitlab.com/zedkaido/website" target="_blank">[ Gitlab |</a> <a href="https://github.com/zedkaido/website" target="_blank">Github ]</a>
         </p>
         <div class="spacer"/>
@@ -98,13 +103,6 @@ import { page } from '$app/stores';
 
 
 <style>
-
- main {
-     --zkLeftPadding: 15px;
-     --zkRightPadding: 15px;
-     font-family: var(--light-font);
- }
-
  .zedkaido-website {
      height: 100vh;
      padding: 0;
@@ -151,8 +149,8 @@ import { page } from '$app/stores';
 
  li {
      display: inline;
-     font-family: 'hk-semi-bold';
-     font-size: 16px;
+     font-family: var(--semi-bold-font);
+     font-size: 17px;
  }
 
  .currentRoute a {
@@ -186,7 +184,7 @@ import { page } from '$app/stores';
      border-width: 1px;
      border-style: solid none none none;
      border-color: var(--secondary-color);
-     margin: 30px 0 0 0;
+     margin: var(--bigger-spacing) 0 0 0;
      padding: var(--bigger-spacing) 0 0 0;
  }
 
@@ -212,7 +210,7 @@ import { page } from '$app/stores';
  }
 
  #address {
-     font-family: 'hk-extra-light';
+     font-family: var(--light-font);
      margin-bottom: var(--default-spacing);
  }
 

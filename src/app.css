@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 :root {
-	--font-body: 'hk-light', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-				 Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'JetBrains Mono', monospace;
+	--font-body: var(--light-font);
+	--extra-light-font: 'hk-extra-light', Arial, sans-serif;
+	--light-font: 'hk-light', Arial, sans-serif;
+	--medium-font: 'hk-medium', Arial, sans-serif;
+	--semi-bold-font: 'hk-semi-bold', Arial, sans-serif;
+	--bold-font: 'hk-bold', Arial, sans-serif;
+
 	--primary-color: #ffffff;
 	--secondary-color: #101010;
 	--tertiary-color: #101010;
@@ -14,26 +18,24 @@
 	--text-color: #101010;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 
-	--extra-light-font: 'hk-extra-light', Arial, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-				 Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--light-font: 'hk-light';
-	--medium-font: 'hk-medium';
-	--semi-bold-font: 'hk-semi-bold';
-	--bold-font: 'hk-bold';
+	--leftPadding: 15px;
+	--rightPadding: 15px;
 
 	--default-width: 350px;
 	--default-list-gap: 25px;
 	--default-spacing: 20px;
-	--default-padding: 24px;
 	--bigger-spacing: 24px;
+	--default-padding: 24px;
 	--default-border: dashed 1px var(--secondary-color);
 	--default-border-radius: 10px;
 }
 
 body {
 	background-color: #ffffff;
-	line-height: 1.4;
+	line-height: 1.5;
 	margin: 0px;
+	font-family: var(--light-font);
+	font-size: 16px;
 }
 
 body::before {
@@ -44,13 +46,13 @@ body::before {
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: #ffffff;
-  background: var(--accent-color);
+	color: #ffffff;
+	background: var(--accent-color);
 }
 
 ::selection {
-  color: #ffffff;
-  background: var(--accent-color);
+	color: #ffffff;
+	background: var(--accent-color);
 }
 
 img {
@@ -69,48 +71,50 @@ p {
 
 h1 {
 	font-size: 44px;
-	font-weight: 700;
-	font-family: 'hk-bold';
+	font-weight: 100;
+	font-family: var(--bold-font);
 	margin-bottom: 16px;
 }
 
 h2 {
 	font-size: 28px;
-	font-weight: 700;
-	font-family: 'hk-bold';
+	font-weight: 100;
+	font-family: var(--bold-font);
 	margin-bottom: 16px;
 }
 
 h3 {
-	font-size: 20px;
-	font-weight: 600;
+	font-size: 22px;
+	font-weight: 100;
 	font-family: var(--semi-bold-font);
 	margin-bottom: 16px;
 }
 
 h4 {
 	font-size: 17px;
-	font-weight: 500;
+	font-weight: 100;
 	font-family: var(--medium-font);
 	margin-bottom: 16px;
 }
 
 h5 {
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 100;
 	font-family: var(--medium-font);
 	margin-bottom: 16px;
 }
 
 p {
 	font-family: var(--light-font);
-	font-weight: 400;
+	font-weight: 100;
 	font-size: 16px;
 	margin-bottom: 16px;
 }
 
 a {
 	font-family: var(--semi-bold-font);
+	font-weight: 100;
+	font-size: 16px;
 	color: var(--text-color);
 	text-decoration: none;
 	text-underline-offset: 0px;
@@ -134,15 +138,45 @@ ul {
 
 .header h4 {
 	margin: 0;
-	font-family: var(--extra-light-font);
+	font-family: var(--light-font);
 }
 
 .spacer {
 	height: var(--default-spacing);
 }
 
-.separator {
+.divider {
 	border-bottom: 1px solid var(--secondary-color);
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.borderTop {
+	border-top: var(--default-border);
+}
+
+.borderRight {
+	border-right: var(--default-border);
+}
+
+.borderBottom {
+	border-bottom: var(--default-border);
+}
+
+.borderLeft {
+	border-left: var(--default-border);
+}
+
+.noMargin {
+	margin: 0;
 }
 
 .zeroMargin * {
@@ -197,7 +231,7 @@ button:focus:not(:focus-visible) {
 	padding: 0.75rem 1rem;
 	border: 1px solid var(--secondary-color);
 	color: var(--text-color);
-	font-family: var(--light-font), sans-serif;
+	font-family: var(--light-font);
 	grid-auto-flow: column;
 	grid-auto-columns: minmax(0px, max-content);
 	display: inline-grid;
@@ -224,7 +258,7 @@ button:focus:not(:focus-visible) {
 	box-sizing: border-box;
 	min-width: 0px;
 	outline: none;
-	font-family: var(--light-font), sans-serif;
+	font-family: var(--light-font);
 	padding: 0.75rem 1rem;
 	font-size: 1rem;
 	border: 1px solid var(--secondary-color);
@@ -234,16 +268,20 @@ button:focus:not(:focus-visible) {
 	color: var(--text-color);
 	--active-bg: #f4f4f0;
 }
+
 #input::placeholder{
 	color: var(--discrete-color);
 }
+
 #input:focus-within{
 	outline: var(--accent-color) solid 0.125rem;
 }
+
 #input:disabled{
 	cursor: not-allowed;
 	opacity: 0.3;
 }
+
 #input:read-only{
 	background-color: var(--primary-color);
 	color: var(--text-color);

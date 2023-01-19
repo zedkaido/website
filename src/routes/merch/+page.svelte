@@ -103,6 +103,7 @@
 
  .productThumbnail {
      width: 100%;
+     height: var(--default-height);
      border-bottom: var(--default-border);
  }
 

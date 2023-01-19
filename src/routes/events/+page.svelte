@@ -50,22 +50,18 @@
                         <a class="event" href="{event.url}" target="_blank">
                             {#if event?.thumbnail_url}
                                 {#if event?.thumbnail_size}
-                                    <div class="eventThumbnail" style="height: {event?.thumbnail_size};">
-                                        <img class="eventImage" style="height: {event?.thumbnail_size};" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
-                                    </div>
+                                    <img class="eventThumbnail borderBottom" style="height: {event?.thumbnail_size};" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
                                 {:else}
-                                    <div class="eventThumbnail">
-                                        <img class="eventImage" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
-                                    </div>
+                                    <img class="eventThumbnail borderBottom" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
                                 {/if}
                             {/if}
                             {#if event?.date}
-                                <div class="eventDate zeroMargin">
+                                <div class="eventDate borderBottom zeroMargin">
                                     <h2>{event.date}</h2>
                                 </div>
                             {/if}
                             {#if event?.title}
-                                <div class="eventTitle zeroMargin">
+                                <div class="eventTitle borderBottom zeroMargin">
                                     <h3>{event.title}</h3>
                                 </div>
                             {/if}
@@ -111,23 +107,17 @@
 
  .eventThumbnail {
      width: 100%;
-     height: 244px;
-     border-bottom: var(--default-border);
- }
-
- .eventImage {
-     height: 100%;
+     height: var(--default-width);
+     object-fit: cover;
  }
 
  .eventDate {
      width: 100%;
      padding: var(--default-padding);
-     border-bottom: var(--default-border);
  }
 
  .eventTitle {
      padding: var(--default-padding);
-     border-bottom: var(--default-border);
  }
 
  .eventDescription {
@@ -135,7 +125,7 @@
  }
 
  .zkGetNotified {
-     font-family: 'hk-bold';
+     font-family: var(--bold-font);
      color: var(--accent-color);
  }
 
