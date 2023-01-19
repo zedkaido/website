@@ -286,3 +286,9 @@ button:focus:not(:focus-visible) {
 	background-color: var(--primary-color);
 	color: var(--text-color);
 }
+
+@media screen and (max-width: 350px) {
+	:root {
+		--default-width: 92%;
+	}
+}

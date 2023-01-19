@@ -5,13 +5,13 @@
  import zkLogo from '$lib/images/zk_logo.svg';
  import zkHeader from '$lib/images/zk_header.svg';
  import zkPicture from '$lib/images/zk_picture.webp';
-import { page } from '$app/stores';
+ import { page } from '$app/stores';
 
  let navBar;
  let sticky;
  let stickyHeader = false;
 
- let route = $page.url.pathname === "/" ? "/music" : $page.url.pathname;
+ $: currentRoute = $page.url.pathname;
  let routes = [
      { url: '/music', title: 'Music' },
      { url: '/events', title: 'Events' },
@@ -19,10 +19,6 @@ import { page } from '$app/stores';
      { url: '/merch', title: 'Merch' },
      { url: '/socials', title: 'Socials' },
  ];
-
- const updateRoute = (newRoute) => {
-     route = newRoute;
- };
 
  const onScroll = () => {
      sticky = navBar.offsetTop + 314;
@@ -40,8 +36,8 @@ import { page } from '$app/stores';
     <main>
         <div id="header">
             <div id="headerBranding">
-                <img style="width: 75px;" alt="Zed Kaido Logo" src={zkLogo}/>
-                <img style="width: 142px;" alt="Zed Kaido Title"src={zkHeader}/>
+                <img id="zkLogo" style="width: 75px;" alt="Zed Kaido Logo" src={zkLogo}/>
+                <img id="zkHeader" style="width: 142px;" alt="Zed Kaido Title"src={zkHeader}/>
             </div>
             <img style="width: 154px;" alt="Portrait of Zed Kaido Dancing" src={zkPicture}/>
         </div>
@@ -53,9 +49,9 @@ import { page } from '$app/stores';
         <nav id="navBar" class={stickyHeader ? "sticky" : ""} bind:this={navBar}>
             {#each routes as item (item)}
                 {#if (item.url.includes("/blog"))}
-                    <li class={route.includes("blog") && item.url.includes("/blog") ? "currentRoute" : ""}><a href={item.url} on:click={() => updateRoute(item.url)}>{item.title}</a></li>
+                    <li class={currentRoute.includes("blog") && item.url.includes("/blog") ? "currentRoute" : ""}><a href={item.url}>{item.title}</a></li>
                 {:else}
-                    <li class={route === item.url ? "currentRoute" : ""}><a href={item.url} on:click={() => updateRoute(item.url)}>{item.title}</a></li>
+                    <li class={currentRoute === item.url ? "currentRoute" : ""}><a href={item.url}>{item.title}</a></li>
                 {/if}
             {/each}
         </nav>
@@ -135,6 +131,7 @@ import { page } from '$app/stores';
 
  #navBar {
      display: flex;
+     width: 100% !important;
      flex-direction: row;
      flex-wrap: wrap;
      gap: 16px 16px;
@@ -172,7 +169,7 @@ import { page } from '$app/stores';
  }
 
  .sticky + .content {
-     padding-top: 102px;
+     padding-top: 57.5px;
  }
 
  .content {
@@ -216,5 +213,20 @@ import { page } from '$app/stores';
 
  #address:hover {
      text-underline-offset: 1px;
+ }
+
+ @media screen and (max-width: 350px) {
+     #navBar {
+         justify-content: flex-start;
+         gap: 8px;
+     }
+
+     .sticky {
+         padding: 10px !important;
+     }
+
+     #zkHeader {
+         width: 100px;
+     }
  }
 </style>

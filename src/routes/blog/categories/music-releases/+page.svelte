@@ -3,7 +3,7 @@
     <meta
         name="description"
         content="Stay up to date on the latest music releases by Zed Kaido with these exclusive blog posts. Discover new music, behind-the-scenes insights, and more."/>
-    <meta name="keywords" content="music release, new music, software engineering, tips and tricks, industry experts, new music releases, insights">
+    <meta name="keywords" content="music releases, new music, zed kaido music, exclusive insights, music blog, new music releases, latest music, EDM">
 </svelte:head>
 
 <script>
