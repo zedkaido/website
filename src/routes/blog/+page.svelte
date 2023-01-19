@@ -12,7 +12,7 @@
 </script>
 
 <div class="header">
-    <h4>Reading about music is almost as good as listening to it, almost.</h4>
+    <h5>Reading about music is almost as good as listening to it, almost.</h5>
 </div>
 <div class="spacer"/>
 

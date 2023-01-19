@@ -70,14 +70,14 @@ p {
 }
 
 h1 {
-	font-size: 44px;
+	font-size: 28px;
 	font-weight: 100;
 	font-family: var(--bold-font);
 	margin-bottom: 16px;
 }
 
 h2 {
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: 100;
 	font-family: var(--bold-font);
 	margin-bottom: 16px;
@@ -91,14 +91,21 @@ h3 {
 }
 
 h4 {
-	font-size: 17px;
+	font-size: 20px;
 	font-weight: 100;
 	font-family: var(--medium-font);
 	margin-bottom: 16px;
 }
 
 h5 {
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: 100;
+	font-family: var(--medium-font);
+	margin-bottom: 16px;
+}
+
+h6 {
+ 	font-size: 16px;
 	font-weight: 100;
 	font-family: var(--medium-font);
 	margin-bottom: 16px;
@@ -136,7 +143,7 @@ ul {
 	border-bottom: 1px solid var(--secondary-color);
 }
 
-.header h4 {
+.header * {
 	margin: 0;
 	font-family: var(--light-font);
 }

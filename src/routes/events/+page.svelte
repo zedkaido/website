@@ -32,7 +32,7 @@
 
 <section>
     <div class="header">
-        <h4>Get ready to dance your socks off at my upcoming events!</h4>
+        <h5>Get ready to dance your socks off at my upcoming events!</h5>
     </div>
     <div class="spacer">
     </div>

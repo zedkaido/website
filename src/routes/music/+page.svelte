@@ -8,7 +8,7 @@
 
 <section>
     <div class="header">
-        <h4>Life is a symphony! Turn up the volume!</h4>
+        <h5>Life is a symphony! Turn up the volume!</h5>
     </div>
     <div class="spacer"/>
     <h1>Latest Release</h1>
@@ -28,7 +28,7 @@
     <li>*</li>
     <div class="spacer"/>
     <p>If you are a DJ and have no means to buy it, send me a DM or an email, and I will send the .wav over to you!</p>
-    <p>Also make sure to checkou the merch I have designed specifally for this release. It's amazing! <a href="/merch">[Merch]</a></p>
+    <p>On top of that, check out the exclusive <a href="merch">"Rendez-Vous" Merch</a> designed specifally for this release - It's amazing!</p>
 </section>
 
 <style>
