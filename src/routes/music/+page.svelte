@@ -17,34 +17,16 @@
     <h3>Second Rendez-Vous (Redux)</h3>
     <div class="divider"/>
     <div class="spacer"/>
-    <p>Make sure to also check out my blog post about it: <a href="/blog/second-rendez-vous-redux#thumbnail">A Journey Through Space & Sound</a></p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2MWjwvJD5Khi8XQ4YPAcTn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p>Make sure to check out my blog post about it: <a href="/blog/second-rendez-vous-redux#thumbnail">A Journey Through Space & Sound</a></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3yEOjWzIpzqB3WfqfzKyjH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <div class="spacer"/>
     <p>You can also listen to it on: </p>
-    <li><a href="">Souncloud</a></li>
-    <li><a href="">Beatport</a></li>
-    <li><a href="">Deezer</a></li>
-    <li><a href="">Tidal</a></li>
-    <li>*</li>
+    <li><a href="https://soundcloud.com/zedkaido/second-rendez-vous-redux" target="_blank">Souncloud</a></li>
+    <li><a href="https://deezer.page.link/6m2sLS68taqEeYKSA" target="_blank">Deezer</a></li>
+    <li><a href="https://tidal.com/browse/track/271720996" target="_blank">Tidal</a></li>
+    <li><a href="https://music.youtube.com/watch?v=0PMRIEptYNU&feature=share" target="_blank">Youtube Music</li>
+    <li><a href="https://youtu.be/TMMxn9-0eLs" target="_blank">Youtube Video</li>
     <div class="spacer"/>
     <p>If you are a DJ and have no means to buy it, send me a DM or an email, and I will send the .wav over to you!</p>
     <p>On top of that, check out the exclusive <a href="merch">"Rendez-Vous" Merch</a> designed specifally for this release - It's amazing!</p>
 </section>
-
-<style>
-
- #header {
-     width: 100%;
-     display: flex;
-     flex-direction: column;
- }
-
- #description {
-     font-family: "hk-extra-light";
-     font-size: 16.9px;
- }
-
- span {
-     font-size: 14px;
- }
-</style>

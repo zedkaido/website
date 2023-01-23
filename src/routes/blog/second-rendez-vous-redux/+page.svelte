@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>Zed Kaido | Second Rendez-Vous (Redux): A Journey Through Space And Sound</title>
+    <title>Zed Kaido | Second Rendez-Vous (Redux): A Journey Through Space & Sound</title>
 </svelte:head>
 
 <PostTemplate
@@ -33,8 +33,11 @@
 
         <h3>The Process of Creating "Second Rendez-Vous (Redux)"</h3>
         <p>
-            The process of creating "Second Rendez-Vous (Redux)" was a challenging and rewarding experience. I spent countless hours in the studio, working on every detail, and experimenting with different sounds and effects. The final track is 7:27 minutes long, divided into seventeen sections, each with its own story and emotion - I could tell you about each one of them, but I believe it comes to the listener to define the meaning and the story of the song.
+            The process of creating "Second Rendez-Vous (Redux)" was a challenging and rewarding experience. I spent countless hours in the studio, working on every detail, and experimenting with different sounds and effects. The final track is 7:27 minutes long, divided into seventeen sections, each with its own story and emotion - I could tell you about each one of them, but I believe it comes to you to define the meaning and the story of the song:
         </p>
+
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3yEOjWzIpzqB3WfqfzKyjH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="spacer"/>
 
         <h3>A Complex and Intricate Composition</h3>
         <p>
@@ -49,9 +52,29 @@
             The track features 66 layers, making it a truly intricate and immersive composition. Each layer adds something unique to the track, and it's designed to be listened to multiple times, revealing new elements and details with each listen. The track is not only a feast for the ears but also for the mind, it's a track that I believe will keep you engaged and interested for a long time.
         </p>
 
+        <!-- <iframe src="https://youtu.be/MJ5nhiqgyLU"> -->
+        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/TMMxn9-0eLs" frameborder="0" allowfullscreen>
+        </iframe>
+
+        <div class="spacer"/>
+
         <h2>Experience the Track in Style with Limited-Edition Merchandise</h2>
         <p>
-            In addition to the release of "Second Rendez-Vous (Redux)", I am super excited to unveil my limited-edition line of merchandise designed specifically for this release. From exclusive t-shirts and backpacks to tumblers and other accessories featuring mesmerizing patterns of the track cover, each item is designed to be a stylish and functional accessory for any music lover. Whether you're heading to a festival, hitting the club, or just hanging out with friends, this merchandise will help you rep your love for the track in style. The merchandise is designed to perfectly capture the spirit of the track, and it's a great way to show your support and appreciation for the music. You can find it <a href="/merch">here</a>!
+            In addition to the release of "Second Rendez-Vous (Redux)", I am super excited to unveil my limited-edition line of merchandise designed specifically for this release. From exclusive t-shirts and backpacks to tumblers and other accessories featuring mesmerizing patterns of the track cover, each item is designed to be a stylish and functional accessory for any music lover. Whether you're heading to a festival, hitting the club, or just hanging out with friends, this merchandise will help you rep your love for the track in style.
         </p>
+        <p>The merchandise is designed to perfectly capture the spirit of the track, and it's a great way to show your support and appreciation for the music. You can find it in <a href="/merch">/merch</a> - Grab it before it's gone!
+        </p>
+        <div style="display:flex;">
+            <a href="/merch">
+                <img class="merchAdvert" alt="Zed Kaido's Second Rendez-Vous (Redux) Merch" src="/blog/second-rendez-vous-redux/merch-01-advert.webp"/>
+            </a>
+        </div>
+        <div class="spacer"/>
     </div>
 </PostTemplate>
+
+<style>
+ .merchAdvert {
+     width: 100%;
+ }
+</style>

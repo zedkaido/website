@@ -202,10 +202,6 @@
      word-wrap: break-word;
  }
 
- #thanks {
-     margin-bottom: var(--default-spacing);
- }
-
  #address {
      font-family: var(--light-font);
      margin-bottom: var(--default-spacing);

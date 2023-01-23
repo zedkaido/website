@@ -33,6 +33,7 @@
      loading = false;
      error = !response?.success;
      products = response?.products;
+     console.log(products);
  };
 </script>
 

@@ -2,7 +2,6 @@
  export let category;
  export let thumbnail;
  export let thumbnailAlt;
- export let title;
  export let author;
  export let formattedDate;
 </script>

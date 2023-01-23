@@ -134,6 +134,10 @@ a:hover {
 	text-decoration-style: wavy;
 }
 
+iframe {
+	border: none;
+}
+
 ul {
 	list-style-type: none;
 }
