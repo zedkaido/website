@@ -5,7 +5,7 @@
 <section>
     <div class="posts">
         {#each posts as post}
-            <a class="post" href={post.url}>
+            <a class="post" href={ post.thumbnail ? post.url + "#thumbnail" : post.url }>
                 {#if post?.thumbnail}
                     <img class="postThumbnail borderBottom" src={post.thumbnail} alt={post.thumbnail_alt} />
                 {/if}

@@ -60,7 +60,7 @@
         </div>
         <div id="emailSubscriptionWrapper">
             <p>Join my email list to get a front-row seat at all things Zed Kaido. From blog posts and music releases to special promotions, you won't miss a single beat. Stay updated!</p>
-            <form id="follow-form" class="input-with-button" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)">
+            <form id="follow-form" class="input-with-button" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)" target="_blank">
                 <input type="hidden" name="seller_id" value="1078182701802"/>
                 <input id="input" type="email" placeholder="Your email address" name="email" value=""/>
                 <button id="button" class="primary" type="submit">

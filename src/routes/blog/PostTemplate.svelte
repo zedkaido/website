@@ -3,7 +3,8 @@
  export let thumbnail;
  export let thumbnailAlt;
  export let author;
- export let formattedDate;
+ export let date;
+ export let updatedDate;
 </script>
 
 <section>
@@ -22,11 +23,11 @@
 
     <div class="divider"/>
     <div class="spacer"/>
-    {#if formattedDate}
-    <h5>{formattedDate}</h5>
+    {#if updatedDate || date}
+        <h5>{updatedDate ? updatedDate : date}</h5>
+        <div class="divider"/>
+        <div class="spacer"/>
     {/if}
-    <div class="divider"/>
-    <div class="spacer"/>
 
     <slot name="content">
     </slot>
