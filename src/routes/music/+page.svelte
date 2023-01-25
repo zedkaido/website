@@ -21,8 +21,9 @@
     <iframe title="Second Rendez-Vous (Redux) - Spotify Embed" style="border-radius:12px" src="https://open.spotify.com/embed/track/3yEOjWzIpzqB3WfqfzKyjH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <div class="spacer"/>
     <p>You can also listen to it on: </p>
+    <li><a href="https://open.spotify.com/track/3yEOjWzIpzqB3WfqfzKyjH?si=7f27640d402d4ded" target="_blank">Spotify</a></li>
     <li><a href="https://soundcloud.com/zedkaido/second-rendez-vous-redux" target="_blank">Souncloud</a></li>
-    <li><a href="https://music.apple.com/us/album/second-rendez-vous-redux/1665747269?i=1665747271">Apple Music</a> </li>
+    <li><a href="https://music.apple.com/us/album/second-rendez-vous-redux/1665747269?i=1665747271">Apple Music</a></li>
     <li><a href="https://deezer.page.link/6m2sLS68taqEeYKSA" target="_blank">Deezer</a></li>
     <li><a href="https://tidal.com/browse/track/271720996" target="_blank">Tidal</a></li>
     <li><a href="https://music.youtube.com/watch?v=0PMRIEptYNU&feature=share" target="_blank">YouTube Music</a></li>

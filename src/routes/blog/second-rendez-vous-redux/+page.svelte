@@ -41,6 +41,7 @@
 
         <div class="spacer"/>
         <p>You can also listen to it on: </p>
+        <li><a href="https://open.spotify.com/track/3yEOjWzIpzqB3WfqfzKyjH?si=7f27640d402d4ded" target="_blank">Spotify</a></li>
         <li><a href="https://soundcloud.com/zedkaido/second-rendez-vous-redux" target="_blank">Souncloud</a></li>
         <li><a href="https://music.apple.com/us/album/second-rendez-vous-redux/1665747269?i=1665747271">Apple Music</a> </li>
         <li><a href="https://deezer.page.link/6m2sLS68taqEeYKSA" target="_blank">Deezer</a></li>

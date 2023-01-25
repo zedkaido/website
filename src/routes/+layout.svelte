@@ -37,7 +37,7 @@
         <div id="header">
             <div id="headerBranding">
                 <img id="zkLogo" style="width: 75px;" alt="Zed Kaido Logo" src={zkLogo}/>
-                <img id="zkHeader" style="width: 142px;" alt="Zed Kaido Title"src={zkHeader}/>
+                <h1>Zed Kaido</h1>
             </div>
             <img style="width: 154px;" alt="Portrait of Zed Kaido Dancing" src={zkPicture}/>
         </div>
@@ -120,6 +120,14 @@
      flex-direction: column;
      justify-content: space-between;
      padding-top: 30px;
+ }
+
+ #headerBranding h1 {
+     font-size: 35px;
+     font-size: 80px;
+     line-height: 69px;
+     letter-spacing: -0.23em;
+     margin-bottom: 0;
  }
 
  #description {
