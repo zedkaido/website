@@ -46,14 +46,16 @@
             sonic bliss where we dance
             and groove to the beat, inspire!
         </div>
-        <nav id="navBar" class={stickyHeader ? "sticky" : ""} bind:this={navBar}>
-            {#each routes as item (item)}
-                {#if (item.url.includes("/blog"))}
-                    <li class={currentRoute.includes("blog") && item.url.includes("/blog") ? "currentRoute" : ""}><a href={item.url}>{item.title}</a></li>
-                {:else}
-                    <li class={currentRoute === item.url ? "currentRoute" : ""}><a href={item.url}>{item.title}</a></li>
-                {/if}
-            {/each}
+        <nav>
+            <ul id="navBar" class={stickyHeader ? "sticky" : ""} bind:this={navBar}>
+                {#each routes as item (item)}
+                    {#if (item.url.includes("/blog"))}
+                        <li class={currentRoute.includes("blog") && item.url.includes("/blog") ? "currentRoute" : ""}><a href={item.url}>{item.title}</a></li>
+                    {:else}
+                        <li class={currentRoute === item.url ? "currentRoute" : ""}><a href={item.url}>{item.title}</a></li>
+                    {/if}
+                {/each}
+            </ul>
         </nav>
         <div class="content">
             <slot />
@@ -78,13 +80,13 @@
             <a id="email" href="mailto:contact@zedkaido.com">contact@zedkaido.com</a>
         </div>
         <div id="footer">
-            <p id="address" target="_blank">
+            <p class="address" target="_blank">
                 <span style="font-family: var(--semi-bold-font);">bitcoin:</span>bc1qlkcrnqlhphreh3efqd8mpdq9hjp04agcnqhvj5
             </p>
-            <p id="address" target="_blank">
+            <p class="address" target="_blank">
                 <span style="font-family: var(--semi-bold-font);">monero:</span>44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY
             </p>
-            <a id="address" target="_blank" href="https://www.buymeacoffee.com/zedkaido">
+            <a class="address" target="_blank" href="https://www.buymeacoffee.com/zedkaido">
                 <span style="font-family: var(--semi-bold-font);">buymeacoffee.com/zedkaido</span>
             </a>
         </div>
@@ -147,6 +149,7 @@
      background: #ffffff99;
      backdrop-filter: blur(4.4px);
      color: var(--text-color);
+     margin: 0;
      padding: 15px 0 16px 0;
      border-top: 1px solid var(--text-color);
      border-bottom: 1px solid var(--text-color);
@@ -210,7 +213,7 @@
      word-wrap: break-word;
  }
 
- #address {
+ .address {
      font-family: var(--light-font);
      margin-bottom: var(--default-spacing);
  }

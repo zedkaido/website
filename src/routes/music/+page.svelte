@@ -18,7 +18,7 @@
     <div class="divider"/>
     <div class="spacer"/>
     <p>Make sure to check out my blog post about it: <a href="/blog/second-rendez-vous-redux#thumbnail">A Journey Through Space & Sound</a></p>
-    <iframe title="Second Rendez-Vous (Redux) - Spotify Embed" style="border-radius:12px" src="https://open.spotify.com/embed/track/3yEOjWzIpzqB3WfqfzKyjH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe title="Second Rendez-Vous (Redux) - Bandcamp Embed" style="border: 0; width: 100%; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=3682126709/size=large/bgcol=ffffff/linkcol=101010/tracklist=false/transparent=true/" seamless SameSite=Strict><a href="https://zedkaido.bandcamp.com/track/second-rendez-vous-redux">Second Rendez-Vous (Redux) by Zed Kaido</a></iframe>
     <div class="spacer"/>
     <p>You can also listen to it on: </p>
     <li><a href="https://open.spotify.com/track/3yEOjWzIpzqB3WfqfzKyjH?si=7f27640d402d4ded" target="_blank">Spotify</a></li>
@@ -32,3 +32,4 @@
     <p>If you are a DJ and have no means to buy it, send me a DM or an email, and I will send the .wav over to you!</p>
     <p>On top of that, check out the exclusive <a href="merch">"Rendez-Vous" Merch</a> designed specifally for this release - It's amazing!</p>
 </section>
+

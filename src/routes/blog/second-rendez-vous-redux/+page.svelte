@@ -37,17 +37,19 @@
             The process of creating "Second Rendez-Vous (Redux)" was a challenging and rewarding experience. I spent countless hours in the studio, working on every detail, and experimenting with different sounds and effects. The final track is 7:27 minutes long, divided into seventeen sections, each with its own story and emotion - I could tell you about each one of them, but I believe it comes to you to define the meaning and the story of the song:
         </p>
 
-        <iframe title="Second Rendez-Vous (Redux) - Spotify Embed" style="border-radius:12px" src="https://open.spotify.com/embed/track/3yEOjWzIpzqB3WfqfzKyjH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+        <iframe title="Second Rendez-Vous (Redux) - Bandcamp Embed" style="border: 0; width: 100%; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=3682126709/size=large/bgcol=ffffff/linkcol=101010/tracklist=false/transparent=true/" seamless SameSite=Strict><a href="https://zedkaido.bandcamp.com/track/second-rendez-vous-redux">Second Rendez-Vous (Redux) by Zed Kaido</a></iframe>
         <div class="spacer"/>
+
         <p>You can also listen to it on: </p>
-        <li><a href="https://open.spotify.com/track/3yEOjWzIpzqB3WfqfzKyjH?si=7f27640d402d4ded" target="_blank">Spotify</a></li>
-        <li><a href="https://soundcloud.com/zedkaido/second-rendez-vous-redux" target="_blank">Souncloud</a></li>
-        <li><a href="https://music.apple.com/us/album/second-rendez-vous-redux/1665747269?i=1665747271">Apple Music</a> </li>
-        <li><a href="https://deezer.page.link/6m2sLS68taqEeYKSA" target="_blank">Deezer</a></li>
-        <li><a href="https://tidal.com/browse/track/271720996" target="_blank">Tidal</a></li>
-        <li><a href="https://music.youtube.com/watch?v=0PMRIEptYNU&feature=share" target="_blank">YouTube Music</a></li>
-        <li><a href="https://youtu.be/TMMxn9-0eLs" target="_blank">YouTube Video</a></li>
+        <dl>
+            <li><a href="https://open.spotify.com/track/3yEOjWzIpzqB3WfqfzKyjH?si=7f27640d402d4ded" target="_blank">Spotify</a></li>
+            <li><a href="https://soundcloud.com/zedkaido/second-rendez-vous-redux" target="_blank">Souncloud</a></li>
+            <li><a href="https://music.apple.com/us/album/second-rendez-vous-redux/1665747269?i=1665747271">Apple Music</a> </li>
+            <li><a href="https://deezer.page.link/6m2sLS68taqEeYKSA" target="_blank">Deezer</a></li>
+            <li><a href="https://tidal.com/browse/track/271720996" target="_blank">Tidal</a></li>
+            <li><a href="https://music.youtube.com/watch?v=0PMRIEptYNU&feature=share" target="_blank">YouTube Music</a></li>
+            <li><a href="https://youtu.be/TMMxn9-0eLs" target="_blank">YouTube Video</a></li>
+        </dl>
         <div class="spacer"/>
 
         <h3>A Complex and Intricate Composition</h3>
@@ -66,7 +68,6 @@
         <!-- <iframe src="https://youtu.be/MJ5nhiqgyLU"> -->
         <iframe title="Second Rendez-Vous (Redux) - YouTube Embed" width="100%" height="200px" src="https://www.youtube.com/embed/TMMxn9-0eLs" frameborder="0" allowfullscreen>
         </iframe>
-
         <div class="spacer"/>
 
         <h2>Experience the Track in Style with Limited-Edition Merchandise</h2>
