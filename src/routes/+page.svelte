@@ -2,7 +2,11 @@
  import { onMount } from 'svelte';
  import { goto } from '$app/navigation';
 
+ let redirected = false;
  onMount(() => {
- 	 goto('/music');
+     if (!redirected) {
+         redirected = true;
+         goto('/music');
+     }
  })
 </script>
