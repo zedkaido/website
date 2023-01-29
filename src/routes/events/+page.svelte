@@ -30,54 +30,51 @@
  };
 </script>
 
-<section>
-    <div class="header">
-        <h5>Get ready to dance your socks off at my upcoming events!</h5>
-    </div>
-    <div class="spacer">
-    </div>
-    <div class="events">
-        {#if loading}
+<div class="header">
+    <h5>Get ready to dance your socks off at my upcoming events!</h5>
+</div>
+<div class="spacer"/>
+<div class="events">
+    {#if loading}
+        <br/>
+        <h5> █ Loading ... </h5>
+    {:else}
+        {#if error}
             <br/>
-            <h5> █ Loading ... </h5>
+            <h1>Oops ⚠️😵‍💫🙀</h1>
         {:else}
-            {#if error}
-                <br/>
-                <h1>Oops ⚠️😵‍💫🙀</h1>
-            {:else}
-                {#if events}
-                    {#each events as event}
-                        <a class="event" href="{event.url}" target="_blank">
-                            {#if event?.thumbnail_url}
-                                {#if event?.thumbnail_size}
-                                    <img class="eventThumbnail borderBottom" style="height: {event?.thumbnail_size};" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
-                                {:else}
-                                    <img class="eventThumbnail borderBottom" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
-                                {/if}
+            {#if events}
+                {#each events as event}
+                    <a class="event" href="{event.url}" target="_blank">
+                        {#if event?.thumbnail_url}
+                            {#if event?.thumbnail_size}
+                                <img class="eventThumbnail borderBottom" style="height: {event?.thumbnail_size};" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
+                            {:else}
+                                <img class="eventThumbnail borderBottom" alt={"A picture depiction of " + event?.title} src={event?.thumbnail_url} />
                             {/if}
-                            {#if event?.date}
-                                <div class="eventDate borderBottom zeroMargin">
-                                    <h2>{event.date}</h2>
-                                </div>
-                            {/if}
-                            {#if event?.title}
-                                <div class="eventTitle borderBottom zeroMargin">
-                                    <h3>{event.title}</h3>
-                                </div>
-                            {/if}
-                            {#if event?.description}
-                                <div class="eventDescription zeroMargin">
-                                    <p>{event.description}</p>
-                                </div>
-                            {/if}
-                        </a>
-                    {/each}
-                {/if}
+                        {/if}
+                        {#if event?.date}
+                            <div class="eventDate borderBottom zeroMargin">
+                                <h2>{event.date}</h2>
+                            </div>
+                        {/if}
+                        {#if event?.title}
+                            <div class="eventTitle borderBottom zeroMargin">
+                                <h3>{event.title}</h3>
+                            </div>
+                        {/if}
+                        {#if event?.description}
+                            <div class="eventDescription zeroMargin">
+                                <p>{event.description}</p>
+                            </div>
+                        {/if}
+                    </a>
+                {/each}
             {/if}
         {/if}
-        <a href="https://t.me/+KDaW-JQMhCNhZDNk" class="zkGetNotified" target="_blank">** stay up to date</a>
-    </div>
-</section>
+    {/if}
+    <a href="https://t.me/+KDaW-JQMhCNhZDNk" class="zkGetNotified" target="_blank">** stay up to date</a>
+</div>
 
 <style>
  .events {
