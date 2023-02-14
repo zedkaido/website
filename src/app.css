@@ -194,6 +194,22 @@ ul {
 	margin: 0;
 }
 
+.zkMusicLinks {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+
+.zkMusicLinks a:hover {
+	text-decoration-color: #ffffff !important;
+}
+
+.zkSocialLinks {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 10px;
+}
+
 .zkLink {
 	height: 37px;
 	padding: 8px 16px 6px 16px;

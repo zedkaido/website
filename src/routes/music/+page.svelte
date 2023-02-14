@@ -10,22 +10,52 @@
     <h5>Life is a symphony! Turn up the volume!</h5>
 </div>
 <div class="spacer"/>
-<h1>Latest Release</h1>
-<div class="divider"/>
+<iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=674483766/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/bachs-ghost-in-the-machine">Bach&#39;s Ghost In The Machine by zedkaido</a></iframe>
 <div class="spacer"/>
-<h3>Second Rendez-Vous (Redux)</h3>
-<div class="divider"/>
+<p>Stream my tunes on every platform known to mankind! I'm like a musical ninja, popping up on Spotify, Apple Music, Tidal, you name it!</p>
+<p>But seriously, why did the DJ put his headphones in the freezer?</p>
+<div class="zkMusicLinks">
+   <a href="https://open.spotify.com/artist/6bW3RzyZ1QkPZhJ3rrIxR1?si=heDLqOJKRyG9ZMYCOaTz8w" target="_blank">
+        <div class="zkLink" style="background-color: #1DB954;; color: #FFFFFF;">
+           SPOTIFY
+        </div>
+   </a>
+   <a href="https://tidal.com/browse/artist/36763030" target="_blank">
+       <div class="zkLink" style="background-color: #101010;">
+           TIDAL
+       </div>
+   </a>
+   <a href="https://music.apple.com/us/artist/zed-kaido/1665747270" target="_blank">
+       <div class="zkLink" style="background-color: #fc3c44;">
+           APPLE MUSIC
+       </div>
+   </a>
+    <a href="https://audius.co/zedkaido" target="_blank">
+        <div class="zkLink" style="background-color: #7F2AE6;">
+            AUDIUS
+        </div>
+    </a>
+    <a href="https://deezer.page.link/mFRUHeBH5Lcaamue8" target="_blank">
+       <div class="zkLink" style="background-color: #202020;">
+           DEEZER
+       </div>
+    </a>
+    <a href="https://music.youtube.com/channel/UCPBMKG0KJnVo-0LLfsfUIUA?feature=share" target="_blank">
+        <div class="zkLink" style="background-color: #FF0000;">
+            YOUTUBE MUSIC
+        </div>
+    </a>
+    <a href="https://zedkaido.bandcamp.com/" target="_blank">
+        <div class="zkLink" style="background-color: #629aa9;">
+            BANDCAMP
+        </div>
+    </a>
+    <a href="https://soundcloud.com/zedkaido" target="_blank">
+        <div class="zkLink" style="background-color: #F26F23;">
+            SOUNDCLOUD
+        </div>
+    </a>
+</div>
 <div class="spacer"/>
-<p>Make sure to check out my blog post about it: <a href="/blog/second-rendez-vous-redux#thumbnail">A Journey Through Space & Sound</a></p>
-<iframe title="Second Rendez-Vous (Redux) - Bandcamp Embed" style="border: 0; width: 100%; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=3682126709/size=large/bgcol=ffffff/linkcol=101010/tracklist=false/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/second-rendez-vous-redux">Second Rendez-Vous (Redux) by Zed Kaido</a></iframe>
-<div class="spacer"/>
-<li><a href="https://open.spotify.com/track/3yEOjWzIpzqB3WfqfzKyjH?si=7f27640d402d4ded" target="_blank">Spotify</a></li>
-<li><a href="https://soundcloud.com/zedkaido/second-rendez-vous-redux" target="_blank">Souncloud</a></li>
-<li><a href="https://music.apple.com/us/album/second-rendez-vous-redux/1665747269?i=1665747271" target="_blank">Apple Music</a></li>
-<li><a href="https://deezer.page.link/6m2sLS68taqEeYKSA" target="_blank">Deezer</a></li>
-<li><a href="https://tidal.com/browse/track/271720996" target="_blank">Tidal</a></li>
-<li><a href="https://music.youtube.com/watch?v=0PMRIEptYNU&feature=share" target="_blank">YouTube Music</a></li>
-<li><a href="https://youtu.be/TMMxn9-0eLs" target="_blank">YouTube Video</a></li>
-<div class="spacer"/>
-<p>If you are a DJ and have no means to buy it, send me a DM or an email, and I will send the .wav over to you!</p>
-<p>On top of that, check out the exclusive <a href="merch">"Rendez-Vous" Merch</a> designed specifally for this release - It's amazing!</p>
+<p>He wanted to hear some cool beats!</p>
+<iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=3682126709/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/second-rendez-vous-redux">Second Rendez-Vous (Redux) by Zed Kaido</a></iframe>

@@ -75,7 +75,7 @@
              <div class="zkLink" style="background-color: #0088CC; color: #FFFFFF; margin-bottom: 15px;">
              TELEGRAM CHANNEL
              </div>
-             </a> -->
+             </a>-->
     </div>
     <div id="emailWrapper">
         <a id="email" href="mailto:contact@zedkaido.com">contact@zedkaido.com</a>

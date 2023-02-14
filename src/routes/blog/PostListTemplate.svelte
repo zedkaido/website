@@ -1,5 +1,6 @@
 <script>
  export let posts;
+ posts.sort((a, b) => b.id - a.id);
 </script>
 
 <section>

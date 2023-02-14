@@ -6,9 +6,21 @@
     "title": "Second Rendez Vous (Redux) - A Journey Through Space & Sound",
     "summary": "Challenging, but rewarding. The final track is 7:27 minutes long, divided into seventeen sections, each with its own story and emotion - I could tell you about each one of them, but I believe it comes to you to define the meaning and the story of the track",
     "thumbnail": "/blog/second-rendez-vous-redux/thumbnail.webp",
-    "thumbnail_alt": "Cover art for Second Rendez-Vous",
+    "thumbnail_alt": "Cover art for the track release of 'Second Rendez-Vous', portraying Jean Michel Jarre, in a futuristic landscape scenario that is moving at the speed of light, a sunset in the background can be observed.",
     "date": "2023-01-23",
-    "updatedDate": "2023-01-28",
+    "updatedDate": "2023-02-13",
+    "author": "Zed Kaido"
+},
+    {
+    "id": 2,
+    "url": "/blog/bachs-ghost-in-the-machine",
+    "category": "music-releases",
+    "title": "Bach's Ghost In The Machine",
+    "summary": "A reimagined take on Bach's iconic Prelude no.1 and inspired by the haunting beauty of Charles Gounod's Ave Maria.",
+    "thumbnail": "/blog/bachs-ghost-in-the-machine/thumbnail.webp",
+    "thumbnail_alt": "Cover art for the track release of 'Bach's Ghost In The Machine', portraying Bach inside a musical machine, half of the cover is a realistic portrait of Bach, and the other is a representation of his ghost",
+    "date": "2023-02-13",
+    "updatedDate": "2023-02-13",
     "author": "Zed Kaido"
 }
 ]
