@@ -26,7 +26,7 @@ export async function GET({ setHeaders }) {
       </url>
       <url>
         <loc>${website}/music</loc>
-        <lastmod>2023-01-28</lastmod>
+        <lastmod>2023-02-13</lastmod>
       </url>
       <url>
         <loc>${website}/events</loc>
@@ -38,7 +38,7 @@ export async function GET({ setHeaders }) {
       </url>
       <url>
         <loc>${website}/socials</loc>
-        <lastmod>2023-01-28</lastmod>
+        <lastmod>2023-02-13</lastmod>
       </url>
       ${posts
         .map(
