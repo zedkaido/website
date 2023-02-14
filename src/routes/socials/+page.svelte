@@ -7,16 +7,10 @@
     <meta name="keywords" content="socials, follow, updates, behind the scenes, creative process, community, connection, social media">
 </svelte:head>
 
-<div class="spacer"></div>
-<p>Get the inside scoop by joining my Telegram Channel. Don't miss out on exclusive insider updates. Let's connect!</p>
-
-<a href="https://t.me/+KDaW-JQMhCNhZDNk" target="_blank">
-    <div class="zkLink" style="background-color: #0088CC; color: #FFFFFF; margin-bottom: 15px;">
-        TELEGRAM
-    </div>
-</a>
-
-<p>Or, check out my other socials. Just <span style="font-family: 'hk-semi-bold'">remember</span> to be mindfull of your consumption! Always strive to create more than you consume!</p>
+<div class="header">
+    <h5>Follow, but always strive to create more than you consume!</h5>
+</div>
+<div class="spacer"/>
 
 <div class="zkSocialLinks">
     <a href="https://twitch.tv/zedkaido" target="_blank">
