@@ -23,31 +23,10 @@
             YOUTUBE
         </div>
     </a>
-    <a href="https://twitter.com/zedkaido" target="_blank">
-        <div class="zkLink" style="background-color: #1D9BF0;">
-            <span>TWITTER<span/>
-        </div>
-    </a>
-    <a href="https://instagram.com/zedkaido" target="_blank">
-        <div class="zkLink" style="background-color: #bc2a8d;">
-            INSTAGRAM
-        </div>
-    </a>
-    <a href="https://facebook.com/zedkaidomusic" target="_blank">
-        <div class="zkLink" style="background-color: #4c68d7;">
-            FACEBOOK
-        </div>
-    </a>
-    <a href="https://tiktok.com/@zedkaido" target="_blank">
-        <div class="zkLink" style="background-color: #101010;">
-            TIKTOK
-        </div>
-    </a>
 </div>
 
 <div class="spacer"/>
 <p>And, in case you are looking for my music:</p>
-
 
 <div class="zkMusicLinks">
    <a href="https://open.spotify.com/artist/6bW3RzyZ1QkPZhJ3rrIxR1?si=heDLqOJKRyG9ZMYCOaTz8w" target="_blank">
@@ -65,11 +44,6 @@
            APPLE MUSIC
        </div>
    </a>
-    <a href="https://audius.co/zedkaido" target="_blank">
-        <div class="zkLink" style="background-color: #7F2AE6;">
-            AUDIUS
-        </div>
-    </a>
     <a href="https://deezer.page.link/mFRUHeBH5Lcaamue8" target="_blank">
        <div class="zkLink" style="background-color: #202020;">
            DEEZER
@@ -83,11 +57,6 @@
     <a href="https://zedkaido.bandcamp.com/" target="_blank">
         <div class="zkLink" style="background-color: #629aa9;">
             BANDCAMP
-        </div>
-    </a>
-    <a href="https://soundcloud.com/zedkaido" target="_blank">
-        <div class="zkLink" style="background-color: #F26F23;">
-            SOUNDCLOUD
         </div>
     </a>
 </div>

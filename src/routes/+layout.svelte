@@ -14,7 +14,7 @@
  $: currentRoute = $page.url.pathname;
  let routes = [
      { url: '/music', title: 'Music' },
-     { url: '/events', title: 'Events' },
+     { url: '/shows', title: 'Shows' },
      { url: '/blog', title: 'Blog' },
      { url: '/merch', title: 'Merch' },
      { url: '/socials', title: 'Socials' },
@@ -62,7 +62,7 @@
         </main>
     </div>
     <div id="emailSubscriptionWrapper">
-        <p>Join my email list to get a front-row seat at all things Zed Kaido. From blog posts and music releases to special promotions, you won't miss a single beat. Let's connect!</p>
+        <p>Join my email list & telegram channel to get a front-row seat on all things Zed Kaido. From blog posts and music releases to special promotions, you won't miss a single beat. Let's connect!</p>
         <form id="follow-form" class="input-with-button" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)" target="_blank">
             <input type="hidden" name="seller_id" value="1078182701802"/>
             <input id="input" type="email" placeholder="Your email address" name="email" value=""/>
@@ -70,6 +70,12 @@
                 Join Now
             </button>
         </form>
+        <div class="spacer"/>
+        <a href="https://t.me/+KDaW-JQMhCNhZDNk" id="telegramChannel" target="_blank">
+            <div class="zkLink" style="background-color: #0088CC; color: #FFFFFF; margin-bottom: 15px;">
+                TELEGRAM CHANNEL
+            </div>
+        </a>
     </div>
     <div id="emailWrapper">
         <a id="email" href="mailto:contact@zedkaido.com">contact@zedkaido.com</a>
@@ -214,6 +220,10 @@
 
  #address:hover {
      text-underline-offset: 1px;
+ }
+
+ #telegramChannel {
+     text-decoration-color: #ffffff !important;
  }
 
  @media screen and (max-width: 350px) {

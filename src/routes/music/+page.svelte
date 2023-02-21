@@ -30,11 +30,6 @@
            APPLE MUSIC
        </div>
    </a>
-    <a href="https://audius.co/zedkaido" target="_blank">
-        <div class="zkLink" style="background-color: #7F2AE6;">
-            AUDIUS
-        </div>
-    </a>
     <a href="https://deezer.page.link/mFRUHeBH5Lcaamue8" target="_blank">
        <div class="zkLink" style="background-color: #202020;">
            DEEZER
@@ -48,11 +43,6 @@
     <a href="https://zedkaido.bandcamp.com/" target="_blank">
         <div class="zkLink" style="background-color: #629aa9;">
             BANDCAMP
-        </div>
-    </a>
-    <a href="https://soundcloud.com/zedkaido" target="_blank">
-        <div class="zkLink" style="background-color: #F26F23;">
-            SOUNDCLOUD
         </div>
     </a>
 </div>

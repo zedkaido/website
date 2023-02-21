@@ -16,11 +16,23 @@
     "url": "/blog/bachs-ghost-in-the-machine",
     "category": "music-releases",
     "title": "Bach's Ghost In The Machine",
-    "summary": "A reimagined take on Bach's iconic Prelude no.1 and inspired by the haunting beauty of Charles Gounod's Ave Maria.",
+    "summary": "A reimagined take on Bach's iconic Prelude no.1 and inspired by the haunting beauty of Charles Gounod's Ave Maria",
     "thumbnail": "/blog/bachs-ghost-in-the-machine/thumbnail.webp",
     "thumbnail_alt": "Cover art for the track release of 'Bach's Ghost In The Machine', portraying Bach inside a musical machine, half of the cover is a realistic portrait of Bach, and the other is a representation of his ghost",
     "date": "2023-02-13",
     "updatedDate": "2023-02-13",
+    "author": "Zed Kaido"
+},
+    {
+    "id": 3,
+    "url": "/blog/quit-social-media",
+    "category": "internet",
+    "title": "I Quit Social Media,<br/> Even as an Artist!",
+    "summary": "Yeap, you read it right! I quit social media, even as an artist! Puff! Gone! No more! Why? I hear you ask: Read on to find out",
+    "thumbnail": "/blog/quit-social-media/thumbnail.webp",
+    "thumbnail_alt": "Blog post image showcasing the #quitsocialmedia hashtag in the middle (with the word social, striken out to represent the quite unsocial aspect of it) and the #JoinTheRealWorld hashtag in the corners.",
+    "date": "2023-02-21",
+    "updatedDate": "2023-02-21",
     "author": "Zed Kaido"
 }
 ]

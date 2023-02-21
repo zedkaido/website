@@ -13,13 +13,13 @@
 
                 {#if post?.title}
                 <div class="postTitle borderBottom zeroMargin">
-                    <h3>{post.title}</h3>
+                    <h3>{@html post.title}</h3>
                 </div>
                 {/if}
 
                 {#if post?.summary}
                 <div class="postSummary borderBottom zeroMargin">
-                    <p>{post.summary}&hellip;</p>
+                    <p>{@html post.summary}&hellip;</p>
                 </div>
                 {/if}
 
@@ -68,7 +68,6 @@
 
  .postThumbnail {
      width: 100%;
-     height: var(--default-width);
  }
 
  .postTitle {

@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Zed Kaido | Blog | Music Releases</title>
+    <title>Music Releases | Blog | Zed Kaido</title>
     <meta
         name="description"
         content="Stay up to date on the latest music releases by Zed Kaido with these exclusive blog posts. Discover new music, behind-the-scenes insights, and more."/>

@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Zed Kaido | Second Rendez-Vous (Redux): A Journey Through Space & Sound</title>
+    <title>Second Rendez-Vous (Redux): A Journey Through Space & Sound | Zed Kaido</title>
 </svelte:head>
 
 <PostTemplate

@@ -142,6 +142,22 @@ ul {
 	list-style-type: none;
 }
 
+.extra-light-font {
+	font-family: var(--extra-light-font);
+}
+.light-font {
+	font-family: var(--light-font);
+}
+.medium-font {
+	font-family: var(--medium-font);
+}
+.semi-bold-font {
+	font-family: var(--semi-bold-font);
+}
+.bold-font {
+	font-family: var(--bold-font);
+}
+
 .header {
 	padding: var(--default-spacing) 0 var(--default-spacing) 0;
 	border-bottom: 1px solid var(--secondary-color);
