@@ -15,7 +15,7 @@
 
 <section>
     <div class="header">
-        <a href="/blog">Blog</a> > <h3 class="noMargin">Internet</h3>
+        <a href="/blog">Blog</a> > <h3 class="noMargin medium-font">Internet</h3>
     </div>
     <div class="spacer"/>
 

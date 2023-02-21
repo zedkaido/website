@@ -52,11 +52,6 @@
                     APPLE MUSIC
                 </div>
             </a>
-            <a href="https://audius.co/zedkaido/second-rendez-vous-redux" target="_blank">
-                <div class="zkLink" style="background-color: #7F2AE6;">
-                    AUDIUS
-                </div>
-            </a>
             <a href="https://deezer.page.link/6m2sLS68taqEeYKSA" target="_blank">
                 <div class="zkLink" style="background-color: #202020;">
                     DEEZER
@@ -70,11 +65,6 @@
             <a href="https://zedkaido.bandcamp.com/track/second-rendez-vous-redux" target="_blank">
                 <div class="zkLink" style="background-color: #629aa9;">
                     BANDCAMP
-                </div>
-            </a>
-            <a href="https://soundcloud.com/zedkaido/second-rendez-vous-redux" target="_blank">
-                <div class="zkLink" style="background-color: #F26F23;">
-                    SOUNDCLOUD
                 </div>
             </a>
         </div>

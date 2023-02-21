@@ -45,11 +45,6 @@
                     APPLE MUSIC
                 </div>
             </a>
-            <a href="https://audius.co/zedkaido/bachs-ghost-in-the-machine" target="_blank">
-                <div class="zkLink" style="background-color: #7F2AE6;">
-                    AUDIUS
-                </div>
-            </a>
             <a href="https://deezer.page.link/dFA5nNEToRaLaftx5" target="_blank">
                 <div class="zkLink" style="background-color: #202020;">
                     DEEZER
@@ -63,11 +58,6 @@
             <a href="https://zedkaido.bandcamp.com/track/bachs-ghost-in-the-machine" target="_blank">
                 <div class="zkLink" style="background-color: #629aa9;">
                     BANDCAMP
-                </div>
-            </a>
-            <a href="https://soundcloud.com/zedkaido/bachs-ghost-in-the-machine" target="_blank">
-                <div class="zkLink" style="background-color: #F26F23;">
-                    SOUNDCLOUD
                 </div>
             </a>
         </div>

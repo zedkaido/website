@@ -1,7 +1,6 @@
 <script>
  import '../app.css';
  import '../styles/fonts.css'
- import { onMount } from 'svelte';
  import zkLogo from '$lib/images/zk_logo.svg';
  import zkHeader from '$lib/images/zk_header.svg';
  import zkPicture from '$lib/images/zk_picture.webp';

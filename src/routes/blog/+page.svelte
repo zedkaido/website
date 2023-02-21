@@ -9,6 +9,7 @@
 <script>
  import PostListTemplate from './PostListTemplate.svelte';
  import posts from '$lib/data/posts.json';
+ import { onMount } from 'svelte';
 </script>
 
 <div class="header">
@@ -16,5 +17,23 @@
 </div>
 <div class="spacer"/>
 
+<div class="categories">
+    <h4>Categories</h4>
+    <div class="dashedDivider"/>
+    <div class="spacer"/>
+    <a href="/blog/categories/music-releases">Music Releases</a>
+    <a href="/blog/categories/internet">Internet</a>
+</div>
+<div class="spacer"/>
+<div class="divider"/>
+<div class="spacer"/>
+
 <PostListTemplate posts={posts}>
 </PostListTemplate>
+
+<style>
+ .categories {
+     display: flex;
+     flex-direction: column;
+ }
+</style>

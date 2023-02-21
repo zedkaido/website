@@ -29,9 +29,9 @@
                             <h5><span style="font-family: var(--light-font);">by</span> {post.author}</h5>
                         </div>
                     {/if}
-                    {#if post?.formatted_date}
+                    {#if post?.date}
                         <div class="postDate zeroMargin">
-                            <h5>{post.formatted_date}</h5>
+                            <h5>{post.date}</h5>
                         </div>
                     {/if}
                 </div>
@@ -79,11 +79,12 @@
  }
 
  .postAuthor {
-     width: 100%;
+     width: 50%;
      padding: var(--default-padding);
  }
 
  .postDate {
+     width: 50%;
      padding: var(--default-padding);
  }
 
