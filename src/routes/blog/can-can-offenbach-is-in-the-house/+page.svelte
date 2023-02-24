@@ -28,7 +28,7 @@
        <p>
            As thou listenest to this most wondrous of tracks, let me delve into the tale of the Can Can dance, that most energetic and lively of dances that inspired this musical creation. In days of yore, in the streets of Paris, the Can Can didst emerge as a symbol of liberation and freedom, with its high-kicking legs and its irreverent spirit. It doth remind us to let loose and be free, to dance, sing and laugh with all our major might!
        </p>
-       <iframe width="100%" height="200px" src="https://www.youtube.com/watch?v=kwVP5GDvmgc" title="Can Can: Offenbach is In The House - YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <iframe width="100%" height="200px" src="https://www.youtube.com/embed/kwVP5GDvmgc" title="Can Can: Offenbach is In The House - Zed Kaido" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
        <div class="spacer"></div>
        <p>
            And what of Jacques Offenbach, the master composer whose "Infernal Galop" didst inspire this very track? He was a man of great talent and vision, who didst create music that spoke to the very soul. His melodies didst soar and his rhythms didst move the heart, and we can only imagine the joy he wouldst feel at the sound of this modern reinvention.
