@@ -12,7 +12,7 @@
 
  $: currentRoute = $page.url.pathname;
  let routes = [
-     { url: '/music', title: 'Music' },
+     { url: '/', title: 'Music' },
      { url: '/shows', title: 'Shows' },
      { url: '/blog', title: 'Blog' },
      { url: '/merch', title: 'Merch' },
