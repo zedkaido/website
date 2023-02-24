@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Bach's Ghost In The Machine | Zed Kaido</title>
+    <title>Bach's Ghost In The Machine (Prelude No.1) | Zed Kaido</title>
 </svelte:head>
 
 <PostTemplate
@@ -17,7 +17,7 @@
     updatedDate={post.updatedDate}
     >
     <div id="title" slot="title">
-        <h1>Bach's Ghost In The Machine</h1>
+        <h1>Bach's Ghost In The Machine (Prelude No.1)</h1>
     </div>
    <div slot="content">
        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=674483766/size=small/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/bachs-ghost-in-the-machine">Bach&#39;s Ghost In The Machine by zedkaido</a></iframe>
