@@ -73,7 +73,7 @@
             {/if}
         {/if}
     {/if}
-    <a href="https://t.me/+KDaW-JQMhCNhZDNk" class="zkGetNotified" target="_blank">** stay up to date</a>
+    <a href="https://t.me/zedkaido" class="zkGetNotified" target="_blank">** stay up to date</a>
 </div>
 
 <style>
