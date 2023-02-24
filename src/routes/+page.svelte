@@ -2,7 +2,7 @@
     <title>Zed Kaido | Music</title>
     <meta
         name="description"
-        content="Discover my music, from latest tracks to full DJ sets, all in one place on my music page. With an embedded Spotify player, you can easily listen to my music and explore my discography. Find the perfect soundtrack for your party or just to enjoy it on your own, you can't go wrong with my beats."/>
+        content="Discover my music, from latest tracks to full DJ sets, all in one place on my music page. With an embedded player, you can easily listen to my music and explore my discography. Find the perfect soundtrack for your party or just to enjoy it on your own, you can't go wrong with my beats."/>
     <meta name="keywords" content="music, zed kaido music, tracks, DJ sets, Spotify, listen, discography, beats, sound, EDM">
 </svelte:head>
 

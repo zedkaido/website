@@ -25,10 +25,6 @@ export async function GET({ setHeaders }) {
         <lastmod>2023-02-24</lastmod>
       </url>
       <url>
-        <loc>${website}/music</loc>
-        <lastmod>2023-02-24</lastmod>
-      </url>
-      <url>
         <loc>${website}/events</loc>
         <lastmod>2023-01-28</lastmod>
       </url>
