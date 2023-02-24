@@ -2,7 +2,7 @@
  import PostCard from './PostCard.svelte';
  import QuoteCard from './QuoteCard.svelte';
  export let posts;
- posts.sort((a, b) => new Date (b.date) - new Date(a.date));
+ posts.sort((a, b) => b.id - a.id);
 </script>
 
 <section>

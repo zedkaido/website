@@ -10,7 +10,7 @@
  import PostListTemplate from '../../PostListTemplate.svelte';
  import posts from '$lib/data/posts.json';
 
- const categoryPosts = posts.filter((post) => post.category === "quotes").sort((a, b) => new Date(b.date) - new Date(a.date));
+ const categoryPosts = posts.filter((post) => post.category === "quotes").sort((a, b) => b.id - a.id);
 </script>
 
 <section>
