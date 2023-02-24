@@ -54,10 +54,11 @@ export async function GET({ setHeaders }) {
       </url>
       ${posts
         .map(
-          (post) => `<url>
+          (post) => (post.url ? `<url>
         <loc>${website}${post.url}</loc>
         <lastmod>${post.updatedDate ? post.updatedDate : post.date}</lastmod>
         </url>`
+          : "" )
         )
         .join('')}
     </urlset>`
