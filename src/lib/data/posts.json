@@ -30,9 +30,21 @@
     "title": "I Quit Social Media,<br/> Even as an Artist!",
     "summary": "Yeap, you read it right! I quit social media, even as an artist! Puff! Gone! No more! Why? I hear you ask: Read on to find out",
     "thumbnail": "/blog/quit-social-media/thumbnail.webp",
-    "thumbnail_alt": "Blog post image showcasing the #quitsocialmedia hashtag in the middle (with the word social, striken out to represent the quite unsocial aspect of it) and the #JoinTheRealWorld hashtag in the corners.",
+    "thumbnail_alt": "#quitsocialmedia",
     "date": "2023-02-21",
     "updatedDate": "2023-02-21",
+    "author": "Zed Kaido"
+},
+    {
+    "id": 4,
+    "url": "/blog/can-can-offenbach-is-in-the-house",
+    "category": "music-releases",
+    "title": "Can Can: Offenbach is<br />In The House",
+    "summary": "A psytrance track so wild and free that it doth bring to mind the very essence of revelry and joy",
+    "thumbnail": "/blog/can-can-offenbach-is-in-the-house/thumbnail.webp",
+    "thumbnail_alt": "",
+    "date": "2023-02-24",
+    "updatedDate": "2023-02-24",
     "author": "Zed Kaido"
 }
 ]

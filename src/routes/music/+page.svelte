@@ -10,7 +10,7 @@
     <h5>Life is a symphony! Turn up the volume!</h5>
 </div>
 <div class="spacer"/>
-<iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=674483766/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/bachs-ghost-in-the-machine">Bach&#39;s Ghost In The Machine by zedkaido</a></iframe>
+<iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=1889543827/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/can-can-offenbach-is-in-the-house">Can Can: Offenbach is In The House by zedkaido</a></iframe>
 <div class="spacer"/>
 <p>Stream my tunes on every platform known to mankind! I'm like a musical ninja, popping up on Spotify, Apple Music, Tidal, you name it!</p>
 <p>But seriously, why did the DJ put his headphones in the freezer?</p>
@@ -48,4 +48,5 @@
 </div>
 <div class="spacer"/>
 <p>He wanted to hear some cool beats!</p>
+<iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=674483766/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/bachs-ghost-in-the-machine">Bach&#39;s Ghost In The Machine by zedkaido</a></iframe>
 <iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=3682126709/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/second-rendez-vous-redux">Second Rendez-Vous (Redux) by Zed Kaido</a></iframe>

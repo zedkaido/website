@@ -55,10 +55,6 @@ body::before {
 	background: var(--accent-color);
 }
 
-img {
-	pointer-events: none;
-}
-
 h1,
 h2,
 h3,

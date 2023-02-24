@@ -81,7 +81,7 @@
             But, you say, how about the people that follow you? Surelly they will notice your posts! Well, you've got to engage with them or else they will forget you among the sea of other people they follow. You have to engage, you have to be proactive and catch their attention by liking all of their posts. And then, you have to repeat that for every single follower - that means you have to spend entire days in the feed liking other people's content, commenting emotions you don't feel, liking things you don't care about, DMing people you are not interested in...
         </p>
         <p>
-            Why would you play this game? To get a like back from a stranger who probably liked your post without even looking at it? Ohhh, but wait you thought that was it? Noo noo no, on top of all that, you have to post and engage with <span class="medium-font">Reels, Daily Stories, Live Streams</span>, and fucks knows what! New features get added every single day! And, that's for each app out there. It's a fucking full time job and I ain't conforming.
+            Why would you play this game? To get a like back from a stranger who probably liked your post without even looking at it? Ohhh, but wait you thought that was it? Noo noo no, on top of all that, you have to post and engage with <span class="medium-font">Reels, Daily Stories, Live Streams</span>, and fuck knows what! New features get added every single day! And, that's for each app out there. It's a fucking full time job and I ain't conforming.
         </p>
 
         <p>
