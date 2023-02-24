@@ -22,6 +22,8 @@
     <div class="dashedDivider"/>
     <div class="spacer"/>
     <a href="/blog/categories/music-releases">Music Releases</a>
+    <a href="/blog/categories/artificial-intelligence">Artificial Intelligence</a>
+    <a href="/blog/categories/quotes">Quotes</a>
     <a href="/blog/categories/internet">Internet</a>
 </div>
 <div class="spacer"/>

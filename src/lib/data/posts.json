@@ -46,5 +46,25 @@
     "date": "2023-02-24",
     "updatedDate": "2023-02-24",
     "author": "Zed Kaido"
+},
+    {
+    "id": 5,
+    "category": "quotes",
+    "title": "The reason to finish is so you start something new!",
+    "date": "2023-02-24",
+    "updatedDate": "2023-02-24",
+    "author": "Zed Kaido"
+},
+    {
+    "id": 6,
+    "url": "/blog/i-generated-over-1000-images-with-ai",
+    "category": "artificial-intelligence",
+    "title": "I Generated Over 1000 Images With AI For One Single Track Cover",
+    "summary": "",
+    "thumbnail": "/blog/i-generated-over-1000-ai-images/thumbnail.webp",
+    "thumbnail_alt": "A mosaic with 1000 AI generated images",
+    "date": "2023-02-24",
+    "updatedDate": "2023-02-24",
+    "author": "Zed Kaido"
 }
 ]

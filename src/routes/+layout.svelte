@@ -70,7 +70,7 @@
             </button>
         </form>
         <div class="spacer"/>
-        <a href="https://t.me/+KDaW-JQMhCNhZDNk" id="telegramChannel" target="_blank">
+        <a href="https://t.me/zedkaido" id="telegramChannel" target="_blank">
             <div class="zkLink" style="background-color: #0088CC; color: #FFFFFF; margin-bottom: 15px;">
                 TELEGRAM CHANNEL
             </div>

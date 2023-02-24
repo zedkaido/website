@@ -27,6 +27,7 @@
 	--bigger-spacing: 24px;
 	--default-padding: 24px;
 	--default-border: dashed 1px var(--secondary-color);
+	--quote-border: dashed 1px var(--secondary-color);
 	--default-border-radius: 10px;
 }
 

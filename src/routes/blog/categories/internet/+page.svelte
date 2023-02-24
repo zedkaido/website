@@ -10,7 +10,7 @@
  import PostListTemplate from '../../PostListTemplate.svelte';
  import posts from '$lib/data/posts.json';
 
- const filteredPosts = posts.filter((post) => post.category === "internet");
+ const categoryPosts = posts.filter((post) => post.category === "internet").sort((a, b) => new Date(b.date) - new Date(a.date));
 </script>
 
 <section>
@@ -19,6 +19,6 @@
     </div>
     <div class="spacer"/>
 
-    <PostListTemplate posts={filteredPosts}>
+    <PostListTemplate posts={categoryPosts}>
     </PostListTemplate>
 </section>
