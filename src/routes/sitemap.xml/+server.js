@@ -22,7 +22,7 @@ export async function GET({ setHeaders }) {
       xmlns:xhtml="http://www.w3.org/1999/xhtml">
       <url>
         <loc>${website}</loc>
-        <lastmod>2023-02-24</lastmod>
+        <lastmod>2023-03-03</lastmod>
       </url>
       <url>
         <loc>${website}/events</loc>

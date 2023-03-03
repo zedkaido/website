@@ -15,7 +15,7 @@
 
     {#if post?.summary}
         <div class="postSummary borderBottom zeroMargin">
-            <p>{@html post.summary}&hellip;</p>
+            <p>{@html post.summary}</p>
         </div>
     {/if}
 

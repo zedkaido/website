@@ -37,7 +37,7 @@
             <img id="zkLogo" style="width: 75px;" alt="Zed Kaido Logo" src={zkLogo}/>
             <h1>Zed Kaido</h1>
         </div>
-        <img style="width: 154px;" alt="Portrait of Zed Kaido Dancing" src={zkPicture}/>
+        <img style="width: 154px;" alt="Zed Kaido" src={zkPicture}/>
     </div>
     <div id="description">
         Join me on a quest to
