@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Zed Kaido | Music</title>
+    <title>Zed Kaido</title>
     <meta
         name="description"
         content="Discover Zed's music, from latest tracks to full DJ sets, explore blog posts and Zed's art." />
