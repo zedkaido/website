@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Music Releases | Blog | Zed Kaido</title>
+    <title>Zed Kaido: Music Releases</title>
     <meta
         name="description"
         content="Stay up to date on the latest music releases by Zed Kaido with these exclusive blog posts. Discover new music, behind-the-scenes insights, and more."/>
@@ -15,7 +15,7 @@
 
 <section>
     <div class="header">
-        <a href="/blog">Blog</a> > <h3 class="noMargin medium-font">Music-Releases</h3>
+        <a href="/blog">Blog</a> > <h3 class="noMargin medium-font">Music Releases</h3>
     </div>
     <div class="spacer"/>
 

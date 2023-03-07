@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Internet | Blog | Zed Kaido</title>
+    <title>Zed Kaido: Internet</title>
     <meta
         name="description"
         content="The Internet is Awesome! You just gotta use it right!"/>

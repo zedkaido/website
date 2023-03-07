@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Artificial Intelligence | Blog | Zed Kaido</title>
+    <title>Zed Kaido: Artificial Intelligence</title>
     <meta
         name="description"
         content="AI is a game changer. How will it affect the present and future to come?"/>

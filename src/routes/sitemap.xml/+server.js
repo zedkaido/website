@@ -30,15 +30,15 @@ export async function GET({ setHeaders }) {
       </url>
       <url>
         <loc>${website}/blog</loc>
-        <lastmod>2023-02-24</lastmod>
-      </url>
-      <url>
-        <loc>${website}/socials</loc>
-        <lastmod>2023-02-24</lastmod>
+        <lastmod>2023-03-07</lastmod>
       </url>
       <url>
         <loc>${website}/blog/categories/music-releases</loc>
         <lastmod>2023-02-24</lastmod>
+      </url>
+      <url>
+        <loc>${website}/blog/categories/photography</loc>
+        <lastmod>2023-03-07</lastmod>
       </url>
       <url>
         <loc>${website}/blog/categories/artificial-intelligence</loc>
@@ -51,6 +51,10 @@ export async function GET({ setHeaders }) {
       <url>
         <loc>${website}/blog/categories/thoughts</loc>
         <lastmod>2023-03-07</lastmod>
+      </url>
+      <url>
+        <loc>${website}/socials</loc>
+        <lastmod>2023-02-24</lastmod>
       </url>
       ${posts
         .map(

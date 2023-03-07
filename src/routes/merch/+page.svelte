@@ -38,7 +38,9 @@
 </script>
 
 <div class="header">
-    <h5>Add some beats to that look! It's music to everyone's eyes!</h5>
+    <h5>
+        Add some beats to that look! It's music to everyone's eyes!
+    </h5>
 </div>
 
 <div class="spacer"></div>

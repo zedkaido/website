@@ -2,36 +2,71 @@
  export let post;
 </script>
 
-<a class="post" href={ post.thumbnail ? post.url + "#thumbnail" : post.url }>
-    {#if post?.thumbnail}
-        <img class={"postThumbnail" + (post.title || post.summary || post.author || post.date ? " borderBottom" : "")} src={post.thumbnail} alt={post.thumbnail_alt} />
-    {/if}
+{#if post.url}
+    <a class="post" href={ post.url ? post.thumbnail ? post.url + "#thumbnail" : post.url : "" } target={ post.openInNewTab ? "_blank" : ""}>
+        {#if post?.thumbnail}
+            <img class={"postThumbnail" + (post.title || post.summary || post.author || post.date ? " borderBottom" : "")} src={post.thumbnail} alt={post.thumbnail_alt} />
+        {/if}
 
-    {#if post?.title}
-        <div class={"postTitle" + (post.summary || post.author || post.date ? " borderBottom" : "") + " zeroMargin"}>
-            <h3>{@html post.title}</h3>
-        </div>
-    {/if}
-
-    {#if post?.summary}
-        <div class="postSummary borderBottom zeroMargin">
-            <p>{@html post.summary}</p>
-        </div>
-    {/if}
-
-    <div class="row">
-        {#if post?.author}
-            <div class={"postAuthor" + (post.date ? " borderRight" : "") + " zeroMargin"}>
-                <h5><span style="font-family: var(--light-font);">by</span> {post.author}</h5>
+        {#if post?.title}
+            <div class={"postTitle" + (post.summary || post.author || post.date ? " borderBottom" : "") + " zeroMargin"}>
+                <h3>{@html post.title}</h3>
             </div>
         {/if}
-        {#if post?.date}
-            <div class="postDate zeroMargin">
-                <h5>{post.date}</h5>
+
+        {#if post?.summary}
+            <div class="postSummary borderBottom zeroMargin">
+                <p>{@html post.summary}</p>
             </div>
         {/if}
+
+        <div class="row">
+            {#if post?.author}
+                <div class={"postAuthor" + (post.date ? " borderRight" : "") + " zeroMargin"}>
+                    <h5><span style="font-family: var(--light-font);">by</span> {post.author}</h5>
+                </div>
+            {/if}
+            {#if post?.date}
+                <div class="postDate zeroMargin">
+                    <h5>{post.date}</h5>
+                </div>
+            {/if}
+        </div>
+    </a>
+{:else}
+    <div class="post">
+        {#if post?.thumbnail}
+            <img class={"postThumbnail" + (post.title || post.summary || post.author || post.date ? " borderBottom" : "")} src={post.thumbnail} alt={post.thumbnail_alt} />
+        {/if}
+
+        {#if post?.title}
+            <div class={"postTitle" + (post.summary || post.author || post.date ? " borderBottom" : "") + " zeroMargin"}>
+                <h3>{@html post.title}</h3>
+            </div>
+        {/if}
+
+        {#if post?.summary}
+            <div class="postSummary borderBottom zeroMargin">
+                <p>{@html post.summary}</p>
+            </div>
+        {/if}
+
+        <div class="row">
+            {#if post?.author}
+                <div class={"postAuthor" + (post.date ? " borderRight" : "") + " zeroMargin"}>
+                    <h5><span style="font-family: var(--light-font);">by</span> {post.author}</h5>
+                </div>
+            {/if}
+            {#if post?.date}
+                <div class="postDate zeroMargin">
+                    <h5>{post.date}</h5>
+                </div>
+            {/if}
+        </div>
     </div>
-</a>
+{/if}
+
+
 
 <style>
  .post {

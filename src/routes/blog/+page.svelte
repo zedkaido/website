@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Zed Kaido | Blog</title>
+    <title>Zed Kaido: Blog</title>
     <meta
         name="description"
         content="Get a unique insight into the world of music through the eyes of a software engineer. A fresh take."/>
@@ -16,10 +16,13 @@
 
 <div class="categories">
     <a href="/blog/categories/music-releases">Music Releases</a>
+    <a href="/blog/categories/photography">Photography</a>
     <a href="/blog/categories/thoughts">Thoughts</a>
     <a href="/blog/categories/artificial-intelligence">Artificial Intelligence</a>
     <a href="/blog/categories/internet">Internet</a>
 </div>
+<!--
+-->
 <div class="spacer"/>
 <div class="divider"/>
 <div class="spacer"/>
@@ -31,5 +34,12 @@
  .categories {
      display: flex;
      flex-direction: column;
+     gap: 10px;
+ }
+
+ .categories a {
+     border: var(--default-border);
+     border-radius: var(--default-border-radius);
+     padding: 15px 20px;
  }
 </style>

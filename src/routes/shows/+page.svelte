@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Zed Kaido | Events</title>
+    <title>Zed Kaido: Shows</title>
     <meta
         name="description"
         content="Get ready to party like there's no tomorrow! From Twitch live streams to club nights out, to big festivals, you are sure to enjoy it. Check out my events page for the hottest upcoming shows and snag your ticket before they're gone."/>

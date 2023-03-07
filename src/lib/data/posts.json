@@ -50,7 +50,7 @@
     {
     "id": 5,
     "category": "thoughts",
-    "title": "The reason to finish is so you start something new!",
+    "summary": "The reason to finish is so you start something new!",
     "date": "2023-02-24",
     "updatedDate": "2023-02-24",
     "author": "Zed Kaido"
@@ -70,7 +70,7 @@
     {
     "id": 7,
     "category": "thoughts",
-    "title": "I would rather die living,<br/> than live dead!",
+    "summary": "I would rather die living,<br/> than live dead!",
     "date": "2023-03-07",
     "author": "Zed Kaido"
 }

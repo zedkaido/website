@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Thoughts | Blog | Zed Kaido</title>
+    <title>Zed Kaido: Thoughts</title>
     <meta
         name="description"
         content="Changing The world one quote at a time"/>
