@@ -22,7 +22,7 @@ export async function GET({ setHeaders }) {
       xmlns:xhtml="http://www.w3.org/1999/xhtml">
       <url>
         <loc>${website}</loc>
-        <lastmod>2023-03-03</lastmod>
+        <lastmod>2023-03-07</lastmod>
       </url>
       <url>
         <loc>${website}/events</loc>
@@ -49,8 +49,8 @@ export async function GET({ setHeaders }) {
         <lastmod>2023-02-21</lastmod>
       </url>
       <url>
-        <loc>${website}/blog/categories/quotes</loc>
-        <lastmod>2023-02-24</lastmod>
+        <loc>${website}/blog/categories/thoughts</loc>
+        <lastmod>2023-03-07</lastmod>
       </url>
       ${posts
         .map(

@@ -12,18 +12,12 @@
  import { onMount } from 'svelte';
 </script>
 
-<div class="header">
-    <h5>Reading about music is almost as good as listening to it, almost.</h5>
-</div>
 <div class="spacer"/>
 
 <div class="categories">
-    <h4>Categories</h4>
-    <div class="dashedDivider"/>
-    <div class="spacer"/>
     <a href="/blog/categories/music-releases">Music Releases</a>
+    <a href="/blog/categories/thoughts">Thoughts</a>
     <a href="/blog/categories/artificial-intelligence">Artificial Intelligence</a>
-    <a href="/blog/categories/quotes">Quotes</a>
     <a href="/blog/categories/internet">Internet</a>
 </div>
 <div class="spacer"/>

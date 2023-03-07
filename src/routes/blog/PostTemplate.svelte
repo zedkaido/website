@@ -36,7 +36,7 @@
     <div class="spacer"/>
 
     {#if author}
-        Written by <h3 class="noMargin">{author}</h3>
+        Drafted by <h3 class="noMargin">{author}</h3>
     {/if}
 </section>
 

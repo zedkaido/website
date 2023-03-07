@@ -61,7 +61,8 @@
         </main>
     </div>
     <div id="emailSubscriptionWrapper">
-        <p>Join my email list & telegram channel to get a front-row seat on all things Zed Kaido. From blog posts and music releases to special promotions, you won't miss a single beat. Let's connect!</p>
+        <h3>Get a front-row seat!</h3>
+        <p>I don't use social media, so I invite you to join my email list and telegram channel, where I post top notch stuff! Let's connect!</p>
         <form id="follow-form" class="input-with-button" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)" target="_blank">
             <input type="hidden" name="seller_id" value="1078182701802"/>
             <input id="input" type="email" placeholder="Your email address" name="email" value=""/>
@@ -77,7 +78,17 @@
         </a>
     </div>
     <div id="emailWrapper">
-        <a id="email" href="mailto:contact@zedkaido.com">contact@zedkaido.com</a>
+        <span>
+            To get in touch with me:
+        </span>
+        <a id="email" href="mailto:cc@zedkaido.com">cc@zedkaido.com</a>
+        <div class="spacer" />
+        <div style="justify-content: right">
+            <span>
+                To book me for a show:
+            </span>
+            <a id="email" href="mailto:bookings@zedkaido.com">bookings@zedkaido.com</a>
+        </div>
     </div>
     <div id="footer">
         <p class="address" target="_blank">
@@ -86,13 +97,17 @@
         <p class="address" target="_blank">
             <span style="font-family: var(--semi-bold-font);">monero:</span>44UgnirYY4cM6yhJYHpqb6HTiPbeyJQmviaQLvuvN6MkJEShpDmBCoe26kWvYhcCTECHGoUrTHYoefNGtpW4G12kQC7x3vY
         </p>
+    <div class="divider"/>
+    <div class="spacer"/>
         <a class="address" target="_blank" href="https://www.buymeacoffee.com/zedkaido">
             <span style="font-family: var(--semi-bold-font);">buymeacoffee.com/zedkaido</span>
         </a>
     </div>
     <div class="divider"/>
     <div class="spacer"/>
-    <p>Designed & Developed with ♥ by Zed Kaido.
+    <p>
+        Designed & Developed with ♥ by Zed Kaido.
+        <br />
         Licenced under <a href="/license.txt" target="_blank">GPLv3</a> <a href="https://gitlab.com/zedkaido/website" target="_blank">[ Gitlab |</a> <a href="https://github.com/zedkaido/website" target="_blank">Github ]</a>
     </p>
     <div class="spacer"/>
