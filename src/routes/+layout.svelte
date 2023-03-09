@@ -34,10 +34,10 @@
 <div class="zedkaido-website">
     <div id="header">
         <div id="headerBranding">
-            <img id="zkLogo" style="width: 75px;" alt="Zed Kaido Logo" src={zkLogo}/>
+            <img id="zkLogo" style="width: 75px; height: 28px;" alt="Zed Kaido (Logo Mark)" src={zkLogo}/>
             <h1>Zed Kaido</h1>
         </div>
-        <img style="width: 154px;" alt="Zed Kaido" src={zkPicture}/>
+        <img style="width: 154px; height: 222px;" alt="Zed Kaido" src={zkPicture}/>
     </div>
     <div id="description">
         Join me on a quest to

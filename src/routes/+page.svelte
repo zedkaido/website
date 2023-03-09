@@ -2,7 +2,7 @@
     <title>Zed Kaido: Music</title>
     <meta
         name="description"
-        content="Discover Zed's music, from latest tracks to full DJ sets, explore blog posts and Zed's art." />
+        content="Discover Zed Kaido's music, from latest tracks to full DJ sets, explore blog posts and Zed Kaido's art." />
     <meta name="keywords" content="zed kaido, zedkaido, music, zed kaido music, tracks, DJ sets, Spotify, listen, discography, beats, sound, EDM">
 </svelte:head>
 
@@ -48,5 +48,5 @@
 </div>
 <div class="spacer"/>
 <p>He wanted to hear some cool beats!</p>
-<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=674483766/size=small/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/bachs-ghost-in-the-machine">Bach&#39;s Ghost In The Machine by Zed Kaido</a></iframe>
-<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=3682126709/size=small/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/second-rendez-vous-redux">Second Rendez-Vous (Redux) by Zed Kaido</a></iframe>
+<iframe title="Bach's Ghost In The Machine" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=674483766/size=small/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/bachs-ghost-in-the-machine">Bach&#39;s Ghost In The Machine by Zed Kaido</a></iframe>
+<iframe title="Second Rendez-Vous (Redux)" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=3682126709/size=small/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://zedkaido.bandcamp.com/track/second-rendez-vous-redux">Second Rendez-Vous (Redux) by Zed Kaido</a></iframe>
