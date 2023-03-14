@@ -1,9 +1,6 @@
 <svelte:head>
-    <title>Zed Kaido: Music</title>
-    <meta
-        name="description"
-        content="Discover Zed Kaido's music, from latest tracks to full DJ sets, explore blog posts and Zed Kaido's art." />
-    <meta name="keywords" content="zed kaido, zedkaido, music, zed kaido music, tracks, DJ sets, Spotify, listen, discography, beats, sound, EDM">
+    <title>Zed Kaido</title>
+    <meta name="keywords" content="zed kaido, zed kaido website, zedkaido, music, zed kaido music, tracks, DJ sets, Spotify, listen, discography, beats, sound, EDM">
 </svelte:head>
 
 <div class="header">

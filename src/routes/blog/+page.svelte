@@ -15,14 +15,12 @@
 <div class="spacer"/>
 
 <div class="categories">
-    <a href="/blog/categories/music-releases">Music Releases</a>
-    <a href="/blog/categories/photography">Photography</a>
-    <a href="/blog/categories/thoughts">Thoughts</a>
-    <a href="/blog/categories/artificial-intelligence">Artificial Intelligence</a>
-    <a href="/blog/categories/internet">Internet</a>
+    <a class="zkLink" href="/blog/categories/music-releases">Music Releases</a>
+    <a class="zkLink" href="/blog/categories/photography">Photography</a>
+    <a class="zkLink" href="/blog/categories/thoughts">Thoughts</a>
+    <a class="zkLink" href="/blog/categories/artificial-intelligence">Artificial Intelligence</a>
+    <a class="zkLink" href="/blog/categories/internet">Internet</a>
 </div>
-<!--
--->
 <div class="spacer"/>
 <div class="divider"/>
 <div class="spacer"/>
@@ -38,8 +36,9 @@
  }
 
  .categories a {
-     border: var(--default-border);
-     border-radius: var(--default-border-radius);
-     padding: 15px 20px;
+     background-color: var(--primary-color);
+     color: var(--text-color);
+     font-family: var(--medium-font);
+     padding: 20px 24px;
  }
 </style>

@@ -5,7 +5,7 @@
 {#if post.url}
     <a class="post" href={ post.url ? post.thumbnail ? post.url + "#thumbnail" : post.url : "" } target={ post.openInNewTab ? "_blank" : ""}>
         {#if post?.thumbnail}
-            <img class={"postThumbnail" + (post.title || post.summary || post.author || post.date ? " borderBottom" : "")} src={post.thumbnail} alt={post.thumbnail_alt} />
+            <img class={"postThumbnail" + (post.title || post.summary || post.author || post.date ? " borderBottom" : "")} src={post.thumbnail} loading="lazy" alt={post.thumbnail_alt} />
         {/if}
 
         {#if post?.title}
@@ -36,7 +36,7 @@
 {:else}
     <div class="post">
         {#if post?.thumbnail}
-            <img class={"postThumbnail" + (post.title || post.summary || post.author || post.date ? " borderBottom" : "")} src={post.thumbnail} alt={post.thumbnail_alt} />
+            <img class={"postThumbnail" + (post.title || post.summary || post.author || post.date ? " borderBottom" : "")} src={post.thumbnail} loading="lazy" alt={post.thumbnail_alt} />
         {/if}
 
         {#if post?.title}

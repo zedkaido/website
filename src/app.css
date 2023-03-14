@@ -22,17 +22,30 @@
 	--rightPadding: 15px;
 
 	--default-width: 350px;
-	--default-list-gap: 25px;
+	--default-list-gap: 20px;
 	--default-spacing: 20px;
 	--bigger-spacing: 24px;
 	--default-padding: 24px;
-	--default-border: dashed 1px var(--secondary-color);
-	--quote-border: dashed 1px var(--secondary-color);
-	--default-border-radius: 10px;
+	--default-border: solid 1px var(--secondary-color);
+	--quote-border: solid 1px var(--secondary-color);
+	--default-border-radius: 0px;
 }
 
+/* @media screen and (prefers-color-scheme: dark) { */
+/* 	:root { */
+/* 		--primary-color: #000000; */
+/* 		--secondary-color: #ffffff; */
+/* 		--tertiary-color: #ffffff; */
+/* 		--accent-color: #ffffff; */
+/* 		--accented-color: #630611; */
+/* 		--heading-color: #ffffff; */
+/* 		--discrete-color: #ffffff90; */
+/* 		--text-color: #ffffff; */
+/* 	} */
+/* } */
+
 body {
-	background-color: #ffffff;
+	background-color: var(--primary-color);
 	line-height: 1.5;
 	margin: 0px;
 	font-family: var(--light-font);
@@ -47,12 +60,12 @@ body::before {
 }
 
 ::-moz-selection { /* Code for Firefox */
-	color: #ffffff;
+	color: var(--primary-color);
 	background: var(--accent-color);
 }
 
 ::selection {
-	color: #ffffff;
+	color: var(--primary-color);
 	background: var(--accent-color);
 }
 
@@ -61,6 +74,7 @@ h2,
 h3,
 h4,
 h5,
+span,
 p {
 	margin: 0;
 	color: var(--heading-color);
@@ -218,7 +232,7 @@ ul {
 }
 
 .zkMusicLinks a:hover {
-	text-decoration-color: #ffffff !important;
+	text-decoration-color: var(--primary-color) !important;
 }
 
 .zkSocialLinks {
@@ -228,18 +242,29 @@ ul {
 }
 
 .zkLink {
-	height: 37px;
-	padding: 8px 16px 6px 16px;
+	width: 100%;
+	padding: 18px 16px 18px 16px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	color: #ffffff;
-	font-family: var(--light-font);
 	font-size: 16px;
+	margin: 0px;
+	box-sizing: border-box;
+	background: transparent;
+	border: 1px solid var(--secondary-color);
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.14s ease-out 0s;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-family: var(--light-font);
+	line-height: 1 !important;
 }
 
-.zkLink span {
-	margin: 0;
+.zkLink:hover{
+	transform: translate(-0.25rem, -0.25rem);
+	box-shadow: var(--secondary-color) 0.25rem 0.25rem;
+	background-color: var(--accent);
 }
 
 #follow-form {
@@ -329,6 +354,10 @@ button:focus:not(:focus-visible) {
 #input:read-only{
 	background-color: var(--primary-color);
 	color: var(--text-color);
+}
+
+#player {
+	border: var(--default-border) !important;
 }
 
 @media screen and (max-width: 350px) {

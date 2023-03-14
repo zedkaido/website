@@ -61,7 +61,6 @@
         </main>
     </div>
     <div id="emailSubscriptionWrapper">
-        <h3>Get a front-row seat!</h3>
         <p>I don't use social media, so I invite you to join my email list and telegram channel, where I post top notch stuff! Let's connect!</p>
         <form id="follow-form" class="input-with-button" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)" target="_blank">
             <input type="hidden" name="seller_id" value="1078182701802"/>
@@ -72,7 +71,7 @@
         </form>
         <div class="spacer"/>
         <a href="https://t.me/zedkaido" id="telegramChannel" target="_blank">
-            <div class="zkLink" style="background-color: #0088CC; color: #FFFFFF; margin-bottom: 15px;">
+            <div class="zkLink" style="background-color: #0088CC; color: #FFFFFF;">
                 TELEGRAM CHANNEL
             </div>
         </a>
