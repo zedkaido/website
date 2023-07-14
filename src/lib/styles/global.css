@@ -1,0 +1,130 @@
+@import url("./normalize.css");
+
+:root {
+	/* colors */
+	--color-1: #101010;
+	--color-2: #f1f1f1;
+
+	/* fonts */
+	--font-default: "JetBrains Mono", -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+	--font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--font-mono: "JetBrains Mono", 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+	/* font-sizes */
+	--text-ms: 0.69rem;
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-2xl: 1.5rem;
+	--text-3xl: 1.875rem;
+	--text-4xl: 2.25rem;
+	--text-5xl: 3rem;
+	--text-6xl: 4rem;
+
+	/* letter-spacing */
+	--tracking-tighter: -0.05em;
+	--tracking-tight: -0.025em;
+	--tracking-normal: 0;
+	--tracking-wide: 0.025em;
+	--tracking-wider: 0.05em;
+	--tracking-widest: 0.1em;
+
+	/* line-height */
+	--leading-none: 1;
+	--leading-tight: 1.25;
+	--leading-snug: 1.375;
+	--leading-normal: 1.5;
+	--leading-relaxed: 1.625;
+	--leading-loose: 2;
+
+	/* border-radius */
+	--radius-none: 0;
+	--radius-sm: 0.25rem;
+	--radius: 0.5rem;
+	--radius-lg: 0.75rem;
+	--radius-xl: 1rem;
+	--radius-full: 9999px;
+
+	/* gaps */
+	--gap-sm: 0.6rem;
+	--gap: 0.8rem;
+	--gap-md: 1rem;
+	--gap-lg: 1.5rem;
+	--gap-xl: 2rem;
+	--gap-2xl: 4rem;
+	--gap-3xl: 8rem;
+
+	/* paddings */
+	--padding-sm: 0.875rem;
+	--padding: 1rem;
+	--padding-md: 1.3rem;
+	--padding-lg: 2rem;
+	--padding-xl: 3rem;
+}
+
+body {
+	font-family: var(--font-default);
+	color: var(--color-1);
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+}
+
+input, textarea {
+	box-sizing: border-box;
+	padding: 1rem 0.8rem;
+	border: none;
+	border-radius: var(--radius-sm);
+}
+
+button {
+	cursor: pointer;
+	padding: 1rem 0.8rem;
+	border: none;
+	border-radius: var(--radius-sm);
+	font-family: var(--font-default);
+	font-size: var(--text-base);
+	font-weight: 500;
+	color: var(--color-1);
+}
+
+/* -------------- */
+/* global classes */
+/* -------------- */
+
+.gap-sm {
+	height: var(--gap-sm);
+	width: var(--gap-sm);
+}
+
+.gap {
+	height: var(--gap);
+	width: var(--gap);
+}
+
+.gap-md {
+	height: var(--gap-md);
+	width: var(--gap-md);
+}
+
+.gap-lg {
+	height: var(--gap-lg);
+	width: var(--gap-lg);
+}
+
+.gap-xl {
+	height: var(--gap-xl);
+	width: var(--gap-xl);
+}
+
+.gap-2xl {
+	height: var(--gap-2xl);
+	width: var(--gap-2xl);
+}
+
+.gap-3xl {
+	height: var(--gap-3xl);
+	width: var(--gap-3xl);
+}
