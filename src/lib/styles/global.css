@@ -91,6 +91,14 @@ input, textarea {
 	border-radius: var(--radius-sm);
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 a:active,
 a:focus {
 	background-color: var(--color-1);

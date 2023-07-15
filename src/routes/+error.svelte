@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 </script>
 
+<p />
 <a href="/">
 	<img src="/images/error.webp" alt="Zed Kaido Surprised" />
 </a>
