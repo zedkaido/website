@@ -26,6 +26,8 @@
 
 {#if cover}
 	<div class="player">
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
 		<div class="cover" on:click={toggleAudio}>
 			<img src={cover} alt="blue" />
 			<button aria-label={$paused ? 'play' : 'pause'}>
