@@ -7,16 +7,24 @@
 	<title>Zed Kaido: Blog</title>
 	<meta
 		name="description"
-		content="Discover Zed Kaido's little corner of the internet packed with music releases, insights, photography, art and much more!"
+		content="Discover Zed Kaido's little corner of the internet packed with blog posts, music releases, insights, photography, art and much more!"
 	/>
 	<meta
 		name="keywords"
-		content="music releases, music production, photography, insights, coding, software engineering, tips and tricks, industry experts, new music releases"
+		content="blog posts, music production, insights, coding, software engineering, tips and tricks"
 	/>
 </svelte:head>
 
 {#each posts as post}
 	<ul>
-		<p>{post.date}:<br /> <a href={post.url}> {post.title}</a></p>
+		<li id={post.id?.toString()}>
+			<p>{post.date}:<br /> <a href={post.url}> {post.title}</a></p>
+		</li>
 	</ul>
 {/each}
+
+<style>
+	li {
+		list-style-type: none;
+	}
+</style>

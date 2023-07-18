@@ -1,0 +1,19 @@
+:root {
+	--color-1: #a1a1a1;
+	--color-2: #131313;
+	--color-3: #e5e5e5;
+
+	--color-blue: #9999F7;
+	--color-gray: gray;
+	--color-black: black;
+	--color-white: white;
+
+	--color-border: #555555;
+	--color-hr: #555555;
+
+	--color-code-bg: #080808;
+	--color-code-fg: var(--color-1);
+
+	--color-blockquote-bg: #080808;
+	--color-blockquote-fg: var(--color-1);
+}

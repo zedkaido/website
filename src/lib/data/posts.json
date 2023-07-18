@@ -1,76 +1,33 @@
 [
 	{
 	"id": 1,
-	"url": "/blog/second-rendez-vous-redux",
-	"category": "music-releases",
-	"title": "Second Rendez Vous (Redux) - A Journey Through Space and Sound",
-	"thumbnail": "/blog/second-rendez-vous-redux/thumbnail.webp",
-	"thumbnail_alt": "Cover art for the track release of 'Second Rendez-Vous', portraying Jean Michel Jarre, in a futuristic landscape scenario that is moving at the speed of light, a sunset in the background can be observed.",
-	"date": "2023-01-23",
-	"updatedDate": "2023-02-13",
-	"author": "Zed Kaido"
-},
-	{
-	"id": 2,
-	"url": "/blog/bachs-ghost-in-the-machine",
-	"category": "music-releases",
-	"title": "Bach's Ghost In The Machine (Prelude No.1)",
-	"thumbnail": "/blog/bachs-ghost-in-the-machine/thumbnail.webp",
-	"thumbnail_alt": "Cover art for the track release of 'Bach's Ghost In The Machine', portraying Bach inside a musical machine, half of the cover is a realistic portrait of Bach, and the other is a representation of his ghost",
-	"date": "2023-02-13",
-	"updatedDate": "2023-02-13",
-	"author": "Zed Kaido"
-},
-	{
-	"id": 3,
 	"url": "/blog/quit-social-media",
 	"category": "internet",
 	"title": "I Quit Social Media, Even as an Artist!",
 	"thumbnail": "/blog/quit-social-media/thumbnail.webp",
-	"thumbnail_alt": "#quitsocialmedia",
+	"thumbnailAlt": "#quitsocialmedia",
 	"date": "2023-02-21",
 	"updatedDate": "2023-02-21",
 	"author": "Zed Kaido"
 },
 	{
-	"id": 4,
-	"url": "/blog/can-can-offenbach-is-in-the-house",
-	"category": "music-releases",
-	"title": "Can Can: Offenbach is In The House",
-	"thumbnail": "/blog/can-can-offenbach-is-in-the-house/thumbnail.webp",
-	"thumbnail_alt": "",
-	"date": "2023-02-24",
-	"updatedDate": "2023-02-24",
-	"author": "Zed Kaido"
-},
-	{
-	"id": 5,
-	"url": "/blog/i-generated-over-1000-images-with-ai",
+	"id": 2,
+	"url": "/blog/i-generated-over-1000-ai-images-for-my-track-cover",
 	"category": "artificial-intelligence",
-	"title": "I Generated Over 1000 Images With AI For One Single Track Cover",
+	"title": "I Generated Over 1000 AI Images For My Track Cover",
 	"thumbnail": "/blog/i-generated-over-1000-ai-images/thumbnail.webp",
-	"thumbnail_alt": "A mosaic with 1000 AI generated images",
+	"thumbnailAlt": "A mosaic with 1000 AI generated images",
 	"date": "2023-02-24",
 	"updatedDate": "2023-02-24",
 	"author": "Zed Kaido"
 },
 	{
-	"id": 6,
-	"url": "/blog/cotton-eye-joe",
-	"category": "music-releases",
-	"title": "Cotton Eye Joe (Afro House Mix)",
-	"thumbnail": "/blog/cotton-eye-joe/thumbnail.webp",
-	"thumbnail_alt": "",
-	"date": "2023-03-17",
-	"author": "Zed Kaido"
-},
-	{
-	"id": 7,
+	"id": 3,
 	"url": "/blog/lifespan",
 	"category": "life",
 	"title": "How Many Weeks Do You Have Left? A Reminder to Seize the Day",
 	"thumbnail": "/blog/lifespan/thumbnail.webp",
-	"thumbnail_alt": "",
+	"thumbnailAlt": "How a person looks throught his life",
 	"date": "2023-03-30",
 	"author": "Zed Kaido"
 },
@@ -79,18 +36,9 @@
 	"url": "/blog/i-decided-to-go-offline",
 	"category": "internet",
 	"thumbnail": "/blog/i-decided-to-go-offline/thumbnail.webp",
+	"thumbnailAlt": "Offline Google Chrome Dinosaur Game",
 	"title": "I Decided to Go Offline",
 	"author": "Zed Kaido",
-	"date": "2023-05-05"
-},
-	{
-	"id": 9,
-	"url": "/blog/zorba-the-greek",
-	"category": "music-releases",
-	"title": "Zorba the Greek",
-	"thumbnail": "/blog/zorba-the-greek/thumbnail.webp",
-	"thumbnail_alt": "Zorba Dancing",
-	"date": "2023-05-26",
-	"author": "Zed Kaido"
+	"date": "2023-06-09"
 }
 ]

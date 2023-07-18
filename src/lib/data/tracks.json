@@ -1,0 +1,83 @@
+[
+	{
+	"id": 1,
+	"title": "Second Rendez-Vous (Redux)",
+	"cover": "/images/tracks/second-rendez-vous-redux/thumbnail.webp",
+	"smallCover": "/images/tracks/second-rendez-vous-redux/thumbnail-small.webp",
+	"link": "/music/second-rendez-vous-redux",
+	"source": "https://music.zedkaido.com/second-rendez-vous-redux.m4a",
+	"date": "2023-01-23",
+	"streamingLinks": {
+		"spotify": "https://open.spotify.com/track/3yEOjWzIpzqB3WfqfzKyjH?si=7f27640d402d4ded",
+		"appleMusic": "https://music.apple.com/us/album/second-rendez-vous-redux/1665747269?i=1665747271",
+		"tidal": "https://tidal.com/browse/track/271720996",
+		"youtubeVideo": "https://www.youtube.com/watch?v=TMMxn9-0eLs",
+		"bandcamp": "https://zedkaido.bandcamp.com/track/second-rendez-vous-redux"
+	}
+},
+	{
+	"id": 2,
+	"title": "Bach's Ghost In The Machine",
+	"cover": "/images/tracks/bachs-ghost-in-the-machine/thumbnail.webp",
+	"smallCover": "/images/tracks/bachs-ghost-in-the-machine/thumbnail-small.webp",
+	"link": "/music/bachs-ghost-in-the-machine",
+	"source": "https://music.zedkaido.com/bachs-ghost-in-the-machine.m4a",
+	"date": "2023-02-13",
+	"streamingLinks": {
+		"spotify": "https://open.spotify.com/track/0z0yzn2wxhPNRHK3ca1PA3?si=6340f670f5b34ce2",
+		"appleMusic": "https://music.apple.com/us/album/bachs-ghost-in-the-machine-single/1666944271",
+		"tidal": "https://tidal.com/browse/track/272593539",
+		"youtubeVideo": "https://www.youtube.com/watch?v=PHMrW97rvPU",
+		"bandcamp": "https://zedkaido.bandcamp.com/track/bachs-ghost-in-the-machine"
+	}
+},
+	{
+	"id": 3,
+	"title": "Can Can: Offenbach is In The House",
+	"cover": "/images/tracks/can-can-offenbach-is-in-the-house/thumbnail.webp",
+	"smallCover": "/images/tracks/can-can-offenbach-is-in-the-house/thumbnail-small.webp",
+	"link": "/music/can-can-offenbach-is-in-the-house",
+	"source": "https://music.zedkaido.com/can-can-offenbach-is-in-the-house.m4a",
+	"date": "2023-02-24",
+	"streamingLinks": {
+		"nft": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/44177651947870372643918442202313262982841847278503558282328139882283151654913",
+		"spotify": "https://open.spotify.com/track/2WKbHLFbRQN9g0myfjZl8H?si=61f1651738f74a58",
+		"appleMusic": "https://music.apple.com/us/album/can-can-offenbach-is-in-the-house/1670703617?i=1670703618",
+		"tidal": "https://tidal.com/browse/track/275748595",
+		"youtubeVideo": "https://www.youtube.com/watch?v=kwVP5GDvmgc",
+		"bandcamp": "https://zedkaido.bandcamp.com/track/can-can-offenbach-is-in-the-house"
+	}
+},
+	{
+	"id": 4,
+	"title": "Cotton Eye Joe (Afro House Mix)",
+	"cover": "/images/tracks/cotton-eye-joe/thumbnail.webp",
+	"smallCover": "/images/tracks/cotton-eye-joe/thumbnail-small.webp",
+	"link": "/music/cotton-eye-joe",
+	"source": "https://music.zedkaido.com/cotton-eye-joe.m4a",
+	"date": "2023-03-17",
+	"streamingLinks": {
+		"spotify": "https://open.spotify.com/track/12VMKcxGLpHsFytFYAVal1?si=d0ef07bb62f34d82",
+		"appleMusic": "https://music.apple.com/us/album/cotton-eye-joe-afro-house-mix/1676346610?i=1676346611",
+		"tidal": "https://tidal.com/browse/track/280765511",
+		"youtubeVideo": "https://www.youtube.com/watch?v=CqX0lZj1YGE",
+		"bandcamp": "https://zedkaido.bandcamp.com/track/cotton-eye-joe-afro-house-mix"
+	}
+},
+	{
+	"id": 5,
+	"title": "Zorba The Greek",
+	"cover": "/images/tracks/zorba-the-greek/thumbnail.webp",
+	"smallCover": "/images/tracks/zorba-the-greek/thumbnail-small.webp",
+	"link": "/music/zorba-the-greek",
+	"source": "https://music.zedkaido.com/zorba-the-greek.m4a",
+	"date": "2023-05-26",
+	"streamingLinks": {
+		"spotify": "https://open.spotify.com/track/2C8S58q7QKrfj4TcZZfsIk?si=dcfdb9e13b75471c",
+		"appleMusic": "https://music.apple.com/pt/album/zorba-the-greek/1689241256?i=1689241257",
+		"tidal": "https://tidal.com/browse/track/296372659",
+		"youtubeVideo": "https://www.youtube.com/watch?v=Md4-6p50PXU",
+		"bandcamp": "https://zedkaido.bandcamp.com/track/zorba-the-greek"
+	}
+}
+]

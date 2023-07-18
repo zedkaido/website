@@ -1,0 +1,35 @@
+[
+	{
+	"id": 1,
+	"url": "/dj-shows/001",
+	"thumbnail": "/images/dj-shows/001/001.webp",
+	"title": "#001: DJ Set - Countryside",
+	"youtubeId": "5oKBOYqK0iI",
+	"rumbleVideo": "https://rumble.com/embed/v2f0i74/?pub=1egz95",
+	"audio": "https://shows.zedkaido.com/show-001.m4a",
+	"location": "Portugal",
+	"date": "2023/04/10"
+},
+	{
+	"id": 2,
+	"url": "/dj-shows/002",
+	"thumbnail": "/images/dj-shows/002/002.webp",
+	"title": "#002: DJ Set - Trumpets Reign",
+	"youtubeId": "KPnGJwb_W2o",
+	"rumbleVideo": "https://rumble.com/embed/v2fjhr8/?pub=1egz95",
+	"audio": "https://shows.zedkaido.com/show-002.m4a",
+	"location": "Portugal",
+	"date": "2023/04/14"
+},
+	{
+	"id": 3,
+	"url": "/dj-shows/003",
+	"thumbnail": "/images/dj-shows/003/003.webp",
+	"youtubeId": "kruw3iLmQ8k",
+	"title": "#003: DJ Set - Sunset Mix",
+	"rumbleVideo": "https://rumble.com/embed/v2fyovm/?pub=1egz95",
+	"audio": "https://shows.zedkaido.com/show-003.m4a",
+	"location": "Portugal",
+	"date": "2023/04/16"
+}
+]
