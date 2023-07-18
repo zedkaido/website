@@ -4,7 +4,17 @@ declare global {
 	namespace App {
 		// interface Error {}
 		// interface Locals {}
-		// interface PageData {}
+		interface PageData {
+			env: {
+				COUNTER: DurableObjectNamespace;
+			};
+			context: {
+				waitUntil(promise: Promise<any>): void;
+			};
+			caches: CacheStorage & { default: Cache }
+		}
+		// interface Session {}
+		// interface Stuff {}
 		// interface Platform {}
 	}
 }
