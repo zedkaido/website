@@ -310,3 +310,9 @@ button {
 		padding: 20% 10%;
 	}
 }
+
+@media (max-width: 420px) {
+	body {
+		padding: 24% 7%;
+	}
+}
