@@ -7,6 +7,6 @@
 <style>
 	.content {
 		max-width: var(--size-8xl);
-		font-weight: 200;
+		font-weight: var(--font-text-weight);
 	}
 </style>

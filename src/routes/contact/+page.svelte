@@ -44,7 +44,7 @@
 	}
 
 	p {
-		font-weight: 200;
+		font-weight: var(--font-text-weight);
 		word-break: break-all;
 	}
 </style>

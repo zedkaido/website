@@ -28,6 +28,6 @@
 	}
 
 	p {
-		font-weight: 200;
+		font-weight: var(--font-text-weight);
 	}
 </style>

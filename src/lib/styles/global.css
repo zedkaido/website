@@ -20,6 +20,9 @@
 	--text-5xl: 3rem;
 	--text-6xl: 4rem;
 
+	/* font-weights */
+	--font-text-weight: 300;
+
 	/* letter-spacing */
 	--tracking-tighter: -0.05em;
 	--tracking-tight: -0.025em;
@@ -190,7 +193,6 @@ button {
 	border-radius: var(--border-default);
 	font-family: var(--font-default);
 	font-size: var(--text-base);
-	font-weight: 500;
 	color: var(--color-button-fg);
 	background-color: var(--color-button-bg);
 }
