@@ -28,15 +28,15 @@
 			<option value="dark">Dark</option>
 		</select>
 
-		<p class="no-margin">in</p>
-		<div class="flex-row fill-w align-center justify-space-between">
+		<p class="no-margin line-height-sm">in</p>
+		<div class="flex-row fill-w align-center justify-space-between line-height-sm">
 			<p class="no-margin">art by</p>
 		</div>
 
 		<div class="gap-xl" />
 
-		<h1 class="no-margin">zed kaido</h1>
-		<p class="no-margin">Life is a symphony.<br /> Turn up the volume!</p>
+		<h1 class="no-margin line-height-sm">zed kaido</h1>
+		<p class="no-margin line-height-sm">Life is a symphony.<br /> Turn up the volume!</p>
 
 		{#if currentPath === '/'}
 			<div class="gap-2xl" />
