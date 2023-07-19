@@ -8,6 +8,7 @@
 </svelte:head>
 
 <PostContent>
+	<img src="/images/blog/i-decided-to-go-offline/thumbnail.webp" alt="" />
 	<h2>I Decided to Go Offline</h2>
 
 	<p>
@@ -54,3 +55,9 @@
 
 	<p>Thank me later!</p>
 </PostContent>
+
+<style>
+	img {
+		max-width: 100%;
+	}
+</style>
