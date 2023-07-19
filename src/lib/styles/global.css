@@ -169,7 +169,7 @@ code {
 }
 
 .variable {
-	background-color: var(--color-3);
+	background-color: var(--color-variable);
 	padding: 0 0.1rem;
 	box-sizing: border-box;
 }
@@ -277,6 +277,11 @@ button {
 
 .line-height-sm {
 	line-height: 1.2;
+}
+
+.gap-xs {
+	height: var(--gap-xs);
+	width: var(--gap-xs);
 }
 
 .gap-sm {
