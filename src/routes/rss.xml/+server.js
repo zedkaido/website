@@ -28,7 +28,7 @@ const buildRSSItems = (posts, tracks, djShows) => {
 	tracks.forEach((x) => {
 		items.push({
 			title: x.title,
-			url: website + x.link,
+			url: website + x.url,
 			date: x.date,
 			thumbnail: x.cover
 		});

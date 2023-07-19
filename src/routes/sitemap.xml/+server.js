@@ -54,22 +54,32 @@ export async function GET({ setHeaders }) {
 				<loc>${website}/contact</loc>
 				<lastmod>2023-07-19</lastmod>
 			</url>
-			${djShows
-				.map((show) =>
-					show.url
-						? `<url>
-				<loc>${website}${show.url}</loc>
-				<lastmod>${show.updatedDate ? show.updatedDate : show.date}</lastmod>
-				</url>`
-						: ''
-				)
-				.join('')}
 			${posts
 				.map((post) =>
 					post.url
 						? `<url>
 		<loc>${website}${post.url}</loc>
 		<lastmod>${post.updatedDate ? post.updatedDate : post.date}</lastmod>
+		</url>`
+						: ''
+				)
+				.join('')}
+			${djShows
+				.map((show) =>
+					show.url
+						? `<url>
+					<loc>${website}${show.url}</loc>
+					<lastmod>${show.updatedDate ? show.updatedDate : show.date}</lastmod>
+				</url>`
+						: ''
+				)
+				.join('')}
+			${tracks
+				.map((track) =>
+					track.url
+						? `<url>
+		<loc>${website}${track.url}</loc>
+		<lastmod>${track.updatedDate ? track.updatedDate : track.date}</lastmod>
 		</url>`
 						: ''
 				)
