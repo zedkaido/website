@@ -14,7 +14,7 @@
 		<li id={track.id?.toString()}>
 			<p>
 				{track.date}:<br />
-				<a href={track.link}>{track.title}</a>
+				<a href={track.url}>{track.title}</a>
 			</p>
 		</li>
 	</ul>

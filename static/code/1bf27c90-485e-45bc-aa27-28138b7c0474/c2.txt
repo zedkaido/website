@@ -1,0 +1,12 @@
+<script>
+	import { theme } from '$lib/stores/theme';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		theme.subscribe(v => {
+			const bodyClassList = document.body.classList;
+			bodyClassList.remove('light', 'system', 'dark');
+			bodyClassList.add(v);
+		});
+	});
+</script>

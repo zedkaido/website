@@ -39,6 +39,7 @@
 <PostContent>
 	<img src="/images/blog/lifespan/thumbnail.webp" alt="how a person looks throught his life" />
 
+  <h4>2023-03-30</h4>
 	<div id="title">
 		<h2>How Many Weeks Do You Have Left? A Reminder to Seize the Day</h2>
 	</div>
@@ -226,7 +227,7 @@
 
 	label {
 		display: block;
-		font-weight: 400;
+		font-weight: var(--weight-regular);
 		margin-bottom: var(--gap-sm);
 	}
 

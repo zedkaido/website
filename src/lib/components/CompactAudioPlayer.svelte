@@ -119,7 +119,7 @@
 	.title-wrap a {
 		overflow: hidden;
 		text-overflow: ellipsis;
-		font-weight: 400;
+		font-weight: var(--weight-regular);
 	}
 
 	.audio-player {

@@ -4,6 +4,8 @@
 
 <a href="/blog">-> view all posts</a>
 <div class="gap" />
+
+<h4>2023-02-24</h4>
 <h2>I Generated Over 1000 AI Images For My Track Cover</h2>
 
 <a href="/music/can-can-offenbach-is-in-the-house">

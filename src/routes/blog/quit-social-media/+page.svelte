@@ -7,6 +7,7 @@
 </svelte:head>
 
 <PostContent>
+	<h4>2023-02-21</h4>
 	<h2>I Quit Social Media, Even as an Artist!</h2>
 
 	<p>Yeap, you read it right! I quit social media, even as an artist! Puff! Gone! No more! Why?</p>

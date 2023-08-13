@@ -9,6 +9,8 @@
 
 <PostContent>
 	<img src="/images/blog/i-decided-to-go-offline/thumbnail.webp" alt="" />
+
+	<h4>2023-06-09</h4>
 	<h2>I Decided to Go Offline</h2>
 
 	<p>

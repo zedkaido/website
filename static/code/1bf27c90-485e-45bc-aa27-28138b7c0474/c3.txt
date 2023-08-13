@@ -1,0 +1,8 @@
+<div class="header">
+	<select bind:value={$theme} class="theme-selector">
+		<option value="system">System</option>
+		<option value="light">Light</option>
+		<option value="dark">Dark</option>
+	</select>
+	<!-- Add any other header content here -->
+</div>

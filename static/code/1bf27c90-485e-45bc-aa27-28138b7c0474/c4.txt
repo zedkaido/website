@@ -1,0 +1,19 @@
+/* Define the light theme styles */
+@media screen and (prefers-color-scheme: light) {
+	:root {
+		/* Light theme CSS variable values */
+	}
+	body.dark {
+		/* Override specific styles for the dark theme */
+	}
+}
+
+/* Define the dark theme styles */
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		/* Dark theme CSS variable values */
+	}
+	body.light {
+		/* Override specific styles for the light theme */
+	}
+}

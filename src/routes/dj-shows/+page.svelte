@@ -30,6 +30,6 @@
 	}
 
 	span {
-		font-weight: var(--font-text-weight);
+		font-weight: var(--weight-text);
 	}
 </style>

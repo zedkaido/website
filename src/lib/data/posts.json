@@ -1,28 +1,36 @@
 [
 	{
-	"id": 1,
-	"url": "/blog/quit-social-media",
+	"id": "1bf27c90-485e-45bc-aa27-28138b7c0474",
+	"url": "/blog/svelte-kit-theme-screen-flickering-fix",
+	"title": "Implement svelte-kit theme switching without screen flickering on page reload/load",
+	"date": "2023-08-01",
+	"author": "Zed Kaido"
+},
+	{
+	"id": "b69e316f-121d-4aee-82d5-c4cb31009587",
+	"url": "/blog/i-decided-to-go-offline",
 	"category": "internet",
-	"title": "I Quit Social Media, Even as an Artist!",
-	"thumbnail": "/blog/quit-social-media/thumbnail.webp",
-	"thumbnailAlt": "#quitsocialmedia",
-	"date": "2023-02-21",
-	"updatedDate": "2023-02-21",
-	"author": "Zed Kaido"
+	"thumbnail": "/blog/i-decided-to-go-offline/thumbnail.webp",
+	"thumbnailAlt": "Offline Google Chrome Dinosaur Game",
+	"title": "I Decided to Go Offline",
+	"author": "Zed Kaido",
+	"date": "2023-06-09"
 },
 	{
-	"id": 2,
-	"url": "/blog/i-generated-over-1000-ai-images-for-my-track-cover",
-	"category": "artificial-intelligence",
-	"title": "I Generated Over 1000 AI Images For My Track Cover",
-	"thumbnail": "/blog/i-generated-over-1000-ai-images/thumbnail.webp",
-	"thumbnailAlt": "A mosaic with 1000 AI generated images",
-	"date": "2023-02-24",
-	"updatedDate": "2023-02-24",
-	"author": "Zed Kaido"
+	"id": "92304c72-d38d-45f4-b24a-8b70346ba92d",
+	"title": "How to Redirect www.example.com to example.com in Cloudflare Pages",
+	"url": "/blog/cloudflare-www-website-page-not-working-fix",
+	"date": "2023-05-23"
 },
 	{
-	"id": 3,
+	"id": "c39d1454-24a4-4f42-a736-c78c5af45457",
+	"url": "/blog/mfl-license",
+	"category": "internet",
+	"title": "(MFL) Mother Fucking License",
+	"date": "2023-04-20"
+},
+	{
+	"id": "dd02a605-ae58-43a8-ad4f-2648c46b55d1",
 	"url": "/blog/lifespan",
 	"category": "life",
 	"title": "How Many Weeks Do You Have Left? A Reminder to Seize the Day",
@@ -32,13 +40,23 @@
 	"author": "Zed Kaido"
 },
 	{
-	"id": 8,
-	"url": "/blog/i-decided-to-go-offline",
+	"id": "bbae8ff2-4445-4ff6-9261-a9ef7c4ec3a6",
+	"url": "/blog/i-generated-over-1000-ai-images-for-my-track-cover",
+	"category": "artificial-intelligence",
+	"title": "I Generated Over 1000 AI Images For My Track Cover",
+	"thumbnail": "/blog/i-generated-over-1000-ai-images/thumbnail.webp",
+	"thumbnailAlt": "A mosaic with 1000 AI generated images",
+	"date": "2023-02-24",
+	"author": "Zed Kaido"
+},
+	{
+	"id": "f6fce335-d005-45a5-9654-5f4c4e2fb38c",
+	"url": "/blog/quit-social-media",
 	"category": "internet",
-	"thumbnail": "/blog/i-decided-to-go-offline/thumbnail.webp",
-	"thumbnailAlt": "Offline Google Chrome Dinosaur Game",
-	"title": "I Decided to Go Offline",
-	"author": "Zed Kaido",
-	"date": "2023-06-09"
+	"title": "I Quit Social Media, Even as an Artist!",
+	"thumbnail": "/blog/quit-social-media/thumbnail.webp",
+	"thumbnailAlt": "#quitsocialmedia",
+	"date": "2023-02-21",
+	"author": "Zed Kaido"
 }
 ]

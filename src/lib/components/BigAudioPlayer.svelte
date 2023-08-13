@@ -138,7 +138,7 @@
 		margin: 0;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		font-weight: 400;
+		font-weight: var(--weight-regular);
 	}
 
 	.slider {

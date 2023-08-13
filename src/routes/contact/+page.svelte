@@ -33,7 +33,7 @@
 
 	<div class="gap" />
 
-	<a href="/license.txt">MFL LICENSE</a> |
+	<a href="/LICENSE.txt">MFL LICENSE</a> |
 	<a href="https://github.com/zedkaido/website">GITHUB</a> |
 	<a href="https://gitlab.com/zedkaido/website">GITLAB</a>
 </div>
@@ -44,7 +44,7 @@
 	}
 
 	p {
-		font-weight: var(--font-text-weight);
+		font-weight: var(--weight-text);
 		word-break: break-all;
 	}
 </style>

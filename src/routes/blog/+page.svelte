@@ -1,6 +1,5 @@
 <script>
 	import posts from '$lib/data/posts.json';
-	posts.sort((a, b) => b.id - a.id);
 </script>
 
 <svelte:head>
@@ -15,13 +14,13 @@
 	/>
 </svelte:head>
 
-{#each posts as post}
-	<ul>
+<ul>
+	{#each posts as post}
 		<li id={post.id?.toString()}>
 			<p>{post.date}:<br /> <a href={post.url}> {post.title}</a></p>
 		</li>
-	</ul>
-{/each}
+	{/each}
+</ul>
 
 <style>
 	li {
