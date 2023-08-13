@@ -15,11 +15,6 @@
 	});
 </script>
 
-<svelte:head>
-	<meta name="color-scheme" content={$theme == 'system' ? 'light dark' : $theme} />
-	<!-- <link rel="stylesheet" href={`/theme/${$theme}.css`} /> -->
-</svelte:head>
-
 <div class="page">
 	<div class="header">
 		<select bind:value={$theme} class="theme-selector">
@@ -65,7 +60,7 @@
 
 	<a class="hidden-link" href="/">¯\_(ツ)_/¯</a><br />
 	<div class="gap-sm" />
-	<a href="rss.xml" target="_blank" style="margin-left: var(--size);">RSS</a>
+	<a href="/rss.xml" target="_blank" style="margin-left: var(--size);">RSS</a>
 
 	<div class="gap-3xl" />
 </div>
