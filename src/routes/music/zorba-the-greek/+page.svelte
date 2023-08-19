@@ -16,10 +16,10 @@
 <TrackContent>
 	{#if track}
 		<TrackPlayerWrapper>
-			<AudioPlayer src={track.source} preload="none">
+			<AudioPlayer src={track.src} preload="none">
 				<BigAudioPlayer cover={track.cover} title={track.title} />
 			</AudioPlayer>
-			<StreamingLinks {...track?.streamingLinks} download={true} downloadLink={track?.source} />
+			<StreamingLinks {...track?.streamingLinks} download={true} downloadLink={track?.src} />
 		</TrackPlayerWrapper>
 	{:else}
 		...
