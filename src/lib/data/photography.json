@@ -73,7 +73,14 @@
 	"id": 10,
 	"url": "/images/photography/10.webp",
 	"thumbnail": "/images/photography/10-min.webp",
-	"thumbnail_alt": "cotton-eye-joe-v212",
+	"thumbnail_alt": "Hope",
+	"openInNewTab": true
+},
+	{
+	"id": 11,
+	"url": "/images/photography/11.webp",
+	"thumbnail": "/images/photography/11-min.webp",
+	"thumbnail_alt": "Mystery",
 	"openInNewTab": true
 }
 ]
