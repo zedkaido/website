@@ -55,7 +55,18 @@
 
 	<p>Be bored. Reflect. Act!</p>
 
-	<p>Thank me later!</p>
+	<hr />
+
+	<p>
+		P.S. If you don't want/can't turn off the internet completely, I recommend
+		using: <a href="https://selfcontrolapp.com/" target="_blank">
+			<span class="variable">
+			SelfControl.app
+			</span>
+		</a>
+	</p>
+		
+
 </PostContent>
 
 <style>

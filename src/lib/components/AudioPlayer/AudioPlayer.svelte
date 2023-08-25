@@ -45,8 +45,8 @@
 	});
 
 	/** @param {number} t */
-	const seekBy = (n) => {
-		$currentTime += n;
+	const seekBy = (t) => {
+		$currentTime += t;
 	};
 
 	/** @param {number} t */
@@ -80,10 +80,11 @@
 		bind:playbackRate={$playbackRate}
 		loop={$repeat}
 		bind:this={audio}
-		{src}
 		{preload}
 		style="display: none;"
-	/>
-
+	>
+		<source {src} > 
+    HTML5 audio not supported
+	</audio>
 	<slot />
 </div>
