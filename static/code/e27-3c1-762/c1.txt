@@ -1,0 +1,10 @@
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+
+# START OF BLOCKLIST
+0.0.0.0 youtube.com
+::      youtube.com
+0.0.0.0 www.youtube.com
+::      www.youtube.com
+# END OF BLOCKLIST 

@@ -1,6 +1,9 @@
 <script>
 	import PostContent from '../PostContent.svelte';
 	import Code from '$lib/components/Code.svelte';
+
+	export let data;
+	const { c1 } = data.props;
 </script>
 
 <svelte:head>
@@ -65,7 +68,17 @@
 			</span>
 		</a>
 	</p>
-		
+
+	<hr />
+
+	<p>
+		P.S.S. Or, better yet, edit <span class="variable">/etc/hosts</span> manually:
+		(That's what <a href="https://selfcontrolapp.com/" target="_blank">
+		<span class="variable">SelfControl.app</span></a> does behind the
+		curtains):
+	</p>
+
+	<Code lang="/etc/hosts" code={c1} />
 
 </PostContent>
 
@@ -74,3 +87,5 @@
 		max-width: 100%;
 	}
 </style>
+
+
